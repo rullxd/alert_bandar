@@ -402,8 +402,10 @@ def run_backtest(start_days_ago: int = 30, end_days_ago: int = 1) -> pd.DataFram
             df_today = prepare(df_today)
             
             # Load historical for multi-day metrics
-            hist_start = max(0, i - LOOKBACK_DAYS)
-            historical_files = all_files[hist_start:i] if i > 0 else []
+            # FIX: Find actual index in all_files, not test_files
+            actual_index = all_files.index(file_path)
+            hist_start = max(0, actual_index - LOOKBACK_DAYS)
+            historical_files = all_files[hist_start:actual_index] if actual_index > 0 else []
             
             if len(historical_files) >= 3:
                 df_hist_list = [prepare(load_json(f)) for f in historical_files]
@@ -420,7 +422,8 @@ def run_backtest(start_days_ago: int = 30, end_days_ago: int = 1) -> pd.DataFram
                 continue
             
             # Load next day's data for validation
-            next_file = all_files[i + 1] if i + 1 < len(all_files) else None
+            # FIX: Use actual_index, not i
+            next_file = all_files[actual_index + 1] if actual_index + 1 < len(all_files) else None
             df_next = prepare(load_json(next_file)) if next_file else pd.DataFrame()
             
             # Backtest each signal
