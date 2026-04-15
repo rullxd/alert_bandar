@@ -11,17 +11,33 @@ from datetime import datetime, timedelta
 
 load_dotenv()
 
-# Load all API keys
+# Load all API keys from key.txt
 api_keys: List[Tuple[str, str]] = []
-for i in range(1, 10):
-    key = os.getenv(f"GOAPI_KEY_{i}", "").strip()
-    if key:
-        api_keys.append((f"GOAPI_KEY_{i}", key))
 
+# Try loading from key.txt first
+if os.path.exists("key.txt"):
+    try:
+        with open("key.txt", "r") as f:
+            lines = f.readlines()
+            for i, line in enumerate(lines[1:], 1):  # Skip first line "GOAPI KEYS:"
+                key = line.strip()
+                if key and not key.startswith("GOAPI") and not key.startswith("#"):
+                    api_keys.append((f"GOAPI_KEY_{i}", key))
+        print(f"✓ Loaded {len(api_keys)} keys from key.txt")
+    except Exception as e:
+        print(f"⚠️  Error reading key.txt: {e}")
+
+# Fallback: Load from .env if key.txt is empty
 if not api_keys:
-    key = os.getenv("GOAPI_KEY", "").strip()
-    if key:
-        api_keys.append(("GOAPI_KEY", key))
+    for i in range(1, 10):
+        key = os.getenv(f"GOAPI_KEY_{i}", "").strip()
+        if key:
+            api_keys.append((f"GOAPI_KEY_{i}", key))
+    
+    if not api_keys:
+        key = os.getenv("GOAPI_KEY", "").strip()
+        if key:
+            api_keys.append(("GOAPI_KEY", key))
 
 print("="*70)
 print("🔍 TESTING GOAPI KEYS")

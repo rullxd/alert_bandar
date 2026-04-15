@@ -1,11 +1,22 @@
 """
-Unified Day Trading Screener
+Unified Day Trading Screener - IMPROVED VERSION
 Combines: Basic Screening + Broker Analysis + AI Insight
+
+Key Improvements:
+- Separated liquidity screening from signal generation
+- Independent strategy scoring (all strategies evaluated)
+- Best strategy selection with quality threshold
+- Fixed RISKY BOUNCE logic (only for reversals)
+- Optimized strategy priority
+- Added top N signal filtering
+- Consolidated scoring system
+
 Usage:
-    python main_screener.py                    # Basic only
-    python main_screener.py --broker           # + Broker data
-    python main_screener.py --ai               # + AI analysis  
-    python main_screener.py --broker --ai      # Full features (recommended)
+    python main_screener_improved.py                    # Basic only
+    python main_screener_improved.py --broker           # + Broker data
+    python main_screener_improved.py --ai               # + AI analysis  
+    python main_screener_improved.py --broker --ai      # Full features (recommended)
+    python main_screener_improved.py --top 10           # Limit to top 10 signals
 """
 
 import os
@@ -18,7 +29,7 @@ import pandas as pd
 import requests
 from datetime import datetime, date
 from dotenv import load_dotenv
-from typing import Any, Dict, List, cast
+from typing import Any, Dict, List, cast, Tuple
 
 # Load environment variables
 load_dotenv()
@@ -36,15 +47,30 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 
 # GOAPI Config (for broker data)
 _goapi_keys: List[str] = []
-for i in range(1, 10):
-    key = os.getenv(f"GOAPI_KEY_{i}", "").strip()
-    if key:
-        _goapi_keys.append(key)
 
+# Try loading from ket.txt first
+if os.path.exists("ket.txt"):
+    try:
+        with open("ket.txt", "r") as f:
+            lines = f.readlines()
+            for line in lines[1:]:  # Skip first line "GOAPI KEYS:"
+                key = line.strip()
+                if key and not key.startswith("GOAPI") and not key.startswith("#"):
+                    _goapi_keys.append(key)
+    except:
+        pass
+
+# Fallback: Load from .env
 if not _goapi_keys:
-    key = os.getenv("GOAPI_KEY", "").strip()
-    if key:
-        _goapi_keys.append(key)
+    for i in range(1, 10):
+        key = os.getenv(f"GOAPI_KEY_{i}", "").strip()
+        if key:
+            _goapi_keys.append(key)
+    
+    if not _goapi_keys:
+        key = os.getenv("GOAPI_KEY", "").strip()
+        if key:
+            _goapi_keys.append(key)
 
 _current_key_index = 0
 GOAPI_BASE = "https://api.goapi.io"
@@ -55,6 +81,8 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
 # =========================
 # PARAMETER DAY TRADING
 # =========================
+
+# STAGE 1: Liquidity Screening (Strict)
 MIN_VALUE = 2_000_000_000
 MIN_VOLUME = 500_000
 MIN_FREQUENCY = 200
@@ -72,24 +100,24 @@ MIN_NET_FOREIGN = -1_000_000
 MIN_NONREG_RATIO = 0.01
 MIN_VALUE_RANK_PERCENTILE = 0.5
 
-# NEW STRATEGY PARAMETERS
-MOMENTUM_THRESHOLD = 1.5      # Raised from 1.0
-REVERSAL_THRESHOLD = -2.5     # More conservative
-MOMENTUM_WEIGHT = 0.7         # Favor momentum over reversal
-REVERSAL_WEIGHT = 0.3
-
+# Multi-day requirements (RELAXED)
 LOOKBACK_DAYS = 7
-MIN_LIQUID_DAYS = 5           # Raised from 4
-VOLUME_SURGE_THRESHOLD = 1.5  # Keep strict
-CONSISTENCY_WEIGHT = 0.15
+MIN_LIQUID_DAYS = 4              # Relaxed from 5 to 4
+MIN_CONSISTENCY_SCORE = 40       # 40% consistency minimum
 
-# NEW: Breakout strategy parameters
-MIN_BREAKOUT_VOLUME = 1.5     # Min volume surge for breakout
-MIN_CANDLE_STRENGTH = 0.7     # Min bullish candle strength (0-1)
-MIN_PULLBACK_SUPPORT = 20     # Min % from low for pullback entry
-MAX_PULLBACK_SUPPORT = 40     # Max % from low for pullback entry
-ATR_MULTIPLIER_STOP = 2.0     # Stop loss = Entry - (ATR * 2)
-ATR_MULTIPLIER_TARGET = 3.0   # Target = Entry + (ATR * 3)
+# STAGE 2: Strategy Parameters (TUNED)
+MOMENTUM_THRESHOLD = 2.0         # Raised from 1.5 (clearer momentum)
+BREAKOUT_VOLUME_SURGE = 1.8      # Raised from 1.5 (stricter)
+PULLBACK_VOLUME_SURGE = 1.3      # Relaxed for pullback
+BOUNCE_VOLUME_SURGE = 1.2        # Relaxed for bounce
+
+# Stop loss & targets
+ATR_MULTIPLIER_STOP = 2.0
+ATR_MULTIPLIER_TARGET = 3.0
+
+# STAGE 3: Signal Quality Gate
+MIN_SIGNAL_SCORE = 60            # Minimum score to generate BUY signal
+MAX_SIGNALS = 15                 # Maximum signals to send (top N)
 
 # Broker settings
 MIN_TOP_BUYERS = 5
@@ -147,8 +175,6 @@ def prepare(df: pd.DataFrame) -> pd.DataFrame:
         lambda r: (r["Close"] - r["Low"]) / (r["High"] - r["Low"]) if r["High"] > r["Low"] else 0.5,  # type: ignore
         axis=1
     )
-    
-    df["DayTradingScore"] = calculate_daytrading_score(df)  # type: ignore
     
     return df
 
@@ -210,7 +236,7 @@ def calculate_multi_day_metrics(df_today: pd.DataFrame, df_historical: pd.DataFr
     result["PricePosition"] = ((result["Close"] - result["Support7d"]) / price_range.replace(0, float('nan')) * 100).fillna(50).clip(0, 100)  # type: ignore
     
     def get_phase(group: pd.DataFrame) -> str:
-        if len(group) < 5:
+        if len(group) < 3:
             return "Unknown"
         highs = group["High"].values
         lows = group["Low"].values
@@ -223,11 +249,10 @@ def calculate_multi_day_metrics(df_today: pd.DataFrame, df_historical: pd.DataFr
     phase = hist_grouped.apply(get_phase)
     result["MarketPhase"] = result["StockCode"].map(phase).fillna("Unknown")  # type: ignore
     
-    # NEW: Calculate ATR (Average True Range) from historical data
+    # Calculate ATR (Average True Range) from historical data
     def calc_atr(group: pd.DataFrame) -> float:
         if "TrueRange" in group.columns and len(group) >= 3:
             return group["TrueRange"].tail(7).mean()
-        # Fallback: use average of (High - Low)
         if len(group) > 0:
             return (group["High"] - group["Low"]).mean()
         return 0.0
@@ -235,7 +260,7 @@ def calculate_multi_day_metrics(df_today: pd.DataFrame, df_historical: pd.DataFr
     atr_values = hist_grouped.apply(calc_atr)
     result["ATR7"] = result["StockCode"].map(atr_values).fillna(result["Close"] * 0.03)  # type: ignore
     
-    # NEW: Calculate SMA7 (Simple Moving Average 7-day)
+    # Calculate SMA7 (Simple Moving Average 7-day)
     def calc_sma7(group: pd.DataFrame) -> float:
         if len(group) < 3:
             return group["Close"].mean() if len(group) > 0 else 0
@@ -244,243 +269,21 @@ def calculate_multi_day_metrics(df_today: pd.DataFrame, df_historical: pd.DataFr
     sma_values = hist_grouped.apply(calc_sma7)
     result["SMA7"] = result["StockCode"].map(sma_values).fillna(result["Close"])  # type: ignore
     
-    # NEW: Trend Strength (distance from SMA in %)
+    # Trend Strength (distance from SMA in %)
     result["TrendStrength"] = ((result["Close"] - result["SMA7"]) / result["SMA7"] * 100).fillna(0)  # type: ignore
     
     return result
 
 
-def calculate_daytrading_score(df: pd.DataFrame) -> pd.Series:  # type: ignore
-    """Calculate day trading score 0-100"""
-    score = pd.Series(0.0, index=df.index)
-    
-    score += (df["Value"] / df["Value"].max() * 20).fillna(0)  # type: ignore
-    
-    volatility_normalized = 15 * (1 - (df["Volatility"] - 5).abs() / 10)
-    volatility_score = volatility_normalized.where(
-        (df["Volatility"] >= 1) & (df["Volatility"] <= 15), 0
-    )
-    score += volatility_score.clip(0, 15)  # type: ignore
-    
-    score += (df["Frequency"] / df["Frequency"].max() * 15).fillna(0)  # type: ignore
-    
-    spread_score = (1 - df["SpreadPct"] / MAX_SPREAD_PCT) * 10
-    score += spread_score.clip(0, 10)  # type: ignore
-    
-    score += (df["AvgTradeSize"] / df["AvgTradeSize"].max() * 10).fillna(0)  # type: ignore
-    
-    momentum_score = pd.Series(0.0, index=df.index)
-    
-    momentum_mask = (df["ChangePct"] >= 1) & (df["ChangePct"] <= 10)
-    momentum_score[momentum_mask] = (df["ChangePct"][momentum_mask] / 10 * 15).clip(0, 15)  # type: ignore
-    
-    extreme_mask = df["ChangePct"] > 10
-    momentum_score[extreme_mask] = 10
-    
-    reversal_mask = (df["ChangePct"] >= -5) & (df["ChangePct"] <= -2)
-    momentum_score[reversal_mask] = (5 + df["ChangePct"][reversal_mask]) / 3 * 10  # type: ignore
-    
-    extreme_reversal_mask = df["ChangePct"] < -5
-    momentum_score[extreme_reversal_mask] = 5
-    
-    score += momentum_score  # type: ignore
-    
-    if "ConsistencyScore" in df.columns:
-        score += (df["ConsistencyScore"] / 100 * 15).fillna(0)  # type: ignore
-    
-    return score
+# =========================
+# STAGE 1: LIQUIDITY SCREENING
+# =========================
 
-
-def calculate_entry_signals(df: pd.DataFrame) -> pd.DataFrame:
-    """NEW STRATEGY: Breakout + ATR-based stops + Multiple confirmations"""
-    result = df.copy()
-    
-    result["EntrySignal"] = "HOLD"
-    result["SignalStrength"] = 0
-    result["StopLoss"] = 0.0
-    result["Target1"] = 0.0
-    result["Target2"] = 0.0
-    result["RiskReward"] = 0.0
-    
-    has_multiday = "PricePosition" in df.columns
-    
-    # If no multi-day data, add defaults
-    if not has_multiday:
-        result["VolumeSurge"] = 1.0
-        result["MarketPhase"] = "Unknown"
-        result["PricePosition"] = 50.0
-        result["Resistance7d"] = result["High"]
-        result["SMA7"] = result["Close"]
-        result["ATR7"] = result["Close"] * 0.03
-        result["TrendStrength"] = 0.0
-    
-    for idx, row in result.iterrows():
-        close = row["Close"]
-        high = row["High"]
-        resistance = row.get("Resistance7d", close)
-        support = row.get("Support7d", close)  # Add support
-        change_pct = row["ChangePct"]
-        position = row.get("PricePosition", 50)
-        phase = row.get("MarketPhase", "Unknown")
-        surge = row.get("VolumeSurge", 1)
-        sma7 = row.get("SMA7", close)
-        atr = row.get("ATR7", close * 0.03)  # Default 3% if no ATR
-        candle_strength = row.get("CandleStrength", 0.5)
-        trend_strength = row.get("TrendStrength", 0)
-        
-        # ======================
-        # STRATEGY 1: BREAKOUT (RELAXED)
-        # ======================
-        # Relaxed conditions to generate more signals
-        
-        breakout_distance = (high - resistance) / resistance * 100 if resistance > 0 else 0
-        is_breakout = breakout_distance >= -2.0  # Within 2% of resistance
-        
-        if (is_breakout and
-            surge >= 1.2 and          # Lowered from 1.5
-            candle_strength >= 0.6 and  # Lowered from 0.7
-            change_pct >= 1.0 and     # Lowered from 1.5
-            phase != "Trending Down"):  # Only avoid downtrend
-            
-            result.at[idx, "EntrySignal"] = "BUY - BREAKOUT"
-            
-            # Signal strength based on multiple factors
-            strength = 0
-            strength += min(30, change_pct * 15)  # Max 30 from momentum
-            strength += min(30, (surge - 1) * 20)  # Max 30 from volume
-            strength += min(20, candle_strength * 25)  # Max 20 from candle
-            strength += min(20, abs(trend_strength) * 5)  # Max 20 from trend
-            result.at[idx, "SignalStrength"] = int(min(100, strength))
-            
-            # ATR-based stops (2x ATR below entry)
-            stop = close - (2 * atr)
-            result.at[idx, "StopLoss"] = round(max(stop, close * 0.92))  # Min 8% stop
-            
-            # Targets based on ATR (1.5x and 3x ATR)
-            result.at[idx, "Target1"] = round(close + (1.5 * atr))
-            result.at[idx, "Target2"] = round(close + (3 * atr))
-            
-            risk = close - result.at[idx, "StopLoss"]
-            reward = result.at[idx, "Target2"] - close
-            rr = reward / risk if risk > 0 else 0
-            result.at[idx, "RiskReward"] = round(rr, 2)
-        
-        # ======================
-        # STRATEGY 2: PULLBACK (RELAXED)
-        # ======================
-        
-        elif (15 <= position <= 50 and    # Wider range
-              surge >= 1.1 and            # Lowered from 1.3
-              candle_strength >= 0.55 and  # Lowered from 0.65
-              -3.0 <= change_pct <= -0.3 and  # Wider range
-              phase != "Trending Down"):  # Only avoid downtrend
-            
-            result.at[idx, "EntrySignal"] = "BUY - PULLBACK"
-            
-            # Conservative signal strength
-            strength = 0
-            strength += min(25, (40 - abs(change_pct)) * 2)  # Small pullback = better
-            strength += min(25, (surge - 1) * 20)
-            strength += min(25, candle_strength * 35)
-            strength += min(25, trend_strength * 5)
-            result.at[idx, "SignalStrength"] = int(min(100, strength))
-            
-            # ATR-based stops
-            stop = close - (2.5 * atr)  # Wider stop for pullback
-            result.at[idx, "StopLoss"] = round(stop)
-            
-            # Conservative targets
-            result.at[idx, "Target1"] = round(close + (2 * atr))
-            result.at[idx, "Target2"] = round(close + (3 * atr))
-            
-            risk = close - stop
-            reward = result.at[idx, "Target2"] - close
-            rr = reward / risk if risk > 0 else 0
-            result.at[idx, "RiskReward"] = round(rr, 2)
-        
-        # ======================
-        # STRATEGY 3: MOMENTUM (NEW - EASY)
-        # ======================
-        # Simple momentum play for strong moves
-        
-        elif (change_pct >= 2.0 and      # Strong move
-              surge >= 1.3 and           # Good volume
-              candle_strength >= 0.6 and  # Bullish candle
-              position < 80 and          # Not overbought
-              phase != "Trending Down"):
-            
-            result.at[idx, "EntrySignal"] = "BUY - MOMENTUM"
-            
-            strength = 0
-            strength += min(30, change_pct * 10)
-            strength += min(30, (surge - 1) * 20)
-            strength += min(20, candle_strength * 30)
-            strength += min(20, abs(trend_strength) * 5)
-            result.at[idx, "SignalStrength"] = int(min(100, strength))
-            
-            # Fixed % stops for momentum
-            stop = close * 0.96  # 4% stop
-            result.at[idx, "StopLoss"] = round(stop)
-            
-            # Simple % targets
-            result.at[idx, "Target1"] = round(close * 1.03)  # 3%
-            result.at[idx, "Target2"] = round(close * 1.05)  # 5%
-            
-            risk = close - stop
-            reward = (close * 1.05) - close
-            rr = reward / risk if risk > 0 else 0
-            result.at[idx, "RiskReward"] = round(rr, 2)
-        
-        # ======================        # STRATEGY 4: RISKY BOUNCE (New - for weak markets)
-        # ======================
-        # Dead cat bounce / weak bounce - RISKY!
-        # Only trigger when better signals don't exist
-        
-        elif (change_pct >= 5.0 and       # Big move (desperation bounce)
-              candle_strength >= 0.7 and   # Strong candle (conviction)
-              position < 60):              # Price in lower range (room to move)
-            
-            result.at[idx, "EntrySignal"] = "BUY - RISKY BOUNCE"
-            
-            # Lower strength score (indicate higher risk) 
-            strength = 0
-            strength += min(25, change_pct * 8)
-            strength += min(25, candle_strength * 30)
-            strength += 20  # Base for big move
-            result.at[idx, "SignalStrength"] = int(min(70, strength))  # Cap at 70 (high risk)
-            
-            # Tighter stops for risky trades
-            stop = close * 0.95  # 5% stop (wider due to volatility)
-            result.at[idx, "StopLoss"] = round(stop)
-            
-            # Conservative targets
-            result.at[idx, "Target1"] = round(close * 1.025)  # 2.5%
-            result.at[idx, "Target2"] = round(close * 1.04)   # 4%
-            
-            risk = close - stop
-            reward = (close * 1.04) - close
-            rr = reward / risk if risk > 0 else 0
-            result.at[idx, "RiskReward"] = round(rr, 2)
-        
-        # ======================        # AVOID CONDITIONS
-        # ======================
-        elif position > 75 or change_pct > 7:
-            result.at[idx, "EntrySignal"] = "AVOID - OVERBOUGHT"
-            result.at[idx, "SignalStrength"] = 0
-        
-        elif close < sma7 or phase == "Trending Down":
-            result.at[idx, "EntrySignal"] = "AVOID - DOWNTREND"
-            result.at[idx, "SignalStrength"] = 0
-        
-        elif surge < 1.2:
-            result.at[idx, "EntrySignal"] = "AVOID - LOW VOLUME"
-            result.at[idx, "SignalStrength"] = 0
-    
-    return result
-
-
-def screen(df: pd.DataFrame) -> pd.DataFrame:
-    """Filter stocks for day trading"""
+def screen_liquidity(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Stage 1: Filter for liquidity only
+    This is strict - we only want tradeable stocks
+    """
     
     has_multiday = "ConsistencyScore" in df.columns
     
@@ -503,25 +306,295 @@ def screen(df: pd.DataFrame) -> pd.DataFrame:
     if has_multiday:
         multiday_filter = (
             (df["LiquidDays30d"] >= MIN_LIQUID_DAYS) &
-            (df["ConsistencyScore"] >= 40)
+            (df["ConsistencyScore"] >= MIN_CONSISTENCY_SCORE)
         )
         filtered = df[base_filter & multiday_filter].copy()
     else:
         filtered = df[base_filter].copy()
     
-    filtered["Category"] = "Neutral"  # type: ignore
-    filtered.loc[filtered["ChangePct"] >= MOMENTUM_THRESHOLD, "Category"] = "Momentum"  # type: ignore
-    filtered.loc[filtered["ChangePct"] <= REVERSAL_THRESHOLD, "Category"] = "Reversal"  # type: ignore
+    return filtered
+
+
+# =========================
+# STAGE 2: STRATEGY SCORING
+# =========================
+
+def calculate_momentum_score(df: pd.DataFrame) -> pd.Series:  # type: ignore
+    """
+    Score MOMENTUM strategy (0-100)
+    Strong upward move with volume confirmation
+    Best for: Riding existing strong moves
+    """
+    score = pd.Series(0.0, index=df.index)
     
-    if has_multiday:
-        filtered["VolumeSurgeFlag"] = filtered["VolumeSurge"] >= VOLUME_SURGE_THRESHOLD  # type: ignore
-        filtered["BreakoutFlag"] = (
-            (filtered["VolumeSurge"] >= VOLUME_SURGE_THRESHOLD) &
-            (filtered["ChangePct"] > 2) &
-            (filtered["Trend30d"] == "Up")
-        )  # type: ignore
+    for idx, row in df.iterrows():
+        change_pct = row["ChangePct"]
+        surge = row.get("VolumeSurge", 1.0)
+        candle = row.get("CandleStrength", 0.5)
+        position = row.get("PricePosition", 50)
+        phase = row.get("MarketPhase", "Unknown")
+        trend_str = row.get("TrendStrength", 0)
+        
+        # Requirements
+        if (change_pct >= MOMENTUM_THRESHOLD and
+            surge >= 1.3 and
+            candle >= 0.6 and
+            position < 80 and
+            phase != "Trending Down"):
+            
+            s = 0.0
+            # Change momentum (max 30)
+            s += min(30, change_pct * 10)
+            # Volume surge (max 30)
+            s += min(30, (surge - 1) * 20)
+            # Candle strength (max 20)
+            s += min(20, candle * 30)
+            # Trend strength (max 20)
+            s += min(20, abs(trend_str) * 5)
+            
+            score.loc[idx] = min(100, s)  # type: ignore
     
-    return filtered.sort_values(by="DayTradingScore", ascending=False)
+    return score
+
+
+def calculate_breakout_score(df: pd.DataFrame) -> pd.Series:  # type: ignore
+    """
+    Score BREAKOUT strategy (0-100)
+    Price breaking resistance with strong volume
+    Best for: Catching fresh momentum at resistance break
+    """
+    score = pd.Series(0.0, index=df.index)
+    
+    for idx, row in df.iterrows():
+        close = row["Close"]
+        high = row["High"]
+        resistance = row.get("Resistance7d", close)
+        change_pct = row["ChangePct"]
+        surge = row.get("VolumeSurge", 1.0)
+        candle = row.get("CandleStrength", 0.5)
+        phase = row.get("MarketPhase", "Unknown")
+        trend_str = row.get("TrendStrength", 0)
+        
+        # Breakout distance
+        breakout_dist = (high - resistance) / resistance * 100 if resistance > 0 else -10
+        is_breakout = breakout_dist >= -2.0  # Within 2% of resistance
+        
+        # Requirements (STRICTER volume)
+        if (is_breakout and
+            surge >= BREAKOUT_VOLUME_SURGE and  # 1.8x (stricter)
+            candle >= 0.6 and
+            change_pct >= 1.0 and
+            phase != "Trending Down"):
+            
+            s = 0.0
+            # Change momentum (max 30)
+            s += min(30, change_pct * 15)
+            # Volume surge (max 35) - higher weight for breakout
+            s += min(35, (surge - 1) * 25)
+            # Candle strength (max 20)
+            s += min(20, candle * 25)
+            # Trend strength (max 15)
+            s += min(15, abs(trend_str) * 5)
+            
+            score.loc[idx] = min(100, s)  # type: ignore
+    
+    return score
+
+
+def calculate_pullback_score(df: pd.DataFrame) -> pd.Series:  # type: ignore
+    """
+    Score PULLBACK strategy (0-100)
+    Buying dip in uptrend
+    Best for: Better entry timing on established uptrends
+    """
+    score = pd.Series(0.0, index=df.index)
+    
+    for idx, row in df.iterrows():
+        position = row.get("PricePosition", 50)
+        change_pct = row["ChangePct"]
+        surge = row.get("VolumeSurge", 1.0)
+        candle = row.get("CandleStrength", 0.5)
+        phase = row.get("MarketPhase", "Unknown")
+        trend_str = row.get("TrendStrength", 0)
+        
+        # Requirements
+        if (15 <= position <= 50 and  # In lower half of range
+            surge >= PULLBACK_VOLUME_SURGE and  # 1.3x
+            candle >= 0.55 and
+            -3.0 <= change_pct <= -0.3 and  # Small pullback
+            phase != "Trending Down"):
+            
+            s = 0.0
+            # Pullback quality (max 30) - smaller pullback = better
+            pullback_quality = max(0, 3 - abs(change_pct))
+            s += min(30, pullback_quality * 10)
+            # Volume surge (max 25)
+            s += min(25, (surge - 1) * 20)
+            # Candle strength (max 25)
+            s += min(25, candle * 35)
+            # Trend strength (max 20)
+            s += min(20, trend_str * 5)  # Positive trend strength
+            
+            score.loc[idx] = min(100, s)  # type: ignore
+    
+    return score
+
+
+def calculate_bounce_score(df: pd.DataFrame) -> pd.Series:  # type: ignore
+    """
+    Score BOUNCE strategy (0-70) - RISKY!
+    Reversal play on oversold stocks
+    Best for: Catching dead cat bounce (HIGH RISK)
+    
+    FIXED: Only triggers for DOWN moves that are bouncing
+    """
+    score = pd.Series(0.0, index=df.index)
+    
+    for idx, row in df.iterrows():
+        close = row["Close"]
+        low = row["Low"]
+        change_pct = row["ChangePct"]
+        candle = row.get("CandleStrength", 0.5)
+        position = row.get("PricePosition", 50)
+        surge = row.get("VolumeSurge", 1.0)
+        
+        # FIXED: Only for stocks that FELL then bounced
+        # Check if we're bouncing from a low (not a strong up move!)
+        bounce_from_low = (close > low * 1.02)  # Closed 2% above low
+        had_down_move = change_pct <= -1.5  # Was down at some point
+        
+        # Requirements (CORRECTED LOGIC)
+        if (had_down_move and  # Stock went DOWN
+            bounce_from_low and  # Now bouncing from low
+            candle >= 0.7 and  # Strong reversal candle
+            position < 60 and  # In lower range
+            surge >= BOUNCE_VOLUME_SURGE):  # 1.2x volume
+            
+            s = 0.0
+            # Bounce strength (max 25)
+            bounce_str = (close - low) / (close - low + 0.01) * 100
+            s += min(25, bounce_str * 0.3)
+            # Candle strength (max 25)
+            s += min(25, candle * 30)
+            # Volume (max 20)
+            s += min(20, (surge - 1) * 20)
+            
+            # Cap at 70 (indicate high risk)
+            score.loc[idx] = min(70, s)  # type: ignore
+    
+    return score
+
+
+# =========================
+# STAGE 3: SIGNAL GENERATION
+# =========================
+
+def generate_signals(df: pd.DataFrame, min_score: int = MIN_SIGNAL_SCORE) -> pd.DataFrame:
+    """
+    Stage 3: Generate BUY signals from strategy scores
+    
+    Process:
+    1. Calculate all strategy scores
+    2. Pick best strategy per stock
+    3. Only signal if score >= min_score (quality gate)
+    4. Calculate stops/targets based on strategy
+    """
+    result = df.copy()
+    
+    # Ensure multi-day columns exist
+    has_multiday = "PricePosition" in df.columns
+    if not has_multiday:
+        result["VolumeSurge"] = 1.0
+        result["MarketPhase"] = "Unknown"
+        result["PricePosition"] = 50.0
+        result["Resistance7d"] = result["High"]
+        result["Support7d"] = result["Low"]
+        result["SMA7"] = result["Close"]
+        result["ATR7"] = result["Close"] * 0.03
+        result["TrendStrength"] = 0.0
+        result["CandleStrength"] = 0.5
+    
+    # Calculate all strategy scores
+    print("   Scoring MOMENTUM strategy...")
+    result["MomentumScore"] = calculate_momentum_score(result)
+    
+    print("   Scoring BREAKOUT strategy...")
+    result["BreakoutScore"] = calculate_breakout_score(result)
+    
+    print("   Scoring PULLBACK strategy...")
+    result["PullbackScore"] = calculate_pullback_score(result)
+    
+    print("   Scoring BOUNCE strategy...")
+    result["BounceScore"] = calculate_bounce_score(result)
+    
+    # Find best strategy for each stock
+    score_cols = ["MomentumScore", "BreakoutScore", "PullbackScore", "BounceScore"]
+    result["BestScore"] = result[score_cols].max(axis=1)  # type: ignore
+    result["BestStrategy"] = result[score_cols].idxmax(axis=1)  # type: ignore
+    
+    # Map strategy names
+    strategy_map = {
+        "MomentumScore": "MOMENTUM",
+        "BreakoutScore": "BREAKOUT",
+        "PullbackScore": "PULLBACK",
+        "BounceScore": "RISKY BOUNCE"
+    }
+    result["BestStrategy"] = result["BestStrategy"].map(strategy_map)  # type: ignore
+    
+    # Initialize signal columns
+    result["EntrySignal"] = "NO SIGNAL"
+    result["SignalStrength"] = 0
+    result["StopLoss"] = 0.0
+    result["Target1"] = 0.0
+    result["Target2"] = 0.0
+    result["RiskReward"] = 0.0
+    
+    # Generate signals only for stocks with score >= min_score
+    for idx, row in result.iterrows():
+        if row["BestScore"] >= min_score:
+            strategy = row["BestStrategy"]
+            close = row["Close"]
+            atr = row["ATR7"]
+            
+            result.at[idx, "EntrySignal"] = f"BUY - {strategy}"
+            result.at[idx, "SignalStrength"] = int(row["BestScore"])
+            
+            # Calculate stops/targets based on strategy
+            if strategy == "MOMENTUM":
+                # Fixed % stops for momentum
+                stop = close * 0.96  # 4% stop
+                result.at[idx, "StopLoss"] = round(stop)
+                result.at[idx, "Target1"] = round(close * 1.03)  # 3%
+                result.at[idx, "Target2"] = round(close * 1.05)  # 5%
+                
+            elif strategy == "BREAKOUT":
+                # ATR-based stops for breakout
+                stop = close - (2 * atr)
+                result.at[idx, "StopLoss"] = round(max(stop, close * 0.92))
+                result.at[idx, "Target1"] = round(close + (1.5 * atr))
+                result.at[idx, "Target2"] = round(close + (3 * atr))
+                
+            elif strategy == "PULLBACK":
+                # ATR-based stops for pullback (wider)
+                stop = close - (2.5 * atr)
+                result.at[idx, "StopLoss"] = round(stop)
+                result.at[idx, "Target1"] = round(close + (2 * atr))
+                result.at[idx, "Target2"] = round(close + (3 * atr))
+                
+            elif strategy == "RISKY BOUNCE":
+                # Fixed % stops for bounce (tighter)
+                stop = close * 0.95  # 5% stop
+                result.at[idx, "StopLoss"] = round(stop)
+                result.at[idx, "Target1"] = round(close * 1.025)  # 2.5%
+                result.at[idx, "Target2"] = round(close * 1.04)   # 4%
+            
+            # Calculate Risk/Reward
+            risk = close - result.at[idx, "StopLoss"]
+            reward = result.at[idx, "Target2"] - close
+            rr = reward / risk if risk > 0 else 0
+            result.at[idx, "RiskReward"] = round(rr, 2)
+    
+    return result
 
 
 # =========================
@@ -548,246 +621,224 @@ def http_get_json(url: str, headers: Dict[str, str], params: Dict[str, Any]) -> 
     return cast(Dict[str, Any], r.json())
 
 
-def fetch_broker_summary(symbol: str, trade_date: str) -> Dict[str, Any]:
-    """Fetch broker summary with fallback API keys"""
-    url = f"{GOAPI_BASE}/stock/idx/{symbol}/broker_summary"
-    params = {"date": trade_date, "investor": "ALL"}
+def fetch_broker_summary(stock_code: str, trade_date: str, max_retries: int = 3) -> Dict[str, Any]:
+    if not _goapi_keys:
+        raise RuntimeError("No GOAPI keys available")
     
-    max_attempts = len(_goapi_keys) if _goapi_keys else 1
-    attempt = 0
-    
-    while attempt < max_attempts:
+    for attempt in range(max_retries):
         try:
-            api_key = get_current_api_key()
-            headers = {"X-API-KEY": api_key}
-            raw = http_get_json(url, headers, params)
+            key = get_current_api_key()
+            url = f"{GOAPI_BASE}/stock/idx/{stock_code}/broker"
+            headers = {"X-API-KEY": key}
+            params = {"date": trade_date}
             
-            if raw.get("status") != "success":
-                raise RuntimeError(f"API returned non-success status: {raw}")
+            data = http_get_json(url, headers, params)
+            if data and isinstance(data, dict):
+                return data
             
-            return raw
-        
-        except requests.exceptions.HTTPError as e:
-            if e.response.status_code == 429:
+        except requests.HTTPError as e:
+            if e.response is not None and e.response.status_code == 429:
                 rotate_api_key()
-                attempt += 1
-                wait_time = min(2 ** attempt, 30)
-                print(f"    Rate limit, waiting {wait_time}s...")
-                time.sleep(wait_time)
+                time.sleep(1)
                 continue
-            elif e.response.status_code == 401:
-                raise RuntimeError(f"Unauthorized: Invalid API key")
-            else:
-                raise RuntimeError(f"HTTP {e.response.status_code}: {str(e)}")
-        except Exception as e:
-            raise RuntimeError(f"Error fetching {symbol}: {str(e)}")
+            raise
+        except Exception:
+            raise
     
-    raise RuntimeError(f"All API keys exceeded rate limit")
+    raise RuntimeError(f"Failed to fetch broker data after {max_retries} retries")
 
 
-def extract_brokers_by_side(broker_data: Dict[str, Any], side: str, limit: int = 5) -> List[Dict[str, Any]]:
-    """Extract top brokers by side"""
-    brokers: List[Dict[str, Any]] = []
+def extract_top_buyers(broker_data: Dict[str, Any], min_top: int = MIN_TOP_BUYERS) -> List[Dict[str, Any]]:
+    results: List[Dict[str, Any]] = []
+    data_list = broker_data.get("data", [])
     
-    if not broker_data or not broker_data.get("data") or not broker_data.get("data", {}).get("results"):
-        return []
+    if not isinstance(data_list, list):
+        return results
     
-    for item in broker_data["data"]["results"]:
-        try:
-            if item.get("side") == side:
-                broker: Dict[str, Any] = {
-                    "broker_code": str(item.get("code", "")),
-                    "broker_name": str(item.get("broker", {}).get("name", "Unknown")),
-                    "lot": int(item.get("lot", 0)),
-                    "value": int(item.get("value", 0)),
-                    "avg": float(item.get("avg", 0)),
-                }
-                brokers.append(broker)
-        except (KeyError, TypeError, ValueError):
+    for item in data_list:
+        if not isinstance(item, dict):
             continue
+        top_buy = item.get("top_buy", [])
+        if isinstance(top_buy, list) and len(top_buy) >= min_top:
+            for broker_entry in top_buy[:min_top]:
+                if isinstance(broker_entry, dict):
+                    results.append({
+                        "broker": broker_entry.get("broker", ""),
+                        "value": broker_entry.get("value", 0),
+                        "percentage": broker_entry.get("percentage", 0)
+                    })
+            break
     
-    brokers.sort(key=lambda x: int(x["value"]), reverse=True)
-    return brokers[:limit]
+    return results
 
 
-def extract_top_buyers(broker_data: Dict[str, Any], limit: int = 5) -> List[Dict[str, Any]]:
-    return extract_brokers_by_side(broker_data, "BUY", limit)
-
-
-def extract_top_sellers(broker_data: Dict[str, Any], limit: int = 5) -> List[Dict[str, Any]]:
-    return extract_brokers_by_side(broker_data, "SELL", limit)
-
-
-def rupiah(n: int) -> str:
-    return f"{n:,}".replace(",", ".")
+def extract_top_sellers(broker_data: Dict[str, Any], min_top: int = MIN_TOP_SELLERS) -> List[Dict[str, Any]]:
+    results: List[Dict[str, Any]] = []
+    data_list = broker_data.get("data", [])
+    
+    if not isinstance(data_list, list):
+        return results
+    
+    for item in data_list:
+        if not isinstance(item, dict):
+            continue
+        top_sell = item.get("top_sell", [])
+        if isinstance(top_sell, list) and len(top_sell) >= min_top:
+            for broker_entry in top_sell[:min_top]:
+                if isinstance(broker_entry, dict):
+                    results.append({
+                        "broker": broker_entry.get("broker", ""),
+                        "value": broker_entry.get("value", 0),
+                        "percentage": broker_entry.get("percentage", 0)
+                    })
+            break
+    
+    return results
 
 
 # =========================
-# FORMATTING FUNCTIONS
+# TELEGRAM FORMATTING
 # =========================
 
-def format_telegram_basic(df: pd.DataFrame) -> str:
-    """Format basic screening results"""
-    msg = "📊 <b>DAY TRADING ALERT</b>\n"
-    msg += "=" * 35 + "\n\n"
+def format_telegram_basic(signals: pd.DataFrame) -> str:
+    """Format for basic mode (no broker/AI)"""
+    lines: List[str] = []
     
-    if len(df) == 0:
-        msg += "❌ No stocks passed screening\n"
-        return msg
-    
-    has_signals = "EntrySignal" in df.columns
-    
-    if has_signals:
-        buy_stocks = df[df["EntrySignal"].str.contains("BUY", na=False)].sort_values(by="SignalStrength", ascending=False)
+    for i, (_, row) in enumerate(signals.iterrows(), 1):
+        lines.append(f"<b>📊 {row['StockCode']}</b> - {row['StockName']}")
+        lines.append(f"💰 Price: Rp {int(row['Close']):,}")
+        lines.append(f"📈 Change: {row['ChangePct']:.2f}%")
+        lines.append(f"📊 Volume: {int(row['Volume']):,}")
+        lines.append(f"💵 Value: Rp {int(row['Value']/1e9):.2f}B")
+        lines.append("")
+        lines.append(f"🎯 <b>{row['EntrySignal']}</b>")
+        lines.append(f"⭐ Score: {row['SignalStrength']}/100")
+        lines.append(f"🛡️ Stop: Rp {int(row['StopLoss']):,}")
+        lines.append(f"🎯 T1: Rp {int(row['Target1']):,} | T2: Rp {int(row['Target2']):,}")
+        lines.append(f"📊 R/R: {row['RiskReward']:.2f}")
         
-        if len(buy_stocks) > 0:
-            msg += "🎯 <b>BUY SIGNALS</b>\n"
-            msg += "─" * 35 + "\n"
-            
-            for idx, row in enumerate(buy_stocks.head(5).itertuples(), 1):
-                stock_code = html.escape(str(row.StockCode))
-                signal = html.escape(str(row.EntrySignal))  # type: ignore
-                msg += f"{idx}. <b>{stock_code}</b> - {signal}\n"
-                msg += f"   Price: Rp {row.Close:,.0f} ({row.ChangePct:+.2f}&#37;)\n"  # type: ignore
-                msg += f"   🎯 T1: {row.Target1:,.0f} | T2: {row.Target2:,.0f}\n"  # type: ignore
-                msg += f"   🛑 SL: {row.StopLoss:,.0f} | R:R 1:{row.RiskReward:.1f}\n\n"  # type: ignore
+        if i < len(signals):
+            lines.append("━━━━━━━━━━━━━━━━━━")
     
-    msg += f"📈 Total: {len(df)} stocks\n"
-    msg += f"⏰ {datetime.now().strftime('%Y-%m-%d %H:%M')}\n"
-    
-    return msg
+    return "\n".join(lines)
 
 
-def format_telegram_with_broker(row: Any, buyers: List[Dict[str, Any]], 
-                                sellers: List[Dict[str, Any]], trade_date: str) -> str:
+def format_telegram_with_broker(
+    row: pd.Series,  # type: ignore
+    buyers: List[Dict[str, Any]],
+    sellers: List[Dict[str, Any]],
+    trade_date: str
+) -> str:
     """Format with broker data"""
-    stock_code = html.escape(str(row['StockCode']))
-    stock_name = html.escape(str(row['StockName'][:20]))
+    lines: List[str] = []
     
-    msg = "=" * 30 + "\n"
-    msg += f"🎯 <b>{stock_code}</b> - {stock_name}\n"
-    msg += "=" * 30 + "\n\n"
+    lines.append(f"<b>📊 {row['StockCode']}</b> - {row['StockName']}")
+    lines.append(f"💰 Price: Rp {int(row['Close']):,}")
+    lines.append(f"📈 Change: {row['ChangePct']:.2f}%")
+    lines.append(f"📊 Volume: {int(row['Volume']):,}")
+    lines.append(f"💵 Value: Rp {int(row['Value']/1e9):.2f}B")
+    lines.append("")
+    lines.append(f"🎯 <b>{row['EntrySignal']}</b>")
+    lines.append(f"⭐ Score: {row['SignalStrength']}/100")
+    lines.append(f"🛡️ Stop: Rp {int(row['StopLoss']):,}")
+    lines.append(f"🎯 T1: Rp {int(row['Target1']):,} | T2: Rp {int(row['Target2']):,}")
+    lines.append(f"📊 R/R: {row['RiskReward']:.2f}")
     
-    signal = row.get('EntrySignal', 'N/A')
-    strength = row.get('SignalStrength', 0)
+    # Broker data
+    if buyers:
+        lines.append("")
+        lines.append("<b>🟢 TOP BUYERS:</b>")
+        for b in buyers:
+            val_b = b['value'] / 1e9
+            lines.append(f"  • {b['broker']}: Rp {val_b:.2f}B ({b['percentage']:.1f}%)")
     
-    msg += f"📡 <b>SIGNAL:</b> {signal} ({strength}/100)\n\n"
+    if sellers:
+        lines.append("")
+        lines.append("<b>🔴 TOP SELLERS:</b>")
+        for s in sellers:
+            val_s = s['value'] / 1e9
+            lines.append(f"  • {s['broker']}: Rp {val_s:.2f}B ({s['percentage']:.1f}%)")
     
-    price = row['Close']
-    msg += f"💰 <b>Price:</b> Rp {price:,.0f} ({row['ChangePct']:+.2f}%)\n"
-    msg += f"🛑 <b>Stop Loss:</b> {row['StopLoss']:,.0f}\n"
-    msg += f"🎯 <b>Target 1:</b> {row['Target1']:,.0f} | T2: {row['Target2']:,.0f}\n"
-    msg += f"⚖️ <b>R/R:</b> 1:{row['RiskReward']:.2f}\n\n"
-    
-    if 'VolumeSurge' in row.index:
-        msg += f"📊 Vol Surge: {row['VolumeSurge']:.2f}x | Phase: {row['MarketPhase']}\n\n"
-    
-    total_buy_value = sum(b["value"] for b in buyers) if buyers else 0
-    total_sell_value = sum(s["value"] for s in sellers) if sellers else 0
-    
-    if buyers or sellers:
-        msg += "─" * 30 + "\n"
-        msg += "🏦 <b>BROKER ACTIVITY</b>\n"
-        msg += "─" * 30 + "\n"
-        
-        if buyers:
-            msg += f"🟢 <b>Top Buyer:</b> {buyers[0]['broker_code']}\n"
-            msg += f"   Val: Rp {rupiah(int(buyers[0]['value']))} ({buyers[0]['lot']:,.0f} lot)\n"
-        
-        if sellers:
-            msg += f"🔴 <b>Top Seller:</b> {sellers[0]['broker_code']}\n"
-            msg += f"   Val: Rp {rupiah(int(sellers[0]['value']))} ({sellers[0]['lot']:,.0f} lot)\n"
-        
-        if total_buy_value > 0 and total_sell_value > 0:
-            ratio = total_buy_value / total_sell_value
-            sentiment = "🟢 BULLISH" if ratio > 1.2 else "🔴 BEARISH" if ratio < 0.8 else "⚪ NEUTRAL"
-            msg += f"\n⚖️ B/S Ratio: {ratio:.2f}x {sentiment}\n"
-    
-    msg += "\n" + "=" * 30
-    return msg
+    return "\n".join(lines)
 
 
-def format_telegram_with_ai(row: Any, buyers: List[Dict[str, Any]], 
-                            sellers: List[Dict[str, Any]], 
-                            trade_date: str, ai_result: Dict[str, Any]) -> str:
+def format_telegram_with_ai(
+    row: pd.Series,  # type: ignore
+    buyers: List[Dict[str, Any]],
+    sellers: List[Dict[str, Any]],
+    trade_date: str,
+    ai_result: Dict[str, Any]
+) -> str:
     """Format with AI analysis"""
-    stock_code = html.escape(str(row['StockCode']))
-    stock_name = html.escape(str(row['StockName'][:20]))
+    lines: List[str] = []
     
-    msg = "━" * 35 + "\n"
-    msg += f"🎯 <b>{stock_code}</b> - {stock_name}\n"
-    msg += "━" * 35 + "\n\n"
+    lines.append(f"<b>📊 {row['StockCode']}</b> - {row['StockName']}")
+    lines.append(f"💰 Price: Rp {int(row['Close']):,}")
+    lines.append(f"📈 Change: {row['ChangePct']:.2f}%")
+    lines.append(f"📊 Volume: {int(row['Volume']):,}")
+    lines.append(f"💵 Value: Rp {int(row['Value']/1e9):.2f}B")
+    lines.append("")
+    lines.append(f"🎯 <b>{row['EntrySignal']}</b>")
+    lines.append(f"⭐ Score: {row['SignalStrength']}/100")
+    lines.append(f"🛡️ Stop: Rp {int(row['StopLoss']):,}")
+    lines.append(f"🎯 T1: Rp {int(row['Target1']):,} | T2: Rp {int(row['Target2']):,}")
+    lines.append(f"📊 R/R: {row['RiskReward']:.2f}")
     
-    signal = row.get('EntrySignal', 'N/A')
-    strength = row.get('SignalStrength', 0)
-    msg += f"📡 <b>SIGNAL:</b> {signal} ({strength}/100)\n\n"
+    # Broker data
+    if buyers:
+        lines.append("")
+        lines.append("<b>🟢 TOP BUYERS:</b>")
+        for b in buyers:
+            val_b = b['value'] / 1e9
+            lines.append(f"  • {b['broker']}: Rp {val_b:.2f}B ({b['percentage']:.1f}%)")
     
-    price = row['Close']
-    msg += f"💰 <b>Price:</b> Rp {price:,.0f} ({row['ChangePct']:+.2f}%)\n"
-    msg += f"🛑 <b>Stop Loss:</b> {row['StopLoss']:,.0f}\n"
-    msg += f"🎯 <b>Target 1:</b> {row['Target1']:,.0f} | T2: {row['Target2']:,.0f}\n"
-    msg += f"⚖️ <b>R/R:</b> 1:{row['RiskReward']:.2f}\n\n"
+    if sellers:
+        lines.append("")
+        lines.append("<b>🔴 TOP SELLERS:</b>")
+        for s in sellers:
+            val_s = s['value'] / 1e9
+            lines.append(f"  • {s['broker']}: Rp {val_s:.2f}B ({s['percentage']:.1f}%)")
     
-    if 'VolumeSurge' in row.index:
-        msg += f"📊 Vol Surge: {row['VolumeSurge']:.2f}x | Phase: {row['MarketPhase']}\n\n"
-    
-    if buyers or sellers:
-        total_buy = sum(b['value'] for b in buyers) if buyers else 0
-        total_sell = sum(s['value'] for s in sellers) if sellers else 0
+    # AI analysis
+    if ai_result.get('success'):
+        analysis = ai_result.get('analysis', {})
+        lines.append("")
+        lines.append("<b>🤖 AI ANALYSIS:</b>")
         
-        msg += "─" * 35 + "\n"
-        msg += "🏦 <b>BROKER ACTIVITY</b>\n"
-        msg += "─" * 35 + "\n"
+        if 'recommendation' in analysis:
+            rec = analysis['recommendation']
+            lines.append(f"<b>Recommendation:</b> {rec}")
         
-        if buyers:
-            msg += f"🟢 <b>Top Buyer:</b> {buyers[0]['broker_code']}\n"
-            msg += f"   Val: Rp {rupiah(int(buyers[0]['value']))} ({buyers[0]['lot']:,.0f} lot)\n"
+        if 'key_points' in analysis:
+            points = analysis['key_points']
+            if isinstance(points, list):
+                for p in points[:3]:
+                    lines.append(f"  • {p}")
         
-        if sellers:
-            msg += f"🔴 <b>Top Seller:</b> {sellers[0]['broker_code']}\n"
-            msg += f"   Val: Rp {rupiah(int(sellers[0]['value']))} ({sellers[0]['lot']:,.0f} lot)\n"
-        
-        if total_buy > 0 and total_sell > 0:
-            ratio = total_buy / total_sell
-            sentiment = "🟢 BULLISH" if ratio > 1.2 else "🔴 BEARISH" if ratio < 0.8 else "⚪ NEUTRAL"
-            msg += f"\n⚖️ B/S Ratio: {ratio:.2f}x {sentiment}\n"
-        
-        msg += "\n"
+        if 'risk_level' in analysis:
+            lines.append(f"<b>Risk:</b> {analysis['risk_level']}")
+    else:
+        lines.append("")
+        lines.append(f"<b>🤖 AI:</b> {ai_result.get('error', 'Analysis failed')}")
     
-    if ai_result and ai_result.get('success'):
-        msg += "━" * 35 + "\n"
-        msg += "🤖 <b>AI INSIGHT</b>\n"
-        msg += "━" * 35 + "\n"
-        msg += ai_result['analysis']
-        msg += "\n"
-    
-    msg += "━" * 35
-    return msg
+    return "\n".join(lines)
 
 
 def send_telegram(message: str) -> bool:
-    """Send message to Telegram"""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("[WARNING] Telegram not configured")
         return False
     
-    MAX_LENGTH = 4096
-    if len(message) > MAX_LENGTH:
-        message = message[:MAX_LENGTH-50] + "\n\n... (truncated)"
-    
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    data = {
+        "chat_id": TELEGRAM_CHAT_ID,
+        "text": message,
+        "parse_mode": "HTML",
+        "disable_web_page_preview": True
+    }
     
     try:
-        response = requests.post(
-            url,
-            json={
-                "chat_id": TELEGRAM_CHAT_ID,
-                "text": message,
-                "parse_mode": "HTML"
-            },
-            timeout=20
-        )
-        response.raise_for_status()
+        r = requests.post(url, json=data, timeout=30)
+        r.raise_for_status()
         return True
     except Exception as e:
         print(f"[ERROR] Telegram failed: {e}")
@@ -799,13 +850,17 @@ def send_telegram(message: str) -> bool:
 # =========================
 
 def main():
-    parser = argparse.ArgumentParser(description='Unified Day Trading Screener')
+    parser = argparse.ArgumentParser(description='Unified Day Trading Screener - IMPROVED')
     parser.add_argument('--broker', action='store_true', help='Include broker analysis')
     parser.add_argument('--ai', action='store_true', help='Include AI analysis')
+    parser.add_argument('--top', type=int, default=MAX_SIGNALS, help=f'Max signals to send (default: {MAX_SIGNALS})')
+    parser.add_argument('--min-score', type=int, default=MIN_SIGNAL_SCORE, help=f'Min signal score (default: {MIN_SIGNAL_SCORE})')
     args = parser.parse_args()
     
     use_broker = args.broker
     use_ai = args.ai
+    max_signals = args.top
+    min_score = args.min_score
     
     # Auto-detect features
     if not use_broker and not use_ai:
@@ -815,13 +870,15 @@ def main():
             print("[i] Gemini API key detected. Use --ai to enable AI analysis")
     
     print("="*70)
-    print("🚀 UNIFIED DAY TRADING SCREENER")
+    print("🚀 UNIFIED DAY TRADING SCREENER - IMPROVED")
     print("="*70)
     print(f"📊 Mode: {'Basic' if not use_broker and not use_ai else ''}")
     if use_broker:
         print("   ✅ Broker Analysis: ENABLED")
     if use_ai:
         print("   ✅ AI Analysis: ENABLED")
+    print(f"   🎯 Min Signal Score: {min_score}")
+    print(f"   📊 Max Signals: {max_signals}")
     print("="*70)
     
     # Load data
@@ -856,27 +913,39 @@ def main():
         if df_hist_list:
             df_historical = pd.concat(df_hist_list, ignore_index=True)
             df_today = calculate_multi_day_metrics(df_today, df_historical)
-            df_today["DayTradingScore"] = calculate_daytrading_score(df_today)
             print("✅ Multi-day analysis complete\n")
     
-    # Screen
-    print("🔍 Running screener...")
-    df_screened = screen(df_today)
-    print(f"✅ {len(df_screened)} stocks passed screening\n")
+    # STAGE 1: Liquidity Screening
+    print("🔍 STAGE 1: Liquidity screening...")
+    df_liquid = screen_liquidity(df_today)
+    print(f"✅ {len(df_liquid)} stocks passed liquidity filter\n")
     
-    if len(df_screened) == 0:
-        print("No stocks passed screening")
+    if len(df_liquid) == 0:
+        print("No stocks passed liquidity screening")
         return
     
-    # Generate signals
-    print("🎯 Generating entry signals...")
-    df_signals = calculate_entry_signals(df_screened)
-    buy_signals = df_signals[df_signals["EntrySignal"].str.contains("BUY", na=False)]
-    print(f"✅ Found {len(buy_signals)} BUY signals\n")
+    # STAGE 2 & 3: Strategy Scoring + Signal Generation
+    print("🎯 STAGE 2-3: Scoring strategies & generating signals...")
+    df_signals = generate_signals(df_liquid, min_score=min_score)
+    
+    # Filter only BUY signals
+    buy_signals = df_signals[df_signals["EntrySignal"].str.contains("BUY", na=False)].copy()
+    
+    # Sort by SignalStrength and limit to top N
+    buy_signals = buy_signals.sort_values("SignalStrength", ascending=False).head(max_signals)
+    
+    print(f"✅ Generated {len(buy_signals)} BUY signals (top {max_signals})\n")
     
     if len(buy_signals) == 0:
-        print("No BUY signals generated")
+        print("No BUY signals generated with score >= {}".format(min_score))
         return
+    
+    # Show strategy breakdown
+    print("📊 Strategy Breakdown:")
+    strategy_counts = buy_signals["BestStrategy"].value_counts()
+    for strategy, count in strategy_counts.items():
+        print(f"   {strategy}: {count}")
+    print()
     
     trade_date = df_today['FileDate'].iloc[0]
     trade_date_str = trade_date.strftime("%Y-%m-%d")
@@ -961,6 +1030,14 @@ def main():
                 print(f"  ✗ Error: {str(e)[:100]}")
                 continue
     
+    # Export to Excel
+    export_path = os.path.join(OUTPUT_DIR, f"signals_{trade_date_str}.xlsx")
+    try:
+        buy_signals.to_excel(export_path, index=False)
+        print(f"\n💾 Exported to: {export_path}")
+    except Exception as e:
+        print(f"\n⚠️  Export failed: {e}")
+    
     # Send to Telegram
     if results:
         print("\n" + "="*70)
@@ -974,10 +1051,11 @@ def main():
             mode_str.append("AI")
         mode_text = " + ".join(mode_str) if mode_str else "Basic"
         
-        header = f"🎯 <b>DAY TRADING SIGNALS ({mode_text})</b>\n" + \
+        header = f"🎯 <b>DAY TRADING SIGNALS - IMPROVED ({mode_text})</b>\n" + \
                 f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n" + \
                 f"<b>Date:</b> {trade_date_str}\n" + \
                 f"<b>Signals:</b> {len(results)}\n" + \
+                f"<b>Min Score:</b> {min_score}\n" + \
                 f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
         
         send_telegram(header)
