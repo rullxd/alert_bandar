@@ -22,9 +22,12 @@ print("DOWNLOAD DATA SAHAM IDX - HISTORICAL DATA")
 print("=" * 60)
 print("1. Download hari ini (tekan ENTER)")
 print("2. Download 1 tanggal spesifik")
-print("3. Download 3 tahun kebelakang (otomatis)")
+print("3. Download beberapa tahun kebelakang (otomatis)")
 print("=" * 60)
 choice = input("Pilih [1/2/3 atau Enter]: ").strip()
+
+# Tentukan folder tujuan
+target_folder = data_folder  # Default ke data folder
 
 if choice == "" or choice == "1":
     # Mode default - tanggal hari ini
@@ -32,6 +35,7 @@ if choice == "" or choice == "1":
     date_input = today.strftime("%Y%m%d")
     print(f"\n📅 Download data hari ini: {today.strftime('%d %B %Y')} ({date_input})")
     dates_to_download: List[str] = [date_input]
+    target_folder = data_folder
 
 elif choice == "2":
     # Mode manual - 1 tanggal
@@ -48,14 +52,26 @@ elif choice == "2":
         exit(1)
     
     dates_to_download: List[str] = [date_input]
+    target_folder = data_folder
 
 elif choice == "3":
-    # Mode otomatis - 3 tahun kebelakang
+    # Mode otomatis - input tahun yang diinginkan, simpan ke BACKUP folder
+    try:
+        years_input = int(input("Berapa tahun kebelakang yang mau didownload? (contoh: 3 untuk 3 tahun): ").strip())
+        if years_input <= 0:
+            print("❌ Tahun harus lebih dari 0!")
+            exit(1)
+    except ValueError:
+        print("❌ Input harus angka!")
+        exit(1)
+    
     end_date = datetime.now()
-    start_date = end_date - timedelta(days=3*365)  # 3 tahun
+    start_date = end_date - timedelta(days=years_input*365)  # Custom tahun
     
     print(f"\n📅 Download data dari {start_date.strftime('%Y-%m-%d')} sampai {end_date.strftime('%Y-%m-%d')}")
-    print("⏳ Estimasi: ~750 hari bursa (akan skip weekend & file yang sudah ada)")
+    estimasi_hari = years_input * 252  # 252 hari bursa per tahun (rata-rata)
+    print(f"⏳ Estimasi: ~{estimasi_hari} hari bursa (akan skip weekend & file yang sudah ada)")
+    print(f"📁 File akan disimpan ke folder: {backup_folder.absolute()}")
     confirm = input("Lanjutkan? [y/n]: ").strip().lower()
     
     if confirm != 'y':
@@ -73,6 +89,7 @@ elif choice == "3":
         current_date += timedelta(days=1)
     
     print(f"\n📊 Total hari kerja: {len(dates_to_download)} hari")
+    target_folder = backup_folder  # Simpan ke backup folder untuk opsi 3
 
 else:
     print("❌ Pilihan tidak valid!")
@@ -122,10 +139,11 @@ with session as s:  # type: ignore[misc]
     for idx, date_str in enumerate(dates_to_download, 1):
         # Check jika file sudah ada
         filename = f"idx_stock_{date_str}.json"
-        filepath = data_folder / filename
+        filepath = target_folder / filename
+        data_path = data_folder / filename
         backup_path = backup_folder / filename
         
-        if filepath.exists() or backup_path.exists():
+        if data_path.exists() or backup_path.exists():
             print(f"[{idx}/{total}] ⏭️  {date_str} - sudah ada, skip")
             skip_count += 1
             continue
@@ -238,5 +256,5 @@ print("=" * 60)
 print(f"✅ Berhasil: {success_count}")
 print(f"⏭️  Dilewati: {skip_count}")
 print(f"❌ Error: {error_count}")
-print(f"📁 Lokasi: {data_folder.absolute()}")
+print(f"📁 Lokasi: {target_folder.absolute()}")
 print("=" * 60)
