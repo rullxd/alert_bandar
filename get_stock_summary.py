@@ -47,7 +47,6 @@ print("=" * 60)
 print("DOWNLOAD DATA SAHAM IDX - HISTORICAL DATA")
 print("=" * 60)
 print("1. Download hari ini (tekan ENTER)")
-print("2. Download 1 tanggal spesifik")
 print("3. Download beberapa tahun kebelakang (otomatis)")
 print("=" * 60)
 choice = input("Pilih [1/2/3 atau Enter]: ").strip()
@@ -75,23 +74,6 @@ if choice == "" or choice == "1":
         print("✅ Tidak ada data baru yang perlu di-download.")
         exit(0)
 
-    target_folder = data_folder
-
-elif choice == "2":
-    # Mode manual - 1 tanggal
-    date_input = input("Masukkan tanggal (format: YYYYMMDD, contoh: 20260209): ").strip()
-    
-    # Validasi format tanggal
-    try:
-        datetime.strptime(date_input, "%Y%m%d")
-        if len(date_input) != 8:
-            raise ValueError("Format harus 8 digit")
-    except ValueError as e:
-        print(f"❌ Error: Format tanggal salah! Gunakan format YYYYMMDD (8 digit)")
-        print(f"   Contoh: 20260209 untuk tanggal 9 Februari 2026")
-        exit(1)
-    
-    dates_to_download: List[str] = [date_input]
     target_folder = data_folder
 
 elif choice == "3":
