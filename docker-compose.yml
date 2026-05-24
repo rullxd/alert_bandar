@@ -1,0 +1,38 @@
+services:
+  timescaledb:
+    image: timescale/timescaledb:latest-pg16
+    container_name: timescaledb
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: market_data
+    ports:
+      - "5433:5432"
+    volumes:
+      - timescaledb_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - market_data_network
+
+  adminer:
+    image: adminer:latest
+    container_name: market_data_adminer
+    depends_on:
+      timescaledb:
+        condition: service_healthy
+    ports:
+      - "8081:8080"
+    networks:
+      - market_data_network
+
+volumes:
+  timescaledb_data:
+
+networks:
+  market_data_network:
+    driver: bridge
