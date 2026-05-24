@@ -1,0 +1,154 @@
+{
+  "downloaded_at": "2026-05-24T23:48:29",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "IC",
+  "from": "2025-10-01",
+  "to": "2025-10-01",
+  "buy_count": 3,
+  "sell_count": 3,
+  "total_count": 6,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "GIAA",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-10-01",
+            "value": 120000000,
+            "lot": 15000,
+            "avg_price": 80,
+            "freq": 17,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GIAA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AADI",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-10-01",
+            "value": 89850000,
+            "lot": 122,
+            "avg_price": 7364.754098360656,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AADI.png?version=1731380937972873322",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GZCO",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-10-01",
+            "value": 2023000,
+            "lot": 85,
+            "avg_price": 238,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GZCO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "GZCO",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-10-01",
+            "value": 1190000,
+            "lot": 50,
+            "avg_price": 238,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GZCO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ZATA",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-10-01",
+            "value": 1062400,
+            "lot": 128,
+            "avg_price": 83,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ZATA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "REAL",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-10-01",
+            "value": 300200,
+            "lot": 38,
+            "avg_price": 79,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/REAL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-10-01",
+      "to": "2025-10-01",
+      "broker_code": "IC",
+      "broker_name": "Integrity Capital Sekuritas"
+    }
+  }
+}

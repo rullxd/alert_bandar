@@ -1,0 +1,1861 @@
+{
+  "downloaded_at": "2026-05-24T20:53:57",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "KZ",
+  "from": "2025-06-20",
+  "to": "2025-06-20",
+  "buy_count": 35,
+  "sell_count": 55,
+  "total_count": 90,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BBRI",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 42527858000,
+            "lot": 112131,
+            "avg_price": 3792.6940810302235,
+            "freq": 1225,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBCA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 31586007500,
+            "lot": 36215,
+            "avg_price": 8721.802429932348,
+            "freq": 428,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMRI",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 18716580000,
+            "lot": 38070,
+            "avg_price": 4916.359338061466,
+            "freq": 536,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PGAS",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 14676833000,
+            "lot": 92005,
+            "avg_price": 1595.221237976197,
+            "freq": 90,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PGAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNTR",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 14588145000,
+            "lot": 6801,
+            "avg_price": 21450,
+            "freq": 10,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TLKM",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 13952332000,
+            "lot": 52610,
+            "avg_price": 2652.0304124691124,
+            "freq": 541,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ASII",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 12844543000,
+            "lot": 28607,
+            "avg_price": 4490,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ASII.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GOTO",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 12462269100,
+            "lot": 2112249,
+            "avg_price": 59,
+            "freq": 86,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "K",
+                  "notation_desc": "Perusahaan Tercatat yang menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/K.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/K.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INDF",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 7521995000,
+            "lot": 9330,
+            "avg_price": 8062.159699892819,
+            "freq": 348,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INDF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AMRT",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 4864102000,
+            "lot": 21334,
+            "avg_price": 2279.976563232399,
+            "freq": 10,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AMRT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTBA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 4356300000,
+            "lot": 14722,
+            "avg_price": 2959.0408911832633,
+            "freq": 166,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTBA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRMS",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 3950305200,
+            "lot": 95418,
+            "avg_price": 414,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ADRO",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 3631464000,
+            "lot": 19524,
+            "avg_price": 1860,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ADRO.png?version=1753857016610110434",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BFIN",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 3523337500,
+            "lot": 44667,
+            "avg_price": 788.8010164103252,
+            "freq": 453,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BFIN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 3499176600,
+            "lot": 286110,
+            "avg_price": 122.30179301667191,
+            "freq": 304,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PGEO",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 2991841000,
+            "lot": 21009,
+            "avg_price": 1424.0758722452283,
+            "freq": 139,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PGEO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SRTG",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 2577677000,
+            "lot": 16061,
+            "avg_price": 1604.9293319220471,
+            "freq": 336,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SRTG.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CMRY",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 2081089000,
+            "lot": 4440,
+            "avg_price": 4687.137387387387,
+            "freq": 236,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CMRY.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BTPS",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 1612466000,
+            "lot": 12449,
+            "avg_price": 1295.2574503976223,
+            "freq": 474,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BTPS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MIKA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 1512500000,
+            "lot": 6250,
+            "avg_price": 2420,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MIKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ELSA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 1462731200,
+            "lot": 29570,
+            "avg_price": 494.6672979370984,
+            "freq": 262,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ELSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DSSA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 1455460000,
+            "lot": 6100,
+            "avg_price": 2386,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DSSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTEL",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 1324918000,
+            "lot": 25000,
+            "avg_price": 529.9672,
+            "freq": 71,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTEL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MAPA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 1301492000,
+            "lot": 20223,
+            "avg_price": 643.5701923552391,
+            "freq": 102,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MAPA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MDKA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 784257000,
+            "lot": 3819,
+            "avg_price": 2053.56637863315,
+            "freq": 73,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MDKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBNI",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 723312000,
+            "lot": 1761,
+            "avg_price": 4107.393526405452,
+            "freq": 65,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBNI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ITMG",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 451000000,
+            "lot": 200,
+            "avg_price": 22550,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ITMG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNVR",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 374118000,
+            "lot": 2711,
+            "avg_price": 1380,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNVR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ANTM",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 357440000,
+            "lot": 1117,
+            "avg_price": 3200,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANTM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MIDI",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 226933000,
+            "lot": 5543,
+            "avg_price": 409.4046545192134,
+            "freq": 217,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MIDI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RALS",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 215105800,
+            "lot": 5355,
+            "avg_price": 401.69150326797387,
+            "freq": 147,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RALS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TPIA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 153435000,
+            "lot": 159,
+            "avg_price": 9650,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TPIA.png?version=1750055121325821609",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMGR",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 15276000,
+            "lot": 57,
+            "avg_price": 2680,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMGR.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TOBA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 3320000,
+            "lot": 40,
+            "avg_price": 830,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TOBA.png?version=1770367590961892787",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PNLF",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 270000,
+            "lot": 10,
+            "avg_price": 270,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PNLF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BBCA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 275147660000,
+            "lot": 316296,
+            "avg_price": 8699.055947593393,
+            "freq": 8844,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 271978650000,
+            "lot": 718206,
+            "avg_price": 3786.916984820511,
+            "freq": 8742,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMRI",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 169101233000,
+            "lot": 345987,
+            "avg_price": 4887.502507319639,
+            "freq": 3084,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TLKM",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 86909487000,
+            "lot": 327676,
+            "avg_price": 2652.299436028272,
+            "freq": 1590,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GOTO",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 45598060300,
+            "lot": 7660934,
+            "avg_price": 59.520236435922826,
+            "freq": 2329,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "K",
+                  "notation_desc": "Perusahaan Tercatat yang menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/K.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/K.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AMMN",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 31558287500,
+            "lot": 41317,
+            "avg_price": 7638.0878330953365,
+            "freq": 602,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AMMN.png?version=1723524843327460802",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRIS",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 15965473000,
+            "lot": 65000,
+            "avg_price": 2456.2266153846153,
+            "freq": 1524,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRIS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PGAS",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 15211876000,
+            "lot": 94621,
+            "avg_price": 1607.6638378372666,
+            "freq": 1292,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PGAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBNI",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 14935894000,
+            "lot": 36365,
+            "avg_price": 4107.216829368898,
+            "freq": 224,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBNI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KLBF",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 13712198500,
+            "lot": 91363,
+            "avg_price": 1500.8481004345304,
+            "freq": 1292,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KLBF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INDF",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 12900125000,
+            "lot": 16025,
+            "avg_price": 8050,
+            "freq": 51,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INDF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRPT",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 9565350000,
+            "lot": 63768.99999999999,
+            "avg_price": 1500.0000000000002,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "EXCL",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 9026311000,
+            "lot": 40000,
+            "avg_price": 2256.57775,
+            "freq": 283,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/EXCL.png?version=1747296040608163618",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MDKA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 7001724000,
+            "lot": 34662,
+            "avg_price": 2020,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MDKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MBMA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 6947105600,
+            "lot": 166943,
+            "avg_price": 416.1363818788449,
+            "freq": 1080,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MBMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CTRA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 6097057000,
+            "lot": 64123,
+            "avg_price": 950.8377649205433,
+            "freq": 443,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CTRA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INCO",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 4924540000,
+            "lot": 15098,
+            "avg_price": 3261.7167836799576,
+            "freq": 309,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INCO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CMRY",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 4396484000,
+            "lot": 9424,
+            "avg_price": 4665.199490662139,
+            "freq": 547,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CMRY.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JSMR",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 4189092000,
+            "lot": 11261,
+            "avg_price": 3720,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JSMR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ANTM",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 3731273000,
+            "lot": 11690,
+            "avg_price": 3191.8502994011974,
+            "freq": 445,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANTM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INKP",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 3150560000,
+            "lot": 5432,
+            "avg_price": 5800,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INKP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PWON",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 2481376400,
+            "lot": 65896,
+            "avg_price": 376.5594876775525,
+            "freq": 508,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PWON.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MIKA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 2382732000,
+            "lot": 9846,
+            "avg_price": 2420,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MIKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TOBA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 2368042000,
+            "lot": 28438,
+            "avg_price": 832.7034249947254,
+            "freq": 239,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TOBA.png?version=1770367590961892787",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNTR",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 2170740000,
+            "lot": 1012,
+            "avg_price": 21450,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRMS",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 2063818200,
+            "lot": 49114,
+            "avg_price": 420.2097568921285,
+            "freq": 132,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "EMTK",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 2004132000,
+            "lot": 39292,
+            "avg_price": 510.0610811361091,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/EMTK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AADI",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 1887150000,
+            "lot": 2705,
+            "avg_price": 6976.524953789279,
+            "freq": 122,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AADI.png?version=1731380937972873322",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HMSP",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 1358500000,
+            "lot": 22000,
+            "avg_price": 617.5,
+            "freq": 81,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HMSP.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MAPA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 1278648500,
+            "lot": 20000,
+            "avg_price": 639.32425,
+            "freq": 137,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MAPA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CPRO",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 1050000000,
+            "lot": 210000,
+            "avg_price": 50,
+            "freq": 141,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CPRO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BFIN",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 869052500,
+            "lot": 10845,
+            "avg_price": 801.339326878746,
+            "freq": 150,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BFIN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ASII",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 826160000,
+            "lot": 1840,
+            "avg_price": 4490,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ASII.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TOWR",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 797720400,
+            "lot": 16414,
+            "avg_price": 486,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TOWR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PRDA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 759861000,
+            "lot": 2815,
+            "avg_price": 2699.3285968028417,
+            "freq": 194,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PRDA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PGEO",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 759672500,
+            "lot": 5485,
+            "avg_price": 1385,
+            "freq": 57,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PGEO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AMRT",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 748752000,
+            "lot": 3284,
+            "avg_price": 2280,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AMRT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TPIA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 734365000,
+            "lot": 761,
+            "avg_price": 9650,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TPIA.png?version=1750055121325821609",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ACES",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 720681500,
+            "lot": 13899,
+            "avg_price": 518.513202388661,
+            "freq": 175,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ACES-NEW.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNVR",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 358386000,
+            "lot": 2597,
+            "avg_price": 1380,
+            "freq": 16,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNVR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INTP",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 287650000,
+            "lot": 523,
+            "avg_price": 5500,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INTP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NCKL",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 284580000,
+            "lot": 4216,
+            "avg_price": 675,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NCKL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AVIA",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 276316800,
+            "lot": 6456,
+            "avg_price": 428,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AVIA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CUAN",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 252520000,
+            "lot": 2140,
+            "avg_price": 1180,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CUAN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ISAT",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 230370000,
+            "lot": 1097,
+            "avg_price": 2100,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ISAT.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MYOR",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 212068500,
+            "lot": 1063,
+            "avg_price": 1995,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MYOR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TBIG",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 178964000,
+            "lot": 854,
+            "avg_price": 2095.5971896955502,
+            "freq": 28,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TBIG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ITMG",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 154387500,
+            "lot": 69,
+            "avg_price": 22375,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ITMG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KRAS",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 136492000,
+            "lot": 6625,
+            "avg_price": 206.0256603773585,
+            "freq": 21,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KRAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GEMS",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 52522500,
+            "lot": 58,
+            "avg_price": 9055.603448275862,
+            "freq": 41,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GEMS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BDMN",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 39432000,
+            "lot": 159,
+            "avg_price": 2480,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BDMN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "LPGI",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 30187000,
+            "lot": 680,
+            "avg_price": 443.9264705882353,
+            "freq": 22,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LPGI.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TUGU",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 16897000,
+            "lot": 178,
+            "avg_price": 949.2696629213483,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TUGU.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ADCP",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 520000,
+            "lot": 104,
+            "avg_price": 50,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ADCP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "M",
+                  "notation_desc": "Adanya permohonan Penundaan Kewajiban Pembayaran Utang (PKPU)",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/M.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/M.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RUIS",
+            "broker_code": "KZ",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-06-20",
+            "value": 37400,
+            "lot": 2,
+            "avg_price": 187,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RUIS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-06-20",
+      "to": "2025-06-20",
+      "broker_code": "KZ",
+      "broker_name": "CLSA Sekuritas Indonesia"
+    }
+  }
+}

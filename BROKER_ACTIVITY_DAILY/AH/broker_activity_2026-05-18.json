@@ -1,0 +1,104 @@
+{
+  "downloaded_at": "2026-05-25T01:31:05",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "AH",
+  "from": "2026-05-18",
+  "to": "2026-05-18",
+  "buy_count": 4,
+  "sell_count": 0,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "DEWA",
+            "broker_code": "AH",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2026-05-18",
+            "value": 11750000,
+            "lot": 250,
+            "avg_price": 470,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DEWA.png?version=1731380794259246908",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NTBK",
+            "broker_code": "AH",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2026-05-18",
+            "value": 1920000,
+            "lot": 200,
+            "avg_price": 96,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NTBK.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MNCNZPCM6A",
+            "broker_code": "AH",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2026-05-18",
+            "value": 1824100,
+            "lot": 18241,
+            "avg_price": 1,
+            "freq": 19,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MNCN.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IRSX",
+            "broker_code": "AH",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2026-05-18",
+            "value": 45400,
+            "lot": 1,
+            "avg_price": 454,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IRSX.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": []
+      },
+      "from": "2026-05-18",
+      "to": "2026-05-18",
+      "broker_code": "AH",
+      "broker_name": "Shinhan Sekuritas Indonesia"
+    }
+  }
+}
