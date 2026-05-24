@@ -11,11 +11,37 @@ import random
 URL_API = "https://www.idx.co.id/primary/TradingSummary/GetStockSummary"
 URL_PAGE = "https://www.idx.co.id/en/market-data/trading-summary/stock-summary/"
 
-# Buat folder 'data' dan 'backup' jika belum ada
+
+def find_latest_existing_date() -> datetime | None:
+    latest_date: datetime | None = None
+
+    for file_path in data_folder.glob("idx_stock_*.json"):
+        try:
+            date_part = file_path.stem.replace("idx_stock_", "")
+            file_date = datetime.strptime(date_part, "%Y%m%d")
+        except ValueError:
+            continue
+
+        if latest_date is None or file_date > latest_date:
+            latest_date = file_date
+
+    return latest_date
+
+
+def build_missing_dates(start_date: datetime, end_date: datetime) -> List[str]:
+    dates_to_download: List[str] = []
+    current_date = start_date
+
+    while current_date <= end_date:
+        if current_date.weekday() < 5:
+            dates_to_download.append(current_date.strftime("%Y%m%d"))
+        current_date += timedelta(days=1)
+
+    return dates_to_download
+
+# Buat folder data jika belum ada
 data_folder = Path("data")
-backup_folder = Path("backup")
 data_folder.mkdir(exist_ok=True)
-backup_folder.mkdir(exist_ok=True)
 
 print("=" * 60)
 print("DOWNLOAD DATA SAHAM IDX - HISTORICAL DATA")
@@ -30,11 +56,25 @@ choice = input("Pilih [1/2/3 atau Enter]: ").strip()
 target_folder = data_folder  # Default ke data folder
 
 if choice == "" or choice == "1":
-    # Mode default - tanggal hari ini
+    # Mode default - ambil data yang belum ada dari tanggal terakhir sampai hari ini
     today = datetime.now()
-    date_input = today.strftime("%Y%m%d")
-    print(f"\n📅 Download data hari ini: {today.strftime('%d %B %Y')} ({date_input})")
-    dates_to_download: List[str] = [date_input]
+    latest_date = find_latest_existing_date()
+
+    if latest_date is None:
+        print(f"\n📅 Belum ada file lama, download data hari ini: {today.strftime('%d %B %Y')} ({today.strftime('%Y%m%d')})")
+        dates_to_download = [today.strftime("%Y%m%d")]
+    else:
+        start_date = latest_date + timedelta(days=1)
+        print(
+            f"\n📅 Download data belum ada dari {start_date.strftime('%d %B %Y')} "
+            f"sampai {today.strftime('%d %B %Y')}"
+        )
+        dates_to_download = build_missing_dates(start_date, today)
+
+    if not dates_to_download:
+        print("✅ Tidak ada data baru yang perlu di-download.")
+        exit(0)
+
     target_folder = data_folder
 
 elif choice == "2":
@@ -55,7 +95,7 @@ elif choice == "2":
     target_folder = data_folder
 
 elif choice == "3":
-    # Mode otomatis - input tahun yang diinginkan, simpan ke BACKUP folder
+    # Mode otomatis - input tahun yang diinginkan, simpan ke folder data
     try:
         years_input = int(input("Berapa tahun kebelakang yang mau didownload? (contoh: 3 untuk 3 tahun): ").strip())
         if years_input <= 0:
@@ -71,7 +111,7 @@ elif choice == "3":
     print(f"\n📅 Download data dari {start_date.strftime('%Y-%m-%d')} sampai {end_date.strftime('%Y-%m-%d')}")
     estimasi_hari = years_input * 252  # 252 hari bursa per tahun (rata-rata)
     print(f"⏳ Estimasi: ~{estimasi_hari} hari bursa (akan skip weekend & file yang sudah ada)")
-    print(f"📁 File akan disimpan ke folder: {backup_folder.absolute()}")
+    print(f"📁 File akan disimpan ke folder: {data_folder.absolute()}")
     confirm = input("Lanjutkan? [y/n]: ").strip().lower()
     
     if confirm != 'y':
@@ -89,7 +129,7 @@ elif choice == "3":
         current_date += timedelta(days=1)
     
     print(f"\n📊 Total hari kerja: {len(dates_to_download)} hari")
-    target_folder = backup_folder  # Simpan ke backup folder untuk opsi 3
+    target_folder = data_folder
 
 else:
     print("❌ Pilihan tidak valid!")
