@@ -1,0 +1,64 @@
+{
+  "downloaded_at": "2026-05-25T09:03:45",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GI",
+  "from": "2024-02-22",
+  "to": "2024-02-22",
+  "buy_count": 2,
+  "sell_count": 0,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "PANI",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-02-22",
+            "value": 547500,
+            "lot": 1,
+            "avg_price": 5475,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PANI.png?version=1724730260229025769",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MPIX",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-02-22",
+            "value": 342500,
+            "lot": 25,
+            "avg_price": 137,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MPIX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": []
+      },
+      "from": "2024-02-22",
+      "to": "2024-02-22",
+      "broker_code": "GI",
+      "broker_name": "Webull Sekuritas Indonesia"
+    }
+  }
+}

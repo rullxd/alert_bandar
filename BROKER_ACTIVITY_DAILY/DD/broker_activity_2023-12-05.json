@@ -1,0 +1,194 @@
+{
+  "downloaded_at": "2026-05-25T09:15:11",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DD",
+  "from": "2023-12-05",
+  "to": "2023-12-05",
+  "buy_count": 6,
+  "sell_count": 2,
+  "total_count": 8,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "APEX",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-12-05",
+            "value": 37400000,
+            "lot": 2000,
+            "avg_price": 187,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/APEX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GJTL",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-12-05",
+            "value": 27462500,
+            "lot": 275,
+            "avg_price": 998.6363636363636,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GJTL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ASSA",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-12-05",
+            "value": 9300000,
+            "lot": 100,
+            "avg_price": 930,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ASSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ARTO",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-12-05",
+            "value": 7368000,
+            "lot": 24,
+            "avg_price": 3070,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ARTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NCKL",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-12-05",
+            "value": 5330000,
+            "lot": 52,
+            "avg_price": 1025,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NCKL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PRIM",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-12-05",
+            "value": 100000,
+            "lot": 10,
+            "avg_price": 100,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PRIM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BRIS",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-12-05",
+            "value": 17200000,
+            "lot": 100,
+            "avg_price": 1720,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRIS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ARTO",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-12-05",
+            "value": 7521000,
+            "lot": 23,
+            "avg_price": 3270,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ARTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-12-05",
+      "to": "2023-12-05",
+      "broker_code": "DD",
+      "broker_name": "Makindo Sekuritas"
+    }
+  }
+}

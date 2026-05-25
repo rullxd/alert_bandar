@@ -1,0 +1,171 @@
+{
+  "downloaded_at": "2026-05-25T09:04:14",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GI",
+  "from": "2024-03-25",
+  "to": "2024-03-25",
+  "buy_count": 4,
+  "sell_count": 2,
+  "total_count": 6,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "TLKM",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-03-25",
+            "value": 24924000,
+            "lot": 67,
+            "avg_price": 3720,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AIMS",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-03-25",
+            "value": 62000,
+            "lot": 1,
+            "avg_price": 620,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AIMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "VKTR",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-03-25",
+            "value": 58400,
+            "lot": 4,
+            "avg_price": 146,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/VKTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BAIK",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-03-25",
+            "value": 17000,
+            "lot": 2,
+            "avg_price": 85,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BAIK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "COCO",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-03-25",
+            "value": 52400,
+            "lot": 2,
+            "avg_price": 262,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/COCO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DIGI",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-03-25",
+            "value": 2600,
+            "lot": 2,
+            "avg_price": 13,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DIGI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "E",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan ekuitas negatif",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/E.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/E.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-03-25",
+      "to": "2024-03-25",
+      "broker_code": "GI",
+      "broker_name": "Webull Sekuritas Indonesia"
+    }
+  }
+}

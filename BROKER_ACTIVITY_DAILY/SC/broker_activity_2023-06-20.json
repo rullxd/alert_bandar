@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2026-05-25T09:35:13",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "SC",
+  "from": "2023-06-20",
+  "to": "2023-06-20",
+  "buy_count": 3,
+  "sell_count": 1,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "INKP",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-20",
+            "value": 258850000,
+            "lot": 320,
+            "avg_price": 8089.0625,
+            "freq": 10,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INKP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TLKM",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-20",
+            "value": 79600000,
+            "lot": 200,
+            "avg_price": 3980,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PGEO",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-20",
+            "value": 68150000,
+            "lot": 800,
+            "avg_price": 851.875,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PGEO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "INTP",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-20",
+            "value": 48875000,
+            "lot": 50,
+            "avg_price": 9775,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INTP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-06-20",
+      "to": "2023-06-20",
+      "broker_code": "SC",
+      "broker_name": "IMG Sekuritas"
+    }
+  }
+}

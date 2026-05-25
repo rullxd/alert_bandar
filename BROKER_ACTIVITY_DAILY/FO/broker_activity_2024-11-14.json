@@ -1,0 +1,84 @@
+{
+  "downloaded_at": "2026-05-25T09:21:57",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "FO",
+  "from": "2024-11-14",
+  "to": "2024-11-14",
+  "buy_count": 3,
+  "sell_count": 0,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "DOOH",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-11-14",
+            "value": 112044800,
+            "lot": 20008,
+            "avg_price": 56,
+            "freq": 27,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DOOH.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MLPL",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-11-14",
+            "value": 1650000,
+            "lot": 100,
+            "avg_price": 165,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MLPL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMBR",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-11-14",
+            "value": 222000,
+            "lot": 10,
+            "avg_price": 222,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMBR.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": []
+      },
+      "from": "2024-11-14",
+      "to": "2024-11-14",
+      "broker_code": "FO",
+      "broker_name": "Forte Global Sekuritas"
+    }
+  }
+}

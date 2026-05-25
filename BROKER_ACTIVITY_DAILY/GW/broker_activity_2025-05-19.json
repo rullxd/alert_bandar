@@ -1,0 +1,65 @@
+{
+  "downloaded_at": "2026-05-25T09:37:44",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GW",
+  "from": "2025-05-19",
+  "to": "2025-05-19",
+  "buy_count": 1,
+  "sell_count": 1,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "TLKM",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-05-19",
+            "value": 9314370000,
+            "lot": 32682,
+            "avg_price": 2850,
+            "freq": 270,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "APEX",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-05-19",
+            "value": 107477100,
+            "lot": 10613,
+            "avg_price": 101.26929237727316,
+            "freq": 51,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/APEX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-05-19",
+      "to": "2025-05-19",
+      "broker_code": "GW",
+      "broker_name": "HSBC Sekuritas Indonesia"
+    }
+  }
+}

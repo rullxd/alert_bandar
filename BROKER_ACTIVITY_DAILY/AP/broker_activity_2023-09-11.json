@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2026-05-25T07:29:57",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "AP",
+  "from": "2023-09-11",
+  "to": "2023-09-11",
+  "buy_count": 3,
+  "sell_count": 1,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BOGA",
+            "broker_code": "AP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-11",
+            "value": 87815400000,
+            "lot": 716300,
+            "avg_price": 1225.9583973195588,
+            "freq": 387,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BOGA.png?version=1770367740128571883",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NATO",
+            "broker_code": "AP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-11",
+            "value": 38013800000,
+            "lot": 759000,
+            "avg_price": 500.84057971014494,
+            "freq": 62,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NATO.png?version=1771406131675599387",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CARE",
+            "broker_code": "AP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-11",
+            "value": 29649000000,
+            "lot": 591000,
+            "avg_price": 501.6751269035533,
+            "freq": 126,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CARE.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "ARTO",
+            "broker_code": "AP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-11",
+            "value": 12000000,
+            "lot": 50,
+            "avg_price": 2400,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ARTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-09-11",
+      "to": "2023-09-11",
+      "broker_code": "AP",
+      "broker_name": "Pacific Sekuritas Indonesia"
+    }
+  }
+}

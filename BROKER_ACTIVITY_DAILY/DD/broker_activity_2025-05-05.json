@@ -1,0 +1,84 @@
+{
+  "downloaded_at": "2026-05-25T09:24:16",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DD",
+  "from": "2025-05-05",
+  "to": "2025-05-05",
+  "buy_count": 0,
+  "sell_count": 3,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "ANTM",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 23000000,
+            "lot": 100,
+            "avg_price": 2300,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANTM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AUTO",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 11660000,
+            "lot": 53,
+            "avg_price": 2200,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AUTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GPRA",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 7510100,
+            "lot": 689,
+            "avg_price": 109,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GPRA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-05-05",
+      "to": "2025-05-05",
+      "broker_code": "DD",
+      "broker_name": "Makindo Sekuritas"
+    }
+  }
+}

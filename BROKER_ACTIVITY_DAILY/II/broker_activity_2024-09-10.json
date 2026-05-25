@@ -1,0 +1,354 @@
+{
+  "downloaded_at": "2026-05-25T08:53:09",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "II",
+  "from": "2024-09-10",
+  "to": "2024-09-10",
+  "buy_count": 7,
+  "sell_count": 9,
+  "total_count": 16,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "ITMA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 15433287500,
+            "lot": 161518,
+            "avg_price": 955.5150199977711,
+            "freq": 280,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ITMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "OASA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 2465500000,
+            "lot": 175000,
+            "avg_price": 140.88571428571427,
+            "freq": 334,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OASA.png?version=1771926277396885027",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BULL",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 1984814800,
+            "lot": 168044,
+            "avg_price": 118.1128037894837,
+            "freq": 290,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BULL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NICL",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 37510600,
+            "lot": 1369,
+            "avg_price": 274,
+            "freq": 10,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NICL.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PEHA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 15019600,
+            "lot": 383,
+            "avg_price": 392.1566579634465,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PEHA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMAS",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 1994000,
+            "lot": 38,
+            "avg_price": 524.7368421052631,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SDPC",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 1350000,
+            "lot": 100,
+            "avg_price": 135,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SDPC.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "CUAN",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 90750000,
+            "lot": 1000,
+            "avg_price": 907.5,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CUAN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INKP",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 43125000,
+            "lot": 50,
+            "avg_price": 8625,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INKP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BREN",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 37400000,
+            "lot": 34,
+            "avg_price": 11000,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BREN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ITMA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 28950000,
+            "lot": 300,
+            "avg_price": 965,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ITMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTWI",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 13300000,
+            "lot": 700,
+            "avg_price": 190,
+            "freq": 56,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTWI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ARCI",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 11840000,
+            "lot": 400,
+            "avg_price": 296,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ARCI.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PEHA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 7208000,
+            "lot": 183,
+            "avg_price": 393.879781420765,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PEHA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMAS",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 2089000,
+            "lot": 38,
+            "avg_price": 549.7368421052631,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SDPC",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-09-10",
+            "value": 1350000,
+            "lot": 100,
+            "avg_price": 135,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SDPC.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-09-10",
+      "to": "2024-09-10",
+      "broker_code": "II",
+      "broker_name": "Danatama Makmur Sekuritas"
+    }
+  }
+}

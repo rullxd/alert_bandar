@@ -1,0 +1,84 @@
+{
+  "downloaded_at": "2026-05-25T09:37:28",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "SC",
+  "from": "2023-10-23",
+  "to": "2023-10-23",
+  "buy_count": 0,
+  "sell_count": 3,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "BBRI",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-23",
+            "value": 92962500,
+            "lot": 185,
+            "avg_price": 5025,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBCA",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-23",
+            "value": 35600000,
+            "lot": 40,
+            "avg_price": 8900,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PNBN",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-23",
+            "value": 19635000,
+            "lot": 170,
+            "avg_price": 1155,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PNBN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-10-23",
+      "to": "2023-10-23",
+      "broker_code": "SC",
+      "broker_name": "IMG Sekuritas"
+    }
+  }
+}

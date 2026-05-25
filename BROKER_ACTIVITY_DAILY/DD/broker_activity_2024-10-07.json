@@ -1,0 +1,104 @@
+{
+  "downloaded_at": "2026-05-25T09:20:31",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DD",
+  "from": "2024-10-07",
+  "to": "2024-10-07",
+  "buy_count": 0,
+  "sell_count": 4,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "INCO",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-07",
+            "value": 63140000,
+            "lot": 145,
+            "avg_price": 4354.482758620689,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INCO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-07",
+            "value": 24450000,
+            "lot": 50,
+            "avg_price": 4890,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TINS",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-07",
+            "value": 7530000,
+            "lot": 60,
+            "avg_price": 1255,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TINS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TOWR",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-07",
+            "value": 7525500,
+            "lot": 87,
+            "avg_price": 865,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TOWR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-10-07",
+      "to": "2024-10-07",
+      "broker_code": "DD",
+      "broker_name": "Makindo Sekuritas"
+    }
+  }
+}

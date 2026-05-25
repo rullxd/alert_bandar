@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2026-05-25T09:22:23",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DD",
+  "from": "2025-01-17",
+  "to": "2025-01-17",
+  "buy_count": 3,
+  "sell_count": 1,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BUMI",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-17",
+            "value": 59000000,
+            "lot": 5000,
+            "avg_price": 118,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTBA",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-17",
+            "value": 7476000,
+            "lot": 28,
+            "avg_price": 2670,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTBA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INDF",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-17",
+            "value": 7475000,
+            "lot": 10,
+            "avg_price": 7475,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INDF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "CPRO",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-17",
+            "value": 12600000,
+            "lot": 2000,
+            "avg_price": 63,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CPRO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-01-17",
+      "to": "2025-01-17",
+      "broker_code": "DD",
+      "broker_name": "Makindo Sekuritas"
+    }
+  }
+}

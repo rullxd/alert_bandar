@@ -1,0 +1,65 @@
+{
+  "downloaded_at": "2026-05-25T09:36:33",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "SC",
+  "from": "2023-09-01",
+  "to": "2023-09-01",
+  "buy_count": 1,
+  "sell_count": 1,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BBNI",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-01",
+            "value": 73400000,
+            "lot": 160,
+            "avg_price": 4587.5,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBNI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BRPT",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-01",
+            "value": 124050000,
+            "lot": 1101.7599780920134,
+            "avg_price": 1125.9258138494479,
+            "freq": 16,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-09-01",
+      "to": "2023-09-01",
+      "broker_code": "SC",
+      "broker_name": "IMG Sekuritas"
+    }
+  }
+}

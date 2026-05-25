@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2026-05-25T09:22:56",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "FO",
+  "from": "2025-01-10",
+  "to": "2025-01-10",
+  "buy_count": 1,
+  "sell_count": 3,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "ISAP",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-10",
+            "value": 51000000,
+            "lot": 30000,
+            "avg_price": 17,
+            "freq": 13,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ISAP.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "DOOH",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-10",
+            "value": 99925200,
+            "lot": 18338,
+            "avg_price": 54.49078416403098,
+            "freq": 185,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DOOH.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ISAP",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-10",
+            "value": 48000000,
+            "lot": 30000,
+            "avg_price": 16,
+            "freq": 81,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ISAP.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "WAPO",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-10",
+            "value": 3320000,
+            "lot": 200,
+            "avg_price": 166,
+            "freq": 10,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/WAPO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-01-10",
+      "to": "2025-01-10",
+      "broker_code": "FO",
+      "broker_name": "Forte Global Sekuritas"
+    }
+  }
+}

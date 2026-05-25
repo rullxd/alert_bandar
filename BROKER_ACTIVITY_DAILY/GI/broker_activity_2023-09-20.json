@@ -1,0 +1,84 @@
+{
+  "downloaded_at": "2026-05-25T09:01:05",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GI",
+  "from": "2023-09-20",
+  "to": "2023-09-20",
+  "buy_count": 0,
+  "sell_count": 3,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "KKGI",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-09-20",
+            "value": 47600000,
+            "lot": 833.1926400000001,
+            "avg_price": 571.2964531227735,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KKGI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-09-20",
+            "value": 15180000,
+            "lot": 1100,
+            "avg_price": 138,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HMSP",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-09-20",
+            "value": 2595000,
+            "lot": 30,
+            "avg_price": 865,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HMSP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-09-20",
+      "to": "2023-09-20",
+      "broker_code": "GI",
+      "broker_name": "Webull Sekuritas Indonesia"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "downloaded_at": "2026-05-25T09:13:01",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "FO",
+  "from": "2023-06-23",
+  "to": "2023-06-23",
+  "buy_count": 3,
+  "sell_count": 3,
+  "total_count": 6,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "RAJA",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-23",
+            "value": 10000000,
+            "lot": 100,
+            "avg_price": 1000,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RAJA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NAYZ-W",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-23",
+            "value": 5004000,
+            "lot": 10008,
+            "avg_price": 5,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NAYZ.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTBA",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-23",
+            "value": 370000,
+            "lot": 1,
+            "avg_price": 3700,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTBA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "NAYZ-W",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-23",
+            "value": 6004800,
+            "lot": 10008,
+            "avg_price": 6,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NAYZ.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "FREN-W2",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-23",
+            "value": 122400,
+            "lot": 153,
+            "avg_price": 8,
+            "freq": 12,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/FREN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PNBS",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-23",
+            "value": 116000,
+            "lot": 20,
+            "avg_price": 58,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PNBS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-06-23",
+      "to": "2023-06-23",
+      "broker_code": "FO",
+      "broker_name": "Forte Global Sekuritas"
+    }
+  }
+}

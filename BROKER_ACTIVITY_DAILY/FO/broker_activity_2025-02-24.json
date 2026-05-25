@@ -1,0 +1,84 @@
+{
+  "downloaded_at": "2026-05-25T09:23:42",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "FO",
+  "from": "2025-02-24",
+  "to": "2025-02-24",
+  "buy_count": 0,
+  "sell_count": 3,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "ANTM",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-24",
+            "value": 8275000,
+            "lot": 50,
+            "avg_price": 1655,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANTM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MLPL",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-24",
+            "value": 5980000,
+            "lot": 400,
+            "avg_price": 149.5,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MLPL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DOOH",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-24",
+            "value": 1360000,
+            "lot": 100,
+            "avg_price": 136,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DOOH.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-02-24",
+      "to": "2025-02-24",
+      "broker_code": "FO",
+      "broker_name": "Forte Global Sekuritas"
+    }
+  }
+}

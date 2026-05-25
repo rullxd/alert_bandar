@@ -1,0 +1,703 @@
+{
+  "downloaded_at": "2026-05-25T06:26:44",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "RX",
+  "from": "2023-11-02",
+  "to": "2023-11-02",
+  "buy_count": 18,
+  "sell_count": 15,
+  "total_count": 33,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BBRI",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 50274411000,
+            "lot": 100199,
+            "avg_price": 5017.456361839939,
+            "freq": 424,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBNI",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 44966839000,
+            "lot": 92149,
+            "avg_price": 4879.796742232688,
+            "freq": 759,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBNI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MAPI",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 13954646500,
+            "lot": 84259,
+            "avg_price": 1656.1609442314768,
+            "freq": 1073,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MAPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNTR",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 12505095000,
+            "lot": 5200,
+            "avg_price": 24048.259615384617,
+            "freq": 394,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMRI",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 12406730000,
+            "lot": 21112,
+            "avg_price": 5876.6246684350135,
+            "freq": 307,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBCA",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 7966817500,
+            "lot": 9000,
+            "avg_price": 8852.019444444444,
+            "freq": 315,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INKP",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 7490977500,
+            "lot": 8745,
+            "avg_price": 8566.012006861063,
+            "freq": 270,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INKP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUKA",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 4844133400,
+            "lot": 236916,
+            "avg_price": 204.46628340846544,
+            "freq": 601,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "I",
+                  "notation_desc": "Perusahaan Tercatat yang tidak menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/I.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/I.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MEDC",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 4742887500,
+            "lot": 38354,
+            "avg_price": 1236.6083068258852,
+            "freq": 512,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MEDC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TLKM",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 4011431000,
+            "lot": 10905,
+            "avg_price": 3678.5245300320953,
+            "freq": 120,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PRDA",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 3854602500,
+            "lot": 6130,
+            "avg_price": 6288.095432300163,
+            "freq": 262,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PRDA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ASII",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 2691417500,
+            "lot": 4586,
+            "avg_price": 5868.769079808111,
+            "freq": 92,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ASII.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PWON",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 1631600000,
+            "lot": 40640,
+            "avg_price": 401.4763779527559,
+            "freq": 185,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PWON.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ICBP",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 1571095000,
+            "lot": 1500,
+            "avg_price": 10473.966666666667,
+            "freq": 93,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ICBP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MIDI",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 576673800,
+            "lot": 12040,
+            "avg_price": 478.96495016611294,
+            "freq": 125,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MIDI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CTRA",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 568278000,
+            "lot": 5000,
+            "avg_price": 1136.556,
+            "freq": 39,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CTRA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GOTO",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 297285800,
+            "lot": 45063,
+            "avg_price": 65.97115149901249,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "K",
+                  "notation_desc": "Perusahaan Tercatat yang menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/K.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/K.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DRMA",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 93573500,
+            "lot": 668,
+            "avg_price": 1400.8008982035929,
+            "freq": 42,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DRMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BMRI",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 63212582500,
+            "lot": 107217,
+            "avg_price": 5895.761166606042,
+            "freq": 676,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TLKM",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 18574664000,
+            "lot": 50690,
+            "avg_price": 3664.3645689485106,
+            "freq": 400,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTEL",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 14836246000,
+            "lot": 239383,
+            "avg_price": 619.7702426655193,
+            "freq": 1996,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTEL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CPIN",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 3823697500,
+            "lot": 7066,
+            "avg_price": 5411.403198414945,
+            "freq": 250,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CPIN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HRUM",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 3820745500,
+            "lot": 25000,
+            "avg_price": 1528.2982,
+            "freq": 302,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HRUM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BTPS",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 3702143500,
+            "lot": 22767,
+            "avg_price": 1626.100715948522,
+            "freq": 417,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BTPS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ITMG",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 2883327500,
+            "lot": 1139,
+            "avg_price": 25314.55223880597,
+            "freq": 263,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ITMG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "LPPF",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 2591357500,
+            "lot": 13812,
+            "avg_price": 1876.163843035042,
+            "freq": 506,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LPPF.png?version=1776926332047710067",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNTR",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 1903357500,
+            "lot": 794,
+            "avg_price": 23971.75692695214,
+            "freq": 147,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GGRM",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 1795965000,
+            "lot": 795,
+            "avg_price": 22590.754716981133,
+            "freq": 137,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GGRM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PWON",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 567124000,
+            "lot": 14060,
+            "avg_price": 403.35988620199146,
+            "freq": 61,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PWON.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RALS",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 372697800,
+            "lot": 7646,
+            "avg_price": 487.4415380591159,
+            "freq": 134,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RALS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ADMF",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 211357500,
+            "lot": 200,
+            "avg_price": 10567.875,
+            "freq": 54,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ADMF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PANS",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 79787500,
+            "lot": 500,
+            "avg_price": 1595.75,
+            "freq": 91,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PANS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SILO",
+            "broker_code": "RX",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-02",
+            "value": 25200000,
+            "lot": 100,
+            "avg_price": 2520,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SILO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-11-02",
+      "to": "2023-11-02",
+      "broker_code": "RX",
+      "broker_name": "Macquarie Sekuritas Indonesia"
+    }
+  }
+}

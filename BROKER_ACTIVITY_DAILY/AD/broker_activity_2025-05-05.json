@@ -1,0 +1,93 @@
+{
+  "downloaded_at": "2026-05-25T07:52:28",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "AD",
+  "from": "2025-05-05",
+  "to": "2025-05-05",
+  "buy_count": 0,
+  "sell_count": 3,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "INDY",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 292500,
+            "lot": 2,
+            "avg_price": 1462.5,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INDY.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IOTF",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 276500,
+            "lot": 15,
+            "avg_price": 184.33333333333334,
+            "freq": 10,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IOTF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "LABA",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 31200,
+            "lot": 2,
+            "avg_price": 156,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LABA.png?version=1723525059401828235",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-05-05",
+      "to": "2025-05-05",
+      "broker_code": "AD",
+      "broker_name": "OSO Sekuritas Indonesia"
+    }
+  }
+}

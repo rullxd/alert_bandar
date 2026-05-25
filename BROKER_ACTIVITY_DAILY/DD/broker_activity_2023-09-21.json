@@ -1,0 +1,145 @@
+{
+  "downloaded_at": "2026-05-25T09:13:51",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DD",
+  "from": "2023-09-21",
+  "to": "2023-09-21",
+  "buy_count": 2,
+  "sell_count": 4,
+  "total_count": 6,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "MDKA",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-21",
+            "value": 63800000,
+            "lot": 200,
+            "avg_price": 3190,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MDKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "FPNI",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-21",
+            "value": 22800000,
+            "lot": 1000,
+            "avg_price": 228,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/FPNI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "MDKA",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-21",
+            "value": 221900000,
+            "lot": 700,
+            "avg_price": 3170,
+            "freq": 50,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MDKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNTR",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-21",
+            "value": 14175000,
+            "lot": 5,
+            "avg_price": 28350,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PGEO",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-21",
+            "value": 7862500,
+            "lot": 50,
+            "avg_price": 1572.5,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PGEO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KKGI",
+            "broker_code": "DD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-09-21",
+            "value": 7130000,
+            "lot": 129.1448592,
+            "avg_price": 552.0932110009996,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KKGI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-09-21",
+      "to": "2023-09-21",
+      "broker_code": "DD",
+      "broker_name": "Makindo Sekuritas"
+    }
+  }
+}

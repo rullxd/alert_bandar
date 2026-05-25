@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2026-05-25T07:34:15",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "AP",
+  "from": "2024-05-08",
+  "to": "2024-05-08",
+  "buy_count": 3,
+  "sell_count": 1,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "ANTM",
+            "broker_code": "AP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-08",
+            "value": 7450000,
+            "lot": 50,
+            "avg_price": 1490,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANTM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBTN",
+            "broker_code": "AP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-08",
+            "value": 6225000,
+            "lot": 50,
+            "avg_price": 1245,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBTN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "AP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-08",
+            "value": 4620000,
+            "lot": 10,
+            "avg_price": 4620,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "TLKM",
+            "broker_code": "AP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-08",
+            "value": 15750000,
+            "lot": 50,
+            "avg_price": 3150,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-05-08",
+      "to": "2024-05-08",
+      "broker_code": "AP",
+      "broker_name": "Pacific Sekuritas Indonesia"
+    }
+  }
+}

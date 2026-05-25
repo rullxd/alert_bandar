@@ -1,0 +1,44 @@
+{
+  "downloaded_at": "2026-05-25T09:37:00",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GW",
+  "from": "2025-04-09",
+  "to": "2025-04-09",
+  "buy_count": 0,
+  "sell_count": 1,
+  "total_count": 1,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "MAPI",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-04-09",
+            "value": 7043025500,
+            "lot": 63436,
+            "avg_price": 1110.25687306892,
+            "freq": 601,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MAPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-04-09",
+      "to": "2025-04-09",
+      "broker_code": "GW",
+      "broker_name": "HSBC Sekuritas Indonesia"
+    }
+  }
+}

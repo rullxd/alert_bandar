@@ -1,0 +1,85 @@
+{
+  "downloaded_at": "2026-05-25T09:25:30",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GW",
+  "from": "2023-06-15",
+  "to": "2023-06-15",
+  "buy_count": 1,
+  "sell_count": 2,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "MEDC",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-15",
+            "value": 1322624000,
+            "lot": 14737,
+            "avg_price": 897.4852412295583,
+            "freq": 214,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MEDC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "LPPF",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-15",
+            "value": 384189000,
+            "lot": 1069,
+            "avg_price": 3593.910196445276,
+            "freq": 197,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LPPF.png?version=1776926332047710067",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "APEX",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-15",
+            "value": 7269500,
+            "lot": 469,
+            "avg_price": 155,
+            "freq": 21,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/APEX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-06-15",
+      "to": "2023-06-15",
+      "broker_code": "GW",
+      "broker_name": "HSBC Sekuritas Indonesia"
+    }
+  }
+}

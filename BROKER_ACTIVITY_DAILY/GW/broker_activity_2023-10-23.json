@@ -1,0 +1,64 @@
+{
+  "downloaded_at": "2026-05-25T09:27:48",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GW",
+  "from": "2023-10-23",
+  "to": "2023-10-23",
+  "buy_count": 2,
+  "sell_count": 0,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "HRUM",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-10-23",
+            "value": 34900000,
+            "lot": 200,
+            "avg_price": 1745,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HRUM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-10-23",
+            "value": 20000000,
+            "lot": 40,
+            "avg_price": 5000,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": []
+      },
+      "from": "2023-10-23",
+      "to": "2023-10-23",
+      "broker_code": "GW",
+      "broker_name": "HSBC Sekuritas Indonesia"
+    }
+  }
+}

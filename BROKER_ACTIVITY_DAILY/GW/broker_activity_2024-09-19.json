@@ -1,0 +1,65 @@
+{
+  "downloaded_at": "2026-05-25T09:33:33",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GW",
+  "from": "2024-09-19",
+  "to": "2024-09-19",
+  "buy_count": 1,
+  "sell_count": 1,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BBTN",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-09-19",
+            "value": 14950000,
+            "lot": 100,
+            "avg_price": 1495,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBTN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "MYOR",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-09-19",
+            "value": 915600000,
+            "lot": 3270,
+            "avg_price": 2800,
+            "freq": 35,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MYOR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-09-19",
+      "to": "2024-09-19",
+      "broker_code": "GW",
+      "broker_name": "HSBC Sekuritas Indonesia"
+    }
+  }
+}

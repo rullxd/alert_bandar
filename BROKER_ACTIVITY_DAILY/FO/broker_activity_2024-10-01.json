@@ -1,0 +1,65 @@
+{
+  "downloaded_at": "2026-05-25T09:21:09",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "FO",
+  "from": "2024-10-01",
+  "to": "2024-10-01",
+  "buy_count": 1,
+  "sell_count": 1,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "WTON",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-01",
+            "value": 2120000,
+            "lot": 200,
+            "avg_price": 106,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/WTON.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "ANTM",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-01",
+            "value": 3725000,
+            "lot": 25,
+            "avg_price": 1490,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANTM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-10-01",
+      "to": "2024-10-01",
+      "broker_code": "FO",
+      "broker_name": "Forte Global Sekuritas"
+    }
+  }
+}

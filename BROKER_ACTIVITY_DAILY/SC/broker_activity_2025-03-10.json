@@ -1,0 +1,53 @@
+{
+  "downloaded_at": "2026-05-25T09:46:16",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "SC",
+  "from": "2025-03-10",
+  "to": "2025-03-10",
+  "buy_count": 1,
+  "sell_count": 0,
+  "total_count": 1,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "NCKL",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-03-10",
+            "value": 149600000,
+            "lot": 2200,
+            "avg_price": 680,
+            "freq": 12,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NCKL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": []
+      },
+      "from": "2025-03-10",
+      "to": "2025-03-10",
+      "broker_code": "SC",
+      "broker_name": "IMG Sekuritas"
+    }
+  }
+}

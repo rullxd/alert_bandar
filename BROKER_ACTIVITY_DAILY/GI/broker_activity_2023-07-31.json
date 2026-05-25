@@ -1,0 +1,145 @@
+{
+  "downloaded_at": "2026-05-25T09:00:10",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GI",
+  "from": "2023-07-31",
+  "to": "2023-07-31",
+  "buy_count": 3,
+  "sell_count": 3,
+  "total_count": 6,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "AALI",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-31",
+            "value": 151500000,
+            "lot": 200,
+            "avg_price": 7575,
+            "freq": 14,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AALI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMRI",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-31",
+            "value": 141250000,
+            "lot": 250,
+            "avg_price": 5650,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMRI.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CFIN",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-31",
+            "value": 32750000,
+            "lot": 500,
+            "avg_price": 655,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CFIN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BRMS",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-31",
+            "value": 855000000,
+            "lot": 50000,
+            "avg_price": 171,
+            "freq": 52,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BNGA",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-31",
+            "value": 50250000,
+            "lot": 300,
+            "avg_price": 1675,
+            "freq": 13,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BNGA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "WIRG",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-31",
+            "value": 13800,
+            "lot": 1,
+            "avg_price": 138,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/WIRG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-07-31",
+      "to": "2023-07-31",
+      "broker_code": "GI",
+      "broker_name": "Webull Sekuritas Indonesia"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2026-05-25T07:51:08",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "QA",
+  "from": "2025-02-17",
+  "to": "2025-02-17",
+  "buy_count": 2,
+  "sell_count": 2,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "VERN-W",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 881500,
+            "lot": 1763,
+            "avg_price": 5,
+            "freq": 12,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/VERN-W.png?version=1728008776194755982",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ADHI",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 20200,
+            "lot": 1,
+            "avg_price": 202,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ADHI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "KOTA",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 2216800,
+            "lot": 2771,
+            "avg_price": 8,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KOTA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "VERN-W",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 125400,
+            "lot": 209,
+            "avg_price": 6,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/VERN-W.png?version=1728008776194755982",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-02-17",
+      "to": "2025-02-17",
+      "broker_code": "QA",
+      "broker_name": "Tuntun Sekuritas Indonesia"
+    }
+  }
+}

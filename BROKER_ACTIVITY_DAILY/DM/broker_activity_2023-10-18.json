@@ -1,0 +1,65 @@
+{
+  "downloaded_at": "2026-05-25T09:27:40",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DM",
+  "from": "2023-10-18",
+  "to": "2023-10-18",
+  "buy_count": 1,
+  "sell_count": 1,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "STRK-W",
+            "broker_code": "DM",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-18",
+            "value": 563500,
+            "lot": 265,
+            "avg_price": 21.264150943396228,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/STRK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "STRK-W",
+            "broker_code": "DM",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-18",
+            "value": 625500,
+            "lot": 315,
+            "avg_price": 19.857142857142858,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/STRK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-10-18",
+      "to": "2023-10-18",
+      "broker_code": "DM",
+      "broker_name": "Masindo Artha Sekuritas"
+    }
+  }
+}

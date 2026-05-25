@@ -1,0 +1,64 @@
+{
+  "downloaded_at": "2026-05-25T07:49:03",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "AD",
+  "from": "2024-10-21",
+  "to": "2024-10-21",
+  "buy_count": 0,
+  "sell_count": 2,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "TINS",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-21",
+            "value": 1000100000,
+            "lot": 7300,
+            "avg_price": 1370,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TINS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ELIT",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-21",
+            "value": 2340000,
+            "lot": 200,
+            "avg_price": 117,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ELIT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-10-21",
+      "to": "2024-10-21",
+      "broker_code": "AD",
+      "broker_name": "OSO Sekuritas Indonesia"
+    }
+  }
+}

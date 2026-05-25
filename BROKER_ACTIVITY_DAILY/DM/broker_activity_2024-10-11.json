@@ -1,0 +1,84 @@
+{
+  "downloaded_at": "2026-05-25T09:33:51",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DM",
+  "from": "2024-10-11",
+  "to": "2024-10-11",
+  "buy_count": 0,
+  "sell_count": 3,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "KOBX",
+            "broker_code": "DM",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-11",
+            "value": 36000000,
+            "lot": 1500,
+            "avg_price": 240,
+            "freq": 11,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KOBX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ASRI",
+            "broker_code": "DM",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-11",
+            "value": 4700000,
+            "lot": 200,
+            "avg_price": 235,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ASRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "DM",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-11",
+            "value": 3597500,
+            "lot": 265,
+            "avg_price": 135.75471698113208,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-10-11",
+      "to": "2024-10-11",
+      "broker_code": "DM",
+      "broker_name": "Masindo Artha Sekuritas"
+    }
+  }
+}

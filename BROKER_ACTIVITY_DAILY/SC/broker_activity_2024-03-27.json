@@ -1,0 +1,65 @@
+{
+  "downloaded_at": "2026-05-25T09:40:15",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "SC",
+  "from": "2024-03-27",
+  "to": "2024-03-27",
+  "buy_count": 1,
+  "sell_count": 1,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BNGA",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-03-27",
+            "value": 21900000,
+            "lot": 100,
+            "avg_price": 2190,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BNGA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "PNBN",
+            "broker_code": "SC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-03-27",
+            "value": 11700000,
+            "lot": 100,
+            "avg_price": 1170,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PNBN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-03-27",
+      "to": "2024-03-27",
+      "broker_code": "SC",
+      "broker_name": "IMG Sekuritas"
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "downloaded_at": "2026-05-25T09:18:29",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "PP",
+  "from": "2024-05-15",
+  "to": "2024-05-15",
+  "buy_count": 7,
+  "sell_count": 5,
+  "total_count": 12,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "ELSA",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 7107178400,
+            "lot": 158880,
+            "avg_price": 447.3299597180262,
+            "freq": 415,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ELSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "EXCL",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 3118707000,
+            "lot": 12206,
+            "avg_price": 2555.060625921678,
+            "freq": 136,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/EXCL.png?version=1747296040608163618",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CNKO",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 4000000,
+            "lot": 10000,
+            "avg_price": 4,
+            "freq": 24,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CNKO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "E",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan ekuitas negatif",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/E.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/E.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MEJA-W",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 666600,
+            "lot": 2222,
+            "avg_price": 3,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MEJA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TOSK-W",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 333300,
+            "lot": 1111,
+            "avg_price": 3,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TOSK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SOLA",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 145200,
+            "lot": 6,
+            "avg_price": 242,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SOLA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SULI",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 47500,
+            "lot": 5,
+            "avg_price": 95,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SULI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BRPT",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 410000,
+            "lot": 4.006399920334594,
+            "avg_price": 1023.3626401573982,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SOLA",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 339000,
+            "lot": 15,
+            "avg_price": 226,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SOLA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ATLA",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 244800,
+            "lot": 17,
+            "avg_price": 144,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ATLA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TAXI",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 50000,
+            "lot": 500,
+            "avg_price": 1,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TAXI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "WIDI-W",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-15",
+            "value": 200,
+            "lot": 1,
+            "avg_price": 2,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/WIDI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-05-15",
+      "to": "2024-05-15",
+      "broker_code": "PP",
+      "broker_name": "Aldiracita Sekuritas Indonesia"
+    }
+  }
+}

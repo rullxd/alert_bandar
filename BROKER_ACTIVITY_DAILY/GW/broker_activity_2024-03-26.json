@@ -1,0 +1,85 @@
+{
+  "downloaded_at": "2026-05-25T09:30:31",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GW",
+  "from": "2024-03-26",
+  "to": "2024-03-26",
+  "buy_count": 1,
+  "sell_count": 2,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "HMSP",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-03-26",
+            "value": 9663386500,
+            "lot": 112972,
+            "avg_price": 855.378899196261,
+            "freq": 353,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HMSP.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "HEAL",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-03-26",
+            "value": 3043750000,
+            "lot": 24000,
+            "avg_price": 1268.2291666666667,
+            "freq": 139,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HEAL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PWON",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-03-26",
+            "value": 3090000,
+            "lot": 75,
+            "avg_price": 412,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PWON.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-03-26",
+      "to": "2024-03-26",
+      "broker_code": "GW",
+      "broker_name": "HSBC Sekuritas Indonesia"
+    }
+  }
+}

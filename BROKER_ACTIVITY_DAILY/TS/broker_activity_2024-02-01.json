@@ -1,0 +1,183 @@
+{
+  "downloaded_at": "2026-05-25T08:36:47",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "TS",
+  "from": "2024-02-01",
+  "to": "2024-02-01",
+  "buy_count": 3,
+  "sell_count": 4,
+  "total_count": 7,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "TCPI",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-02-01",
+            "value": 14889625000,
+            "lot": 20980,
+            "avg_price": 7097.056720686368,
+            "freq": 316,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TCPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BIPI",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-02-01",
+            "value": 8372200000,
+            "lot": 916000,
+            "avg_price": 91.3995633187773,
+            "freq": 884,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BIPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBYB",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-02-01",
+            "value": 12720000,
+            "lot": 400.00000000000006,
+            "avg_price": 317.99999999999994,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBYB.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "TCPI",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-02-01",
+            "value": 10047427500,
+            "lot": 14084,
+            "avg_price": 7133.930346492473,
+            "freq": 241,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TCPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BULL",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-02-01",
+            "value": 9235200000,
+            "lot": 592000,
+            "avg_price": 156,
+            "freq": 922,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BULL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "OASA",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-02-01",
+            "value": 4338414900,
+            "lot": 307689,
+            "avg_price": 141,
+            "freq": 490,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OASA.png?version=1771926277396885027",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CUAN",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-02-01",
+            "value": 67000000,
+            "lot": 1000,
+            "avg_price": 670,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CUAN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-02-01",
+      "to": "2024-02-01",
+      "broker_code": "TS",
+      "broker_name": "Dwidana Sakti Sekuritas"
+    }
+  }
+}

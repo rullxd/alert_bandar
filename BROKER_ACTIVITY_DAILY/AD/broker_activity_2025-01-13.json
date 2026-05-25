@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2026-05-25T07:50:30",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "AD",
+  "from": "2025-01-13",
+  "to": "2025-01-13",
+  "buy_count": 2,
+  "sell_count": 2,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "OBAT",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 1210684800,
+            "lot": 27768,
+            "avg_price": 436,
+            "freq": 746,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OBAT.png?version=1734505173851514347",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "OBAT-W",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 200766000,
+            "lot": 32973,
+            "avg_price": 60.887999272131744,
+            "freq": 222,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OBAT-W.png?version=1734505235156754964",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "OBAT",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 12949200000,
+            "lot": 297000,
+            "avg_price": 436,
+            "freq": 853,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OBAT.png?version=1734505173851514347",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRPT",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 53000000,
+            "lot": 499.99999999999994,
+            "avg_price": 1060.0000000000002,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-01-13",
+      "to": "2025-01-13",
+      "broker_code": "AD",
+      "broker_name": "OSO Sekuritas Indonesia"
+    }
+  }
+}

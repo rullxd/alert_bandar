@@ -1,0 +1,125 @@
+{
+  "downloaded_at": "2026-05-25T09:12:45",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "PP",
+  "from": "2023-06-22",
+  "to": "2023-06-22",
+  "buy_count": 2,
+  "sell_count": 3,
+  "total_count": 5,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "UNVR",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-22",
+            "value": 55250000,
+            "lot": 130,
+            "avg_price": 4250,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNVR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUKADRCV3A",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-22",
+            "value": 2023700,
+            "lot": 10237,
+            "avg_price": 1.976848686138517,
+            "freq": 15,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "CFIN",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-22",
+            "value": 55500000,
+            "lot": 1000,
+            "avg_price": 555,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CFIN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JPFA",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-22",
+            "value": 51000000,
+            "lot": 400,
+            "avg_price": 1275,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JPFA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUKADRCV3A",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-06-22",
+            "value": 2254500,
+            "lot": 7515,
+            "avg_price": 3,
+            "freq": 34,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-06-22",
+      "to": "2023-06-22",
+      "broker_code": "PP",
+      "broker_name": "Aldiracita Sekuritas Indonesia"
+    }
+  }
+}

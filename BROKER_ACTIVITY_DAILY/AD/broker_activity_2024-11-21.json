@@ -1,0 +1,65 @@
+{
+  "downloaded_at": "2026-05-25T07:49:36",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "AD",
+  "from": "2024-11-21",
+  "to": "2024-11-21",
+  "buy_count": 1,
+  "sell_count": 1,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BBTN",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-11-21",
+            "value": 700056000,
+            "lot": 5556,
+            "avg_price": 1260,
+            "freq": 14,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBTN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "TLKM",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-11-21",
+            "value": 279000000,
+            "lot": 1000,
+            "avg_price": 2790,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-11-21",
+      "to": "2024-11-21",
+      "broker_code": "AD",
+      "broker_name": "OSO Sekuritas Indonesia"
+    }
+  }
+}

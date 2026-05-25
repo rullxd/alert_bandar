@@ -1,0 +1,182 @@
+{
+  "downloaded_at": "2026-05-25T09:01:35",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "BF",
+  "from": "2023-11-08",
+  "to": "2023-11-08",
+  "buy_count": 2,
+  "sell_count": 5,
+  "total_count": 7,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "IKPM",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-08",
+            "value": 224220000,
+            "lot": 10100,
+            "avg_price": 222,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IKPM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MARI",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-08",
+            "value": 70000000,
+            "lot": 10000,
+            "avg_price": 70,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MARI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "E",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan ekuitas negatif",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/E.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/E.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "IKPM",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-08",
+            "value": 99979900,
+            "lot": 5613,
+            "avg_price": 178.12203812577945,
+            "freq": 19,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IKPM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "FREN-W2",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-08",
+            "value": 30000000,
+            "lot": 50000,
+            "avg_price": 6,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/FREN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RGAS",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-08",
+            "value": 5524500,
+            "lot": 435,
+            "avg_price": 127,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RGAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MSTI",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-08",
+            "value": 4630500,
+            "lot": 31,
+            "avg_price": 1493.7096774193549,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MSTI.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RGAS-W",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-08",
+            "value": 783000,
+            "lot": 261,
+            "avg_price": 30,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RGAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-11-08",
+      "to": "2023-11-08",
+      "broker_code": "BF",
+      "broker_name": "Inti Fikasa Sekuritas"
+    }
+  }
+}

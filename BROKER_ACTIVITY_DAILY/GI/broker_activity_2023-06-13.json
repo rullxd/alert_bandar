@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2026-05-25T08:59:19",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GI",
+  "from": "2023-06-13",
+  "to": "2023-06-13",
+  "buy_count": 2,
+  "sell_count": 2,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BRMS",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-13",
+            "value": 260000000,
+            "lot": 20000,
+            "avg_price": 130,
+            "freq": 64,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-13",
+            "value": 142397600,
+            "lot": 13064,
+            "avg_price": 109,
+            "freq": 36,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BNBR",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-13",
+            "value": 441000000,
+            "lot": 70000,
+            "avg_price": 63,
+            "freq": 26,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BNBR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BNGA",
+            "broker_code": "GI",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-13",
+            "value": 15750000,
+            "lot": 100,
+            "avg_price": 1575,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BNGA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-06-13",
+      "to": "2023-06-13",
+      "broker_code": "GI",
+      "broker_name": "Webull Sekuritas Indonesia"
+    }
+  }
+}

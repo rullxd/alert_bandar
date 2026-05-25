@@ -1,0 +1,84 @@
+{
+  "downloaded_at": "2026-05-25T09:26:25",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DM",
+  "from": "2023-08-08",
+  "to": "2023-08-08",
+  "buy_count": 0,
+  "sell_count": 3,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "DEWA",
+            "broker_code": "DM",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 12810000,
+            "lot": 2100,
+            "avg_price": 61,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DEWA.png?version=1731380794259246908",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "DM",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 5320000,
+            "lot": 400,
+            "avg_price": 133,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BNBR",
+            "broker_code": "DM",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 260000,
+            "lot": 50,
+            "avg_price": 52,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BNBR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-08-08",
+      "to": "2023-08-08",
+      "broker_code": "DM",
+      "broker_name": "Masindo Artha Sekuritas"
+    }
+  }
+}

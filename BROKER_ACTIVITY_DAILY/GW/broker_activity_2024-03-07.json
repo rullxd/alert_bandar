@@ -1,0 +1,44 @@
+{
+  "downloaded_at": "2026-05-25T09:30:09",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GW",
+  "from": "2024-03-07",
+  "to": "2024-03-07",
+  "buy_count": 0,
+  "sell_count": 1,
+  "total_count": 1,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "ISAT",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-03-07",
+            "value": 27078900000,
+            "lot": 92776,
+            "avg_price": 2918.739760282832,
+            "freq": 630,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ISAT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-03-07",
+      "to": "2024-03-07",
+      "broker_code": "GW",
+      "broker_name": "HSBC Sekuritas Indonesia"
+    }
+  }
+}

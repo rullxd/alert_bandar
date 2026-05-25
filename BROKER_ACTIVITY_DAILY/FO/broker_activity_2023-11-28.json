@@ -1,0 +1,114 @@
+{
+  "downloaded_at": "2026-05-25T09:15:44",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "FO",
+  "from": "2023-11-28",
+  "to": "2023-11-28",
+  "buy_count": 2,
+  "sell_count": 2,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "DOOH-W",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-28",
+            "value": 29992800,
+            "lot": 49988,
+            "avg_price": 6,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DOOH.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "FREN-W2",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-28",
+            "value": 1146500,
+            "lot": 2293,
+            "avg_price": 5,
+            "freq": 17,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/FREN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "ESSA",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-28",
+            "value": 585000,
+            "lot": 10,
+            "avg_price": 585,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ESSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTPP",
+            "broker_code": "FO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-28",
+            "value": 580000,
+            "lot": 10,
+            "avg_price": 580,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTPP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "M",
+                  "notation_desc": "Adanya permohonan Penundaan Kewajiban Pembayaran Utang (PKPU)",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/M.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/M.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-11-28",
+      "to": "2023-11-28",
+      "broker_code": "FO",
+      "broker_name": "Forte Global Sekuritas"
+    }
+  }
+}

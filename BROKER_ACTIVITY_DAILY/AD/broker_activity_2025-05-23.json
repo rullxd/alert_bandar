@@ -1,0 +1,145 @@
+{
+  "downloaded_at": "2026-05-25T07:52:48",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "AD",
+  "from": "2025-05-23",
+  "to": "2025-05-23",
+  "buy_count": 4,
+  "sell_count": 2,
+  "total_count": 6,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "MYOR",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-23",
+            "value": 499912000,
+            "lot": 2212,
+            "avg_price": 2260,
+            "freq": 16,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MYOR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TINS",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-23",
+            "value": 69484000,
+            "lot": 599,
+            "avg_price": 1160,
+            "freq": 11,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TINS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "OPMS",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-23",
+            "value": 37500,
+            "lot": 5,
+            "avg_price": 75,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OPMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MINA",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-23",
+            "value": 28500,
+            "lot": 3,
+            "avg_price": 95,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MINA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BRIS",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-23",
+            "value": 500025000,
+            "lot": 1695,
+            "avg_price": 2950,
+            "freq": 11,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRIS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "OPMS",
+            "broker_code": "AD",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-23",
+            "value": 197000,
+            "lot": 25,
+            "avg_price": 78.8,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OPMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-05-23",
+      "to": "2025-05-23",
+      "broker_code": "AD",
+      "broker_name": "OSO Sekuritas Indonesia"
+    }
+  }
+}

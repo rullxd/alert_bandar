@@ -1,0 +1,154 @@
+{
+  "downloaded_at": "2026-05-25T07:52:01",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "QA",
+  "from": "2025-04-10",
+  "to": "2025-04-10",
+  "buy_count": 4,
+  "sell_count": 2,
+  "total_count": 6,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BBCA",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-04-10",
+            "value": 4972500,
+            "lot": 6,
+            "avg_price": 8287.5,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CENT",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-04-10",
+            "value": 70000,
+            "lot": 10,
+            "avg_price": 70,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CENT.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NATO",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-04-10",
+            "value": 31900,
+            "lot": 2,
+            "avg_price": 159.5,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NATO.png?version=1771406131675599387",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GOTO",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-04-10",
+            "value": 7500,
+            "lot": 1,
+            "avg_price": 75,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "K",
+                  "notation_desc": "Perusahaan Tercatat yang menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/K.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/K.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "DOOH-W",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-04-10",
+            "value": 3389000,
+            "lot": 16945,
+            "avg_price": 2,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DOOH.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NATO",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-04-10",
+            "value": 28500,
+            "lot": 2,
+            "avg_price": 142.5,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NATO.png?version=1771406131675599387",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-04-10",
+      "to": "2025-04-10",
+      "broker_code": "QA",
+      "broker_name": "Tuntun Sekuritas Indonesia"
+    }
+  }
+}

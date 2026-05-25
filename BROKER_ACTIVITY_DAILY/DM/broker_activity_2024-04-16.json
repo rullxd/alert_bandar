@@ -1,0 +1,44 @@
+{
+  "downloaded_at": "2026-05-25T09:30:49",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DM",
+  "from": "2024-04-16",
+  "to": "2024-04-16",
+  "buy_count": 1,
+  "sell_count": 0,
+  "total_count": 1,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BBCA",
+            "broker_code": "DM",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-04-16",
+            "value": 39795000,
+            "lot": 42,
+            "avg_price": 9475,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": []
+      },
+      "from": "2024-04-16",
+      "to": "2024-04-16",
+      "broker_code": "DM",
+      "broker_name": "Masindo Artha Sekuritas"
+    }
+  }
+}

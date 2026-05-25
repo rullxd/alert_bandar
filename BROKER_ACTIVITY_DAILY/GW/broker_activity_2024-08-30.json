@@ -1,0 +1,44 @@
+{
+  "downloaded_at": "2026-05-25T09:33:13",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GW",
+  "from": "2024-08-30",
+  "to": "2024-08-30",
+  "buy_count": 0,
+  "sell_count": 1,
+  "total_count": 1,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "APEX",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-08-30",
+            "value": 779546600,
+            "lot": 45184,
+            "avg_price": 172.52713349858357,
+            "freq": 818,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/APEX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-08-30",
+      "to": "2024-08-30",
+      "broker_code": "GW",
+      "broker_name": "HSBC Sekuritas Indonesia"
+    }
+  }
+}

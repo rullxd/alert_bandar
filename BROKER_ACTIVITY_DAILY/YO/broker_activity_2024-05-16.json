@@ -1,0 +1,461 @@
+{
+  "downloaded_at": "2026-05-25T09:18:14",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "YO",
+  "from": "2024-05-16",
+  "to": "2024-05-16",
+  "buy_count": 9,
+  "sell_count": 11,
+  "total_count": 20,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "ENRG",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 29100000,
+            "lot": 1500,
+            "avg_price": 194,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ENRG.png?version=1750036449822958153",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BFIN",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 19887500,
+            "lot": 185,
+            "avg_price": 1075,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BFIN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SRTG",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 15500000,
+            "lot": 100,
+            "avg_price": 1550,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SRTG.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AYAM",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 11674800,
+            "lot": 1081,
+            "avg_price": 108,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AYAM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HUMI",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 11100000,
+            "lot": 1500,
+            "avg_price": 74,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HUMI.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KAEF",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 10575000,
+            "lot": 150,
+            "avg_price": 705,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KAEF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GOTO",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 9750000,
+            "lot": 1500,
+            "avg_price": 65,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "K",
+                  "notation_desc": "Perusahaan Tercatat yang menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/K.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/K.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ATLA",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 7150000,
+            "lot": 500,
+            "avg_price": 143,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ATLA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BANK",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 1202500,
+            "lot": 13,
+            "avg_price": 925,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BANK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "DMAS",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 1462000000,
+            "lot": 90000,
+            "avg_price": 162.44444444444446,
+            "freq": 367,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DMAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ENRG",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 22245000,
+            "lot": 1150,
+            "avg_price": 193.43478260869566,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ENRG.png?version=1750036449822958153",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SRTG",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 15202500,
+            "lot": 100,
+            "avg_price": 1520.25,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SRTG.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AYAM",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 11486700,
+            "lot": 1081,
+            "avg_price": 106.25994449583719,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AYAM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HUMI",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 11100000,
+            "lot": 1500,
+            "avg_price": 74,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HUMI.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KAEF",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 10650000,
+            "lot": 150,
+            "avg_price": 710,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KAEF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GOTO",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 9900000,
+            "lot": 1500,
+            "avg_price": 66,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "K",
+                  "notation_desc": "Perusahaan Tercatat yang menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/K.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/K.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ATLA",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 7200000,
+            "lot": 500,
+            "avg_price": 144,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ATLA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DRMA",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 6405000,
+            "lot": 70,
+            "avg_price": 915,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DRMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SURI",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 1440000,
+            "lot": 50,
+            "avg_price": 288,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SURI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BANK",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-16",
+            "value": 1215500,
+            "lot": 13,
+            "avg_price": 935,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BANK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-05-16",
+      "to": "2024-05-16",
+      "broker_code": "YO",
+      "broker_name": "Amantara Sekuritas Indonesia"
+    }
+  }
+}

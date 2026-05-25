@@ -1,0 +1,85 @@
+{
+  "downloaded_at": "2026-05-25T07:47:24",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "PI",
+  "from": "2024-07-24",
+  "to": "2024-07-24",
+  "buy_count": 2,
+  "sell_count": 1,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BSBK",
+            "broker_code": "PI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-24",
+            "value": 13274515200,
+            "lot": 1539604,
+            "avg_price": 86.22032158918788,
+            "freq": 215,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BSBK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GULA",
+            "broker_code": "PI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-24",
+            "value": 20091000,
+            "lot": 250,
+            "avg_price": 803.64,
+            "freq": 60,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GULA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BSBK",
+            "broker_code": "PI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-24",
+            "value": 13458510300,
+            "lot": 1550000,
+            "avg_price": 86.82909870967742,
+            "freq": 4513,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BSBK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-07-24",
+      "to": "2024-07-24",
+      "broker_code": "PI",
+      "broker_name": "Magenta Kapital Sekuritas Indonesia"
+    }
+  }
+}

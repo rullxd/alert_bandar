@@ -1,0 +1,84 @@
+{
+  "downloaded_at": "2026-05-25T09:06:38",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "BF",
+  "from": "2024-08-26",
+  "to": "2024-08-26",
+  "buy_count": 0,
+  "sell_count": 3,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "BTPS",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-26",
+            "value": 131000000,
+            "lot": 1000,
+            "avg_price": 1310,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BTPS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DOID",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-26",
+            "value": 73000000,
+            "lot": 1000,
+            "avg_price": 730,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DOID.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PEGE",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-26",
+            "value": 10825000,
+            "lot": 1000,
+            "avg_price": 108.25,
+            "freq": 12,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PEGE.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-08-26",
+      "to": "2024-08-26",
+      "broker_code": "BF",
+      "broker_name": "Inti Fikasa Sekuritas"
+    }
+  }
+}

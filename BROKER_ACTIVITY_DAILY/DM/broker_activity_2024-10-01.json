@@ -1,0 +1,44 @@
+{
+  "downloaded_at": "2026-05-25T09:33:40",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DM",
+  "from": "2024-10-01",
+  "to": "2024-10-01",
+  "buy_count": 1,
+  "sell_count": 0,
+  "total_count": 1,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BINO-W",
+            "broker_code": "DM",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-10-01",
+            "value": 87000,
+            "lot": 30,
+            "avg_price": 29,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BINO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": []
+      },
+      "from": "2024-10-01",
+      "to": "2024-10-01",
+      "broker_code": "DM",
+      "broker_name": "Masindo Artha Sekuritas"
+    }
+  }
+}

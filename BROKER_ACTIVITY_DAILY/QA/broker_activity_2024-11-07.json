@@ -1,0 +1,44 @@
+{
+  "downloaded_at": "2026-05-25T07:49:20",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "QA",
+  "from": "2024-11-07",
+  "to": "2024-11-07",
+  "buy_count": 0,
+  "sell_count": 1,
+  "total_count": 1,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "ELSA",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-11-07",
+            "value": 904000,
+            "lot": 20,
+            "avg_price": 452,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ELSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-11-07",
+      "to": "2024-11-07",
+      "broker_code": "QA",
+      "broker_name": "Tuntun Sekuritas Indonesia"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "downloaded_at": "2026-05-25T09:02:59",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "BF",
+  "from": "2024-01-26",
+  "to": "2024-01-26",
+  "buy_count": 3,
+  "sell_count": 2,
+  "total_count": 5,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "CGAS",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-26",
+            "value": 223000000,
+            "lot": 10000,
+            "avg_price": 223,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CGAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MAYA",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-26",
+            "value": 51400000,
+            "lot": 3000,
+            "avg_price": 171.33333333333334,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MAYA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMDR",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-26",
+            "value": 35400000,
+            "lot": 1000,
+            "avg_price": 354,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMDR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "CGAS",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-26",
+            "value": 281000000,
+            "lot": 10000,
+            "avg_price": 281,
+            "freq": 67,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CGAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MAYA",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-26",
+            "value": 58400000,
+            "lot": 3000,
+            "avg_price": 194.66666666666666,
+            "freq": 16,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MAYA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-01-26",
+      "to": "2024-01-26",
+      "broker_code": "BF",
+      "broker_name": "Inti Fikasa Sekuritas"
+    }
+  }
+}

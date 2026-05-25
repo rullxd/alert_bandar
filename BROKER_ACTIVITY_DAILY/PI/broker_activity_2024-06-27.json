@@ -1,0 +1,65 @@
+{
+  "downloaded_at": "2026-05-25T07:46:55",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "PI",
+  "from": "2024-06-27",
+  "to": "2024-06-27",
+  "buy_count": 1,
+  "sell_count": 1,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BBRI",
+            "broker_code": "PI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-27",
+            "value": 890000,
+            "lot": 2,
+            "avg_price": 4450,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BBRI",
+            "broker_code": "PI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-27",
+            "value": 894000,
+            "lot": 2,
+            "avg_price": 4470,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-06-27",
+      "to": "2024-06-27",
+      "broker_code": "PI",
+      "broker_name": "Magenta Kapital Sekuritas Indonesia"
+    }
+  }
+}

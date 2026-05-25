@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2026-05-25T09:05:10",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "BF",
+  "from": "2024-05-31",
+  "to": "2024-05-31",
+  "buy_count": 3,
+  "sell_count": 1,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "MEDC",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-31",
+            "value": 140000000,
+            "lot": 1000,
+            "avg_price": 1400,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MEDC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AREA",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-31",
+            "value": 98107600,
+            "lot": 8000,
+            "avg_price": 122.6345,
+            "freq": 26,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AREA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTWI",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-31",
+            "value": 71693200,
+            "lot": 5892,
+            "avg_price": 121.67888662593347,
+            "freq": 23,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTWI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "MEDC",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-31",
+            "value": 142500000,
+            "lot": 1000,
+            "avg_price": 1425,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MEDC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-05-31",
+      "to": "2024-05-31",
+      "broker_code": "BF",
+      "broker_name": "Inti Fikasa Sekuritas"
+    }
+  }
+}

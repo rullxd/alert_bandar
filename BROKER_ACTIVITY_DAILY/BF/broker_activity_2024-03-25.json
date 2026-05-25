@@ -1,0 +1,145 @@
+{
+  "downloaded_at": "2026-05-25T09:04:00",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "BF",
+  "from": "2024-03-25",
+  "to": "2024-03-25",
+  "buy_count": 3,
+  "sell_count": 3,
+  "total_count": 6,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "MAYA",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-03-25",
+            "value": 37000000,
+            "lot": 1000,
+            "avg_price": 370,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MAYA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DGNS",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-03-25",
+            "value": 32000000,
+            "lot": 1000,
+            "avg_price": 320,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DGNS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBYB",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-03-25",
+            "value": 29400000,
+            "lot": 1000.0000000000001,
+            "avg_price": 293.99999999999994,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBYB.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "COCO",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-03-25",
+            "value": 52287200,
+            "lot": 1973,
+            "avg_price": 265.0136847440446,
+            "freq": 30,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/COCO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DOID",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-03-25",
+            "value": 42600000,
+            "lot": 1000,
+            "avg_price": 426,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DOID.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PANI",
+            "broker_code": "BF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-03-25",
+            "value": 27875000,
+            "lot": 50,
+            "avg_price": 5575,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PANI.png?version=1724730260229025769",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-03-25",
+      "to": "2024-03-25",
+      "broker_code": "BF",
+      "broker_name": "Inti Fikasa Sekuritas"
+    }
+  }
+}

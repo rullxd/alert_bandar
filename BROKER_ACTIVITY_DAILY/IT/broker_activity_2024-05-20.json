@@ -1,0 +1,234 @@
+{
+  "downloaded_at": "2026-05-25T09:18:10",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "IT",
+  "from": "2024-05-20",
+  "to": "2024-05-20",
+  "buy_count": 5,
+  "sell_count": 5,
+  "total_count": 10,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "SMGR",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-20",
+            "value": 398000000,
+            "lot": 1000,
+            "avg_price": 3980,
+            "freq": 22,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMGR.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRIS",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-20",
+            "value": 2470000,
+            "lot": 10,
+            "avg_price": 2470,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRIS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ASII",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-20",
+            "value": 1912000,
+            "lot": 4,
+            "avg_price": 4780,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ASII.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTBA",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-20",
+            "value": 295000,
+            "lot": 1,
+            "avg_price": 2950,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTBA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SOUL",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-20",
+            "value": 2800,
+            "lot": 2,
+            "avg_price": 14,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SOUL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "PTBA",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-20",
+            "value": 102900000,
+            "lot": 350,
+            "avg_price": 2940,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTBA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CFIN",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-20",
+            "value": 49000000,
+            "lot": 1000,
+            "avg_price": 490,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CFIN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AVIA",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-20",
+            "value": 1262500,
+            "lot": 25,
+            "avg_price": 505,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AVIA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BJTM",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-20",
+            "value": 232000,
+            "lot": 4,
+            "avg_price": 580,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BJTM.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PGAS",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-05-20",
+            "value": 153500,
+            "lot": 1,
+            "avg_price": 1535,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PGAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-05-20",
+      "to": "2024-05-20",
+      "broker_code": "IT",
+      "broker_name": "Inti Teladan Sekuritas"
+    }
+  }
+}

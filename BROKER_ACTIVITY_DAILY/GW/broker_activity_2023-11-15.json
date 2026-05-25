@@ -1,0 +1,65 @@
+{
+  "downloaded_at": "2026-05-25T09:28:14",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GW",
+  "from": "2023-11-15",
+  "to": "2023-11-15",
+  "buy_count": 1,
+  "sell_count": 1,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "CTRA",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-15",
+            "value": 3614008000,
+            "lot": 31447,
+            "avg_price": 1149.2377651286292,
+            "freq": 96,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CTRA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BSDE",
+            "broker_code": "GW",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-11-15",
+            "value": 10187586000,
+            "lot": 99507,
+            "avg_price": 1023.8059633995598,
+            "freq": 230,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BSDE.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-11-15",
+      "to": "2023-11-15",
+      "broker_code": "GW",
+      "broker_name": "HSBC Sekuritas Indonesia"
+    }
+  }
+}

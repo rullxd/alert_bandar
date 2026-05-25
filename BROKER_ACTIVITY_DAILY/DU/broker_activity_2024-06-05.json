@@ -1,0 +1,125 @@
+{
+  "downloaded_at": "2026-05-25T08:51:32",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DU",
+  "from": "2024-06-05",
+  "to": "2024-06-05",
+  "buy_count": 1,
+  "sell_count": 4,
+  "total_count": 5,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "TINS",
+            "broker_code": "DU",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-06-05",
+            "value": 12450000,
+            "lot": 149.99999999999997,
+            "avg_price": 830.0000000000002,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TINS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "AMMN",
+            "broker_code": "DU",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-06-05",
+            "value": 1900000000,
+            "lot": 1500,
+            "avg_price": 12666.666666666666,
+            "freq": 11,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AMMN.png?version=1723524843327460802",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GPSO",
+            "broker_code": "DU",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-06-05",
+            "value": 1279498200,
+            "lot": 54423,
+            "avg_price": 235.10247505650185,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GPSO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ACES",
+            "broker_code": "DU",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-06-05",
+            "value": 12600000,
+            "lot": 150,
+            "avg_price": 840,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ACES-NEW.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INPP",
+            "broker_code": "DU",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-06-05",
+            "value": 5590000,
+            "lot": 52,
+            "avg_price": 1075,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INPP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-06-05",
+      "to": "2024-06-05",
+      "broker_code": "DU",
+      "broker_name": "KAF Sekuritas Indonesia"
+    }
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "downloaded_at": "2026-05-25T09:13:25",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "AF",
+  "from": "2025-02-17",
+  "to": "2025-02-17",
+  "buy_count": 7,
+  "sell_count": 10,
+  "total_count": 17,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "ADMR",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 674000000,
+            "lot": 8000,
+            "avg_price": 842.5,
+            "freq": 119,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ADMR.png?version=1753857326844772768",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 447240000,
+            "lot": 1140,
+            "avg_price": 3923.157894736842,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTDL",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 119950000,
+            "lot": 2100,
+            "avg_price": 571.1904761904761,
+            "freq": 16,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTDL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RAJA",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 75650000,
+            "lot": 200,
+            "avg_price": 3782.5,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RAJA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CBDK",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 40250000,
+            "lot": 50,
+            "avg_price": 8050,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CBDK.png?version=1734058949472712899",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ESSA",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 8050000,
+            "lot": 100,
+            "avg_price": 805,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ESSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "COCO",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 3083200,
+            "lot": 376,
+            "avg_price": 82,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/COCO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "NCKL",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 252000000,
+            "lot": 4000,
+            "avg_price": 630,
+            "freq": 42,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NCKL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ANTM",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 194375000,
+            "lot": 1250,
+            "avg_price": 1555,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANTM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBCA",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 189650000,
+            "lot": 205,
+            "avg_price": 9251.219512195123,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BTPS",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 98000000,
+            "lot": 1000,
+            "avg_price": 980,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BTPS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRPT",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 94500000,
+            "lot": 1100,
+            "avg_price": 859.0909090909091,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 40000000,
+            "lot": 100,
+            "avg_price": 4000,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DEWA",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 38700000,
+            "lot": 3000,
+            "avg_price": 129,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DEWA.png?version=1731380794259246908",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RATU",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 26400000,
+            "lot": 30,
+            "avg_price": 8800,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RATU.png?version=1734335521561381591",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 21400000,
+            "lot": 2000,
+            "avg_price": 107,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MDKA",
+            "broker_code": "AF",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-17",
+            "value": 9175000,
+            "lot": 50,
+            "avg_price": 1835,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MDKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-02-17",
+      "to": "2025-02-17",
+      "broker_code": "AF",
+      "broker_name": "Harita Kencana Sekuritas"
+    }
+  }
+}

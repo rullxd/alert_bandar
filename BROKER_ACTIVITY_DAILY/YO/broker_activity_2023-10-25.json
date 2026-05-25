@@ -1,0 +1,547 @@
+{
+  "downloaded_at": "2026-05-25T09:14:39",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "YO",
+  "from": "2023-10-25",
+  "to": "2023-10-25",
+  "buy_count": 10,
+  "sell_count": 12,
+  "total_count": 22,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "UNVR",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 1792344000,
+            "lot": 4393,
+            "avg_price": 4080,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNVR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PMMP",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 614680000,
+            "lot": 12780,
+            "avg_price": 480.97026604068856,
+            "freq": 17,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PMMP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "E",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan ekuitas negatif",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/E.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/E.png"
+                  }
+                },
+                {
+                  "notation_code": "D",
+                  "notation_desc": "Adanya Opini \"Tidak Menyatakan Pendapat (Disclaimer)\" dari Akuntan Publik",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/D.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/D.png"
+                  }
+                },
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                },
+                {
+                  "notation_code": "G",
+                  "notation_desc": "Sanksi Administratif dan/atau Perintah Tertulis dari OJK yang dikenakan terhadap Perusahaan Tercatat karena pelanggaran peraturan di bidang Pasar Modal dengan kategori Pelanggaran Sedang",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/G.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/G.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INKP",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 104725000,
+            "lot": 110,
+            "avg_price": 9520.454545454546,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INKP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TKIM",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 40375000,
+            "lot": 50,
+            "avg_price": 8075,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TKIM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TINS",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 35000000,
+            "lot": 500,
+            "avg_price": 700,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TINS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SSMS",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 23400000,
+            "lot": 200,
+            "avg_price": 1170,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SSMS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IMAS",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 14000000,
+            "lot": 100,
+            "avg_price": 1400,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IMAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "APEX",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 11100000,
+            "lot": 500,
+            "avg_price": 222,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/APEX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HOKI",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 7500000,
+            "lot": 500,
+            "avg_price": 150,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HOKI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMSM",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 4431000,
+            "lot": 21,
+            "avg_price": 2110,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMSM.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BBCA",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 13342707500,
+            "lot": 15000,
+            "avg_price": 8895.138333333334,
+            "freq": 111,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HMSP",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 957953000,
+            "lot": 11051,
+            "avg_price": 866.8473441317528,
+            "freq": 69,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HMSP.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ARTO",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 646372500,
+            "lot": 3870,
+            "avg_price": 1670.2131782945737,
+            "freq": 105,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ARTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GGRM",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 617085000,
+            "lot": 245,
+            "avg_price": 25187.14285714286,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GGRM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PMMP",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 511200000,
+            "lot": 12780,
+            "avg_price": 400,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PMMP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "E",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan ekuitas negatif",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/E.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/E.png"
+                  }
+                },
+                {
+                  "notation_code": "D",
+                  "notation_desc": "Adanya Opini \"Tidak Menyatakan Pendapat (Disclaimer)\" dari Akuntan Publik",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/D.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/D.png"
+                  }
+                },
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                },
+                {
+                  "notation_code": "G",
+                  "notation_desc": "Sanksi Administratif dan/atau Perintah Tertulis dari OJK yang dikenakan terhadap Perusahaan Tercatat karena pelanggaran peraturan di bidang Pasar Modal dengan kategori Pelanggaran Sedang",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/G.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/G.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INKP",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 47000000,
+            "lot": 50,
+            "avg_price": 9400,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INKP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TKIM",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 38750000,
+            "lot": 50,
+            "avg_price": 7750,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TKIM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SSMS",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 23500000,
+            "lot": 200,
+            "avg_price": 1175,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SSMS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "APEX",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 11100000,
+            "lot": 500,
+            "avg_price": 222,
+            "freq": 11,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/APEX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HOKI",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 7900000,
+            "lot": 500,
+            "avg_price": 158,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HOKI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMSM",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 4473000,
+            "lot": 21,
+            "avg_price": 2130,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMSM.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SGER",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-25",
+            "value": 2110000,
+            "lot": 37.946127110228396,
+            "avg_price": 556.0514763129144,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SGER.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-10-25",
+      "to": "2023-10-25",
+      "broker_code": "YO",
+      "broker_name": "Amantara Sekuritas Indonesia"
+    }
+  }
+}

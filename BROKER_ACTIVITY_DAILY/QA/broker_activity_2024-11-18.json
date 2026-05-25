@@ -1,0 +1,64 @@
+{
+  "downloaded_at": "2026-05-25T07:49:29",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "QA",
+  "from": "2024-11-18",
+  "to": "2024-11-18",
+  "buy_count": 0,
+  "sell_count": 2,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "DOID",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-11-18",
+            "value": 441000,
+            "lot": 7,
+            "avg_price": 630,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DOID.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RAJA",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-11-18",
+            "value": 438000,
+            "lot": 2,
+            "avg_price": 2190,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RAJA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-11-18",
+      "to": "2024-11-18",
+      "broker_code": "QA",
+      "broker_name": "Tuntun Sekuritas Indonesia"
+    }
+  }
+}

@@ -1,0 +1,450 @@
+{
+  "downloaded_at": "2026-05-25T08:35:32",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "TS",
+  "from": "2023-11-20",
+  "to": "2023-11-20",
+  "buy_count": 7,
+  "sell_count": 12,
+  "total_count": 19,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "TCPI",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 26666972500,
+            "lot": 35596,
+            "avg_price": 7491.564361164175,
+            "freq": 364,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TCPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BIPI",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 11072551000,
+            "lot": 990000,
+            "avg_price": 111.8439494949495,
+            "freq": 365,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BIPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IPTV",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 535000000,
+            "lot": 100000,
+            "avg_price": 53.5,
+            "freq": 39,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IPTV.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BANK",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 411000000,
+            "lot": 4000,
+            "avg_price": 1027.5,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BANK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AMMN",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 147000000,
+            "lot": 200,
+            "avg_price": 7350,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AMMN.png?version=1723524843327460802",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "STAA",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 42250000,
+            "lot": 500,
+            "avg_price": 845,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/STAA.png?ver=2",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RELF",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 36000000,
+            "lot": 10000,
+            "avg_price": 36,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RELF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "TCPI",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 21308355000,
+            "lot": 27427,
+            "avg_price": 7769.116199365589,
+            "freq": 333,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TCPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BIPI",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 10596078400,
+            "lot": 951382,
+            "avg_price": 111.37564511416025,
+            "freq": 199,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BIPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IPTV",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 500000000,
+            "lot": 100000,
+            "avg_price": 50,
+            "freq": 91,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IPTV.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "STRK",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 492000000,
+            "lot": 20000,
+            "avg_price": 246,
+            "freq": 15,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/STRK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BANK",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 411500000,
+            "lot": 4000,
+            "avg_price": 1028.75,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BANK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AWAN",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 102000000,
+            "lot": 3000,
+            "avg_price": 340,
+            "freq": 28,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AWAN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CUAN",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 71000000,
+            "lot": 1000,
+            "avg_price": 710,
+            "freq": 13,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CUAN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IRRA",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 65782200,
+            "lot": 1373,
+            "avg_price": 479.1128914785142,
+            "freq": 39,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IRRA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "STAA",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 42250000,
+            "lot": 500,
+            "avg_price": 845,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/STAA.png?ver=2",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DGIK",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 42120000,
+            "lot": 5200,
+            "avg_price": 81,
+            "freq": 12,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DGIK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RELF",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 36000000,
+            "lot": 10000,
+            "avg_price": 36,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RELF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BHIT",
+            "broker_code": "TS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-20",
+            "value": 27940000,
+            "lot": 5588,
+            "avg_price": 50,
+            "freq": 65,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BHIT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-11-20",
+      "to": "2023-11-20",
+      "broker_code": "TS",
+      "broker_name": "Dwidana Sakti Sekuritas"
+    }
+  }
+}

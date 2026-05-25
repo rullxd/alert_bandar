@@ -1,0 +1,53 @@
+{
+  "downloaded_at": "2026-05-25T09:37:22",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "IP",
+  "from": "2025-04-17",
+  "to": "2025-04-17",
+  "buy_count": 0,
+  "sell_count": 1,
+  "total_count": 1,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "ELTY",
+            "broker_code": "IP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-04-17",
+            "value": 12884000,
+            "lot": 12884,
+            "avg_price": 10,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ELTY.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-04-17",
+      "to": "2025-04-17",
+      "broker_code": "IP",
+      "broker_name": "Yugen Bertumbuh Sekuritas"
+    }
+  }
+}

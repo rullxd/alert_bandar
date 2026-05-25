@@ -1,0 +1,441 @@
+{
+  "downloaded_at": "2026-05-25T08:15:48",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DP",
+  "from": "2025-03-13",
+  "to": "2025-03-13",
+  "buy_count": 9,
+  "sell_count": 10,
+  "total_count": 19,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BRIS",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 18799892000,
+            "lot": 73324,
+            "avg_price": 2563.9479570127105,
+            "freq": 752,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRIS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GOTO",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 10441917100,
+            "lot": 1276737,
+            "avg_price": 81.78596766601109,
+            "freq": 369,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "K",
+                  "notation_desc": "Perusahaan Tercatat yang menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/K.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/K.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTEL",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 3363347500,
+            "lot": 57055,
+            "avg_price": 589.4921566909122,
+            "freq": 174,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTEL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MEDC",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 2231195500,
+            "lot": 22191,
+            "avg_price": 1005.4506331395611,
+            "freq": 136,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MEDC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 755000000,
+            "lot": 80000,
+            "avg_price": 94.375,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MYOR",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 499042000,
+            "lot": 2310.9999999999995,
+            "avg_price": 2159.420164430983,
+            "freq": 152,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MYOR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUKA",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 390000000,
+            "lot": 30000,
+            "avg_price": 130,
+            "freq": 67,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "I",
+                  "notation_desc": "Perusahaan Tercatat yang tidak menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/I.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/I.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DEWA",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 190632000,
+            "lot": 15886,
+            "avg_price": 120,
+            "freq": 28,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DEWA.png?version=1731380794259246908",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KIJA",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 49760100,
+            "lot": 2784,
+            "avg_price": 178.73599137931035,
+            "freq": 30,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KIJA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "GOTO",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 11728328300,
+            "lot": 1426737,
+            "avg_price": 82.20385607158151,
+            "freq": 299,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "K",
+                  "notation_desc": "Perusahaan Tercatat yang menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/K.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/K.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTEL",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 2760235500,
+            "lot": 47055,
+            "avg_price": 586.5977048135161,
+            "freq": 233,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTEL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "EXCL",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 2646070000,
+            "lot": 11751,
+            "avg_price": 2251.7828269934475,
+            "freq": 151,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/EXCL.png?version=1747296040608163618",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MEDC",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 2232195500,
+            "lot": 22191,
+            "avg_price": 1005.9012662791222,
+            "freq": 197,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MEDC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DEWA",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 1997083800,
+            "lot": 162752,
+            "avg_price": 122.70717410538734,
+            "freq": 40,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DEWA.png?version=1731380794259246908",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUKA",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 393000000,
+            "lot": 30000,
+            "avg_price": 131,
+            "freq": 85,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "I",
+                  "notation_desc": "Perusahaan Tercatat yang tidak menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/I.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/I.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTRO",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 312000000,
+            "lot": 1000,
+            "avg_price": 3120,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTRO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 285000000,
+            "lot": 30000,
+            "avg_price": 95,
+            "freq": 74,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NOBU",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 215540500,
+            "lot": 3412,
+            "avg_price": 631.7130715123095,
+            "freq": 36,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NOBU.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GEMS",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2025-03-13",
+            "value": 150777500,
+            "lot": 177,
+            "avg_price": 8518.502824858757,
+            "freq": 57,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GEMS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-03-13",
+      "to": "2025-03-13",
+      "broker_code": "DP",
+      "broker_name": "DBS Vickers Sekuritas Indonesia"
+    }
+  }
+}

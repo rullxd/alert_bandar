@@ -1,0 +1,64 @@
+{
+  "downloaded_at": "2026-05-25T09:15:11",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "CS",
+  "from": "2023-07-27",
+  "to": "2023-07-27",
+  "buy_count": 0,
+  "sell_count": 2,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "TAPG",
+            "broker_code": "CS",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-27",
+            "value": 493718000,
+            "lot": 8155,
+            "avg_price": 605.4175352544452,
+            "freq": 140,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TAPG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BIRD",
+            "broker_code": "CS",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-27",
+            "value": 58550000,
+            "lot": 250,
+            "avg_price": 2342,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BIRD.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-07-27",
+      "to": "2023-07-27",
+      "broker_code": "CS",
+      "broker_name": "Credit Suisse Sekuritas Indonesia"
+    }
+  }
+}

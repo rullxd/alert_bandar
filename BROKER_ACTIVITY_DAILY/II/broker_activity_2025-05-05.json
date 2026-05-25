@@ -1,0 +1,452 @@
+{
+  "downloaded_at": "2026-05-25T08:57:14",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "II",
+  "from": "2025-05-05",
+  "to": "2025-05-05",
+  "buy_count": 11,
+  "sell_count": 9,
+  "total_count": 20,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "OASA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 6132182200,
+            "lot": 421600,
+            "avg_price": 145.45024193548386,
+            "freq": 54,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OASA.png?version=1771926277396885027",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BIPI",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 6109000000,
+            "lot": 745000,
+            "avg_price": 82,
+            "freq": 78,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BIPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ITMA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 2216600000,
+            "lot": 25200,
+            "avg_price": 879.6031746031746,
+            "freq": 21,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ITMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BULL",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 1846900000,
+            "lot": 160600,
+            "avg_price": 115,
+            "freq": 114,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BULL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "STRK",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 250000000,
+            "lot": 50000,
+            "avg_price": 50,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/STRK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CUAN",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 100100000,
+            "lot": 1300,
+            "avg_price": 770,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CUAN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RATU",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 55000000,
+            "lot": 100,
+            "avg_price": 5500,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RATU.png?version=1734335521561381591",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RAJA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 52750000,
+            "lot": 250,
+            "avg_price": 2110,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RAJA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 19500000,
+            "lot": 50,
+            "avg_price": 3900,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ALII",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 4700000,
+            "lot": 100,
+            "avg_price": 470,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ALII.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CASS",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 3960000,
+            "lot": 20,
+            "avg_price": 1980,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CASS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "OASA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 9454780000,
+            "lot": 680200,
+            "avg_price": 139,
+            "freq": 37,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OASA.png?version=1771926277396885027",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RATU",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 55000000,
+            "lot": 100,
+            "avg_price": 5500,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RATU.png?version=1734335521561381591",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RAJA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 53000000,
+            "lot": 250,
+            "avg_price": 2120,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RAJA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRMS",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 37400000,
+            "lot": 1000,
+            "avg_price": 374,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DOOH",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 23520000,
+            "lot": 1960,
+            "avg_price": 120,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DOOH.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MKTR",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 19035000,
+            "lot": 1677,
+            "avg_price": 113.50626118067979,
+            "freq": 46,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MKTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AISA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 7200000,
+            "lot": 500,
+            "avg_price": 144,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AISA.png?version=1776331915024607188",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ALII",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 4800000,
+            "lot": 100,
+            "avg_price": 480,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ALII.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CASS",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-05",
+            "value": 2040000,
+            "lot": 10,
+            "avg_price": 2040,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CASS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-05-05",
+      "to": "2025-05-05",
+      "broker_code": "II",
+      "broker_name": "Danatama Makmur Sekuritas"
+    }
+  }
+}

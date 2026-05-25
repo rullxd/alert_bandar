@@ -1,0 +1,410 @@
+{
+  "downloaded_at": "2026-05-25T08:52:43",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "II",
+  "from": "2024-08-16",
+  "to": "2024-08-16",
+  "buy_count": 7,
+  "sell_count": 10,
+  "total_count": 17,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "EURO",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 11952017900,
+            "lot": 599021,
+            "avg_price": 199.52585802501082,
+            "freq": 843,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/EURO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BIPI",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 4569200000,
+            "lot": 602000,
+            "avg_price": 75.90033222591362,
+            "freq": 61,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BIPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "OASA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 2837778800,
+            "lot": 205524,
+            "avg_price": 138.0753002082482,
+            "freq": 268,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OASA.png?version=1771926277396885027",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MSIN",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 280502500,
+            "lot": 2630,
+            "avg_price": 1066.5494296577947,
+            "freq": 13,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MSIN.png?version=1770367821463423354",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JKON",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 24000000,
+            "lot": 2500,
+            "avg_price": 96,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JKON.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KEEN",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 3575000,
+            "lot": 50,
+            "avg_price": 715,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KEEN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ANJT",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 3525000,
+            "lot": 50,
+            "avg_price": 705,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANJT.png?version=1767348648639652214",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "SRAJ",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 793930000,
+            "lot": 3438,
+            "avg_price": 2309.2786503781267,
+            "freq": 31,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SRAJ.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IPTV",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 147345000,
+            "lot": 44650,
+            "avg_price": 33,
+            "freq": 77,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IPTV.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTRO",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 108210000,
+            "lot": 1250,
+            "avg_price": 865.68,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTRO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GGRP",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 60000000,
+            "lot": 1000,
+            "avg_price": 600,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GGRP.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BREN",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 48125000,
+            "lot": 55,
+            "avg_price": 8750,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BREN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JKON",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 24000000,
+            "lot": 2500,
+            "avg_price": 96,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JKON.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TLKM",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 8910000,
+            "lot": 30,
+            "avg_price": 2970,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ASSA",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 7750000,
+            "lot": 100,
+            "avg_price": 775,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ASSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KEEN",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 3575000,
+            "lot": 50,
+            "avg_price": 715,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KEEN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ANJT",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-16",
+            "value": 3500000,
+            "lot": 50,
+            "avg_price": 700,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANJT.png?version=1767348648639652214",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-08-16",
+      "to": "2024-08-16",
+      "broker_code": "II",
+      "broker_name": "Danatama Makmur Sekuritas"
+    }
+  }
+}

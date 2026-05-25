@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2026-05-25T07:47:52",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "PI",
+  "from": "2024-08-19",
+  "to": "2024-08-19",
+  "buy_count": 2,
+  "sell_count": 2,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BSBK",
+            "broker_code": "PI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-19",
+            "value": 1283000000,
+            "lot": 200000,
+            "avg_price": 64.15,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BSBK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TOBA",
+            "broker_code": "PI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-19",
+            "value": 828000000,
+            "lot": 20000,
+            "avg_price": 414,
+            "freq": 91,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TOBA.png?version=1770367590961892787",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BSBK",
+            "broker_code": "PI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-19",
+            "value": 1300000000,
+            "lot": 200000,
+            "avg_price": 65,
+            "freq": 692,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BSBK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DKFT",
+            "broker_code": "PI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-08-19",
+            "value": 357434000,
+            "lot": 29540,
+            "avg_price": 121,
+            "freq": 73,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DKFT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-08-19",
+      "to": "2024-08-19",
+      "broker_code": "PI",
+      "broker_name": "Magenta Kapital Sekuritas Indonesia"
+    }
+  }
+}

@@ -1,0 +1,586 @@
+{
+  "downloaded_at": "2026-05-25T07:36:19",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DP",
+  "from": "2023-06-05",
+  "to": "2023-06-05",
+  "buy_count": 10,
+  "sell_count": 13,
+  "total_count": 23,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "MTEL",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 4020916000,
+            "lot": 61691,
+            "avg_price": 651.7832422881781,
+            "freq": 2231,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTEL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRMS",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 1553347800,
+            "lot": 120000,
+            "avg_price": 129.44565,
+            "freq": 123,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NCKL",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 1354468500,
+            "lot": 15000,
+            "avg_price": 902.979,
+            "freq": 47,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NCKL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMSM",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 936188500,
+            "lot": 5300,
+            "avg_price": 1766.393396226415,
+            "freq": 42,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMSM.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMTR",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 894000000,
+            "lot": 30000,
+            "avg_price": 298,
+            "freq": 146,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HILL",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 528562000,
+            "lot": 10000,
+            "avg_price": 528.562,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HILL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "M",
+                  "notation_desc": "Adanya permohonan Penundaan Kewajiban Pembayaran Utang (PKPU)",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/M.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/M.png"
+                  }
+                },
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INCO",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 300150000,
+            "lot": 460,
+            "avg_price": 6525,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INCO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PRDA",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 159445000,
+            "lot": 286,
+            "avg_price": 5575,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PRDA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ACES",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 134378500,
+            "lot": 2150,
+            "avg_price": 625.0162790697674,
+            "freq": 43,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ACES-NEW.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ZBRA",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 67923800,
+            "lot": 1470,
+            "avg_price": 462.06666666666666,
+            "freq": 15,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ZBRA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "B",
+                  "notation_desc": "Adanya permohonan Pernyataan Pailit",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/B.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/B.png"
+                  }
+                },
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                },
+                {
+                  "notation_code": "Y",
+                  "notation_desc": "Perusahaan Tercatat yang belum menyelenggarakan Rapat Umum Pemegang Saham Tahunan (RUPST) sampai dengan 6 (enam) bulan setelah tahun buku berakhir",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/Y.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/Y.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "MTEL",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 4352415000,
+            "lot": 66691,
+            "avg_price": 652.624042224588,
+            "freq": 664,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTEL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HILL",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 2491975000,
+            "lot": 47030,
+            "avg_price": 529.8692324048479,
+            "freq": 827,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HILL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "M",
+                  "notation_desc": "Adanya permohonan Penundaan Kewajiban Pembayaran Utang (PKPU)",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/M.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/M.png"
+                  }
+                },
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RMKE",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 1317965000,
+            "lot": 15198,
+            "avg_price": 867.1963416238979,
+            "freq": 149,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RMKE.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PNLF",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 615212000,
+            "lot": 23662,
+            "avg_price": 260,
+            "freq": 13,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PNLF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IMPC",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 582983000,
+            "lot": 17171,
+            "avg_price": 339.516044493623,
+            "freq": 29,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IMPC.png?version=1742443117317841833",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ISAT",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 532530000,
+            "lot": 2548,
+            "avg_price": 2089.9921507064364,
+            "freq": 74,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ISAT.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SSIA",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 367407000,
+            "lot": 8147,
+            "avg_price": 450.9721369829385,
+            "freq": 119,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SSIA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBCA",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 250025000,
+            "lot": 274,
+            "avg_price": 9125,
+            "freq": 34,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 188570000,
+            "lot": 346,
+            "avg_price": 5450,
+            "freq": 34,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TLKM",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 95410000,
+            "lot": 235,
+            "avg_price": 4060,
+            "freq": 42,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMRI",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 93380000,
+            "lot": 184,
+            "avg_price": 5075,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMRI.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SRTG",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 90865000,
+            "lot": 576,
+            "avg_price": 1577.517361111111,
+            "freq": 10,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SRTG.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BHIT",
+            "broker_code": "DP",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-06-05",
+            "value": 53000000,
+            "lot": 10000,
+            "avg_price": 53,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BHIT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-06-05",
+      "to": "2023-06-05",
+      "broker_code": "DP",
+      "broker_name": "DBS Vickers Sekuritas Indonesia"
+    }
+  }
+}

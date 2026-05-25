@@ -1,0 +1,85 @@
+{
+  "downloaded_at": "2026-05-25T07:51:04",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "QA",
+  "from": "2025-02-12",
+  "to": "2025-02-12",
+  "buy_count": 2,
+  "sell_count": 1,
+  "total_count": 3,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "SIDO",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-12",
+            "value": 1512000,
+            "lot": 27,
+            "avg_price": 560,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SIDO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBCA",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-12",
+            "value": 902500,
+            "lot": 1,
+            "avg_price": 9025,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "FUTR-W",
+            "broker_code": "QA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-12",
+            "value": 7981500,
+            "lot": 26605,
+            "avg_price": 3,
+            "freq": 69,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/FUTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-02-12",
+      "to": "2025-02-12",
+      "broker_code": "QA",
+      "broker_name": "Tuntun Sekuritas Indonesia"
+    }
+  }
+}

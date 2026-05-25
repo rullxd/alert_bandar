@@ -1,0 +1,216 @@
+{
+  "downloaded_at": "2026-05-25T08:45:55",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "II",
+  "from": "2023-07-25",
+  "to": "2023-07-25",
+  "buy_count": 5,
+  "sell_count": 2,
+  "total_count": 7,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BIPI",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-07-25",
+            "value": 10261200000,
+            "lot": 779000,
+            "avg_price": 131.7227214377407,
+            "freq": 278,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BIPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BULL",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-07-25",
+            "value": 954540000,
+            "lot": 95194,
+            "avg_price": 100.27312645754985,
+            "freq": 141,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BULL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "WIIM",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-07-25",
+            "value": 49350000,
+            "lot": 300,
+            "avg_price": 1645,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/WIIM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TGUK",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-07-25",
+            "value": 24250000,
+            "lot": 2500,
+            "avg_price": 97,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TGUK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "G",
+                  "notation_desc": "Sanksi Administratif dan/atau Perintah Tertulis dari OJK yang dikenakan terhadap Perusahaan Tercatat karena pelanggaran peraturan di bidang Pasar Modal dengan kategori Pelanggaran Sedang",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/G.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/G.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SQMI",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-07-25",
+            "value": 5600000,
+            "lot": 1000,
+            "avg_price": 56,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SQMI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "E",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan ekuitas negatif",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/E.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/E.png"
+                  }
+                },
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BGTG",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-07-25",
+            "value": 22250000,
+            "lot": 2500,
+            "avg_price": 89,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BGTG.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ACES",
+            "broker_code": "II",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-07-25",
+            "value": 7750000,
+            "lot": 100,
+            "avg_price": 775,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ACES-NEW.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-07-25",
+      "to": "2023-07-25",
+      "broker_code": "II",
+      "broker_name": "Danatama Makmur Sekuritas"
+    }
+  }
+}

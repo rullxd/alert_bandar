@@ -1,6 +1,6 @@
 # TimescaleDB Market Data
 
-Setup ini membuat data broker activity dan stock summary lebih gampang di-query untuk analisa bandar, net buy/sell, akumulasi broker, dan perbandingan ke market value harian.
+Setup ini membuat data broker activity dan stock summary lebih gampang di-query untuk analisa bandar, net buy/sell, akumulasi broker, dan perbandingan ke market value harian. Tabel broker dan stock summary juga menyimpan `icon_url` emiten.
 
 ## 1. Start database
 

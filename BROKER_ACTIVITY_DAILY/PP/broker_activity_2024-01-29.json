@@ -1,0 +1,374 @@
+{
+  "downloaded_at": "2026-05-25T09:16:39",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "PP",
+  "from": "2024-01-29",
+  "to": "2024-01-29",
+  "buy_count": 7,
+  "sell_count": 10,
+  "total_count": 17,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BBNI",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 7870582500,
+            "lot": 14174,
+            "avg_price": 5552.830887540567,
+            "freq": 69,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBNI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ASII",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 24700000,
+            "lot": 50,
+            "avg_price": 4940,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ASII.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INET-W",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 5999700,
+            "lot": 19999,
+            "avg_price": 3,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INET.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SLIS-W",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 1253000,
+            "lot": 2506,
+            "avg_price": 5,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SLIS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTPS-W",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 737100,
+            "lot": 819,
+            "avg_price": 9,
+            "freq": 39,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTPS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTMP",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 164400,
+            "lot": 6,
+            "avg_price": 274,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTMP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "EAST",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 14700,
+            "lot": 1,
+            "avg_price": 147,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/EAST.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "SMMA",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 140392500,
+            "lot": 74,
+            "avg_price": 18971.95945945946,
+            "freq": 31,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MEDC",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 118750000,
+            "lot": 950,
+            "avg_price": 1250,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MEDC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 9945000,
+            "lot": 18,
+            "avg_price": 5525,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMRI",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 8995000,
+            "lot": 14,
+            "avg_price": 6425,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HAJJ-W",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 7599900,
+            "lot": 6909,
+            "avg_price": 11,
+            "freq": 29,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HAJJ.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBCA",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 7580000,
+            "lot": 8,
+            "avg_price": 9475,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HUMI-W",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 2777500,
+            "lot": 5555,
+            "avg_price": 5,
+            "freq": 27,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HUMI.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KING-W",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 911400,
+            "lot": 1302,
+            "avg_price": 7,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KING.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTPS-W",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 756100,
+            "lot": 794,
+            "avg_price": 9.522670025188917,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTPS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INET-W",
+            "broker_code": "PP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-01-29",
+            "value": 300,
+            "lot": 1,
+            "avg_price": 3,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INET.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-01-29",
+      "to": "2024-01-29",
+      "broker_code": "PP",
+      "broker_name": "Aldiracita Sekuritas Indonesia"
+    }
+  }
+}

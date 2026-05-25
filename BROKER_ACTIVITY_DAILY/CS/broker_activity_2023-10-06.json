@@ -1,0 +1,44 @@
+{
+  "downloaded_at": "2026-05-25T09:16:28",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "CS",
+  "from": "2023-10-06",
+  "to": "2023-10-06",
+  "buy_count": 0,
+  "sell_count": 1,
+  "total_count": 1,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "ECII",
+            "broker_code": "CS",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-10-06",
+            "value": 49526200,
+            "lot": 1215,
+            "avg_price": 407.6230452674897,
+            "freq": 104,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ECII.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-10-06",
+      "to": "2023-10-06",
+      "broker_code": "CS",
+      "broker_name": "Credit Suisse Sekuritas Indonesia"
+    }
+  }
+}

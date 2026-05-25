@@ -1,0 +1,434 @@
+{
+  "downloaded_at": "2026-05-25T09:14:59",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "IT",
+  "from": "2023-11-14",
+  "to": "2023-11-14",
+  "buy_count": 8,
+  "sell_count": 12,
+  "total_count": 20,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BREN",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 201250000,
+            "lot": 375,
+            "avg_price": 5366.666666666667,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BREN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMGR",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 93375000,
+            "lot": 150,
+            "avg_price": 6225,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMGR.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NCKL",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 52250000,
+            "lot": 500,
+            "avg_price": 1045,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NCKL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SDPC",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 50425000,
+            "lot": 2750,
+            "avg_price": 183.36363636363637,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SDPC.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNTR",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 11650000,
+            "lot": 5,
+            "avg_price": 23300,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MERK",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 8680000,
+            "lot": 20,
+            "avg_price": 4340,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MERK.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "OKAS",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 2700000,
+            "lot": 250,
+            "avg_price": 108,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OKAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SCCO",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 1680000,
+            "lot": 8,
+            "avg_price": 2100,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SCCO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "GGRM",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 122100000,
+            "lot": 55,
+            "avg_price": 22200,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GGRM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JPFA",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 61750000,
+            "lot": 500,
+            "avg_price": 1235,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JPFA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ESSA",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 47375000,
+            "lot": 750,
+            "avg_price": 631.6666666666666,
+            "freq": 15,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ESSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MNCN",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 40000000,
+            "lot": 1000,
+            "avg_price": 400,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MNCN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MEDC",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 30375000,
+            "lot": 250,
+            "avg_price": 1215,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MEDC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PGAS",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 24412500,
+            "lot": 217,
+            "avg_price": 1125,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PGAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SDPC",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 13750000,
+            "lot": 750,
+            "avg_price": 183.33333333333334,
+            "freq": 12,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SDPC.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SIDO",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 4980000,
+            "lot": 100,
+            "avg_price": 498,
+            "freq": 11,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SIDO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RAJA",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 2600000,
+            "lot": 25,
+            "avg_price": 1040,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RAJA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MDKA",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 2310000,
+            "lot": 10,
+            "avg_price": 2310,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MDKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BULL",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 2250000,
+            "lot": 250,
+            "avg_price": 90,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BULL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MERK",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-14",
+            "value": 1314000,
+            "lot": 3,
+            "avg_price": 4380,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MERK.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-11-14",
+      "to": "2023-11-14",
+      "broker_code": "IT",
+      "broker_name": "Inti Teladan Sekuritas"
+    }
+  }
+}

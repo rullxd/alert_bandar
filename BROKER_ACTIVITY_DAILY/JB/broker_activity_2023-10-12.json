@@ -1,0 +1,2179 @@
+{
+  "downloaded_at": "2026-05-25T09:03:07",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "JB",
+  "from": "2023-10-12",
+  "to": "2023-10-12",
+  "buy_count": 42,
+  "sell_count": 60,
+  "total_count": 102,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BRPT",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 251669000,
+            "lot": 2154.4415571599284,
+            "avg_price": 1168.1402967911563,
+            "freq": 11,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BULL",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 115962000,
+            "lot": 10525,
+            "avg_price": 110.17767220902613,
+            "freq": 37,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BULL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CPIN",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 53420000,
+            "lot": 102,
+            "avg_price": 5237.254901960784,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CPIN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JPFA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 23478000,
+            "lot": 182,
+            "avg_price": 1290,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JPFA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "STRK",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 19483800,
+            "lot": 1004,
+            "avg_price": 194.0617529880478,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/STRK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ADRO",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 10800000,
+            "lot": 40,
+            "avg_price": 2700,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ADRO.png?version=1753857016610110434",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PGEO",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 9205000,
+            "lot": 70,
+            "avg_price": 1315,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PGEO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "WIKA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 7020000,
+            "lot": 160,
+            "avg_price": 438.75,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/WIKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IATA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 6090000,
+            "lot": 1015,
+            "avg_price": 60,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IATA.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 5312500,
+            "lot": 10,
+            "avg_price": 5312.5,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TOOL-W",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 4914700,
+            "lot": 7021,
+            "avg_price": 7,
+            "freq": 18,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TOOL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SILO",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 4640000,
+            "lot": 20,
+            "avg_price": 2320,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SILO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMTR",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 2848000,
+            "lot": 100,
+            "avg_price": 284.8,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ACST",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 2123600,
+            "lot": 106,
+            "avg_price": 200.33962264150944,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ACST.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "E",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan ekuitas negatif",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/E.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/E.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BTPS",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 2046000,
+            "lot": 11,
+            "avg_price": 1860,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BTPS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INDY",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 2025000,
+            "lot": 10,
+            "avg_price": 2025,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INDY.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AMRT",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1990000,
+            "lot": 7,
+            "avg_price": 2842.8571428571427,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AMRT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RELF-W",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1500000,
+            "lot": 5000,
+            "avg_price": 3,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RELF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTEL",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1320000,
+            "lot": 20,
+            "avg_price": 660,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTEL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTBA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1100000,
+            "lot": 4,
+            "avg_price": 2750,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTBA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1008000,
+            "lot": 80,
+            "avg_price": 126,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ANTM",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 912500,
+            "lot": 5,
+            "avg_price": 1825,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANTM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ISAP-W",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 724800,
+            "lot": 2416,
+            "avg_price": 3,
+            "freq": 13,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ISAP.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GIAA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 591500,
+            "lot": 65,
+            "avg_price": 91,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GIAA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CFIN",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 550000,
+            "lot": 10,
+            "avg_price": 550,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CFIN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MEDC",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 423000,
+            "lot": 3,
+            "avg_price": 1410,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MEDC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TLKM",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 385000,
+            "lot": 1,
+            "avg_price": 3850,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TLKM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBTN",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 373500,
+            "lot": 3,
+            "avg_price": 1245,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBTN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IMPC",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 354000,
+            "lot": 10.000000000000002,
+            "avg_price": 353.99999999999994,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IMPC.png?version=1742443117317841833",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTPP",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 232500,
+            "lot": 3,
+            "avg_price": 775,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTPP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "M",
+                  "notation_desc": "Adanya permohonan Penundaan Kewajiban Pembayaran Utang (PKPU)",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/M.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/M.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CYBR",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 212000,
+            "lot": 20,
+            "avg_price": 106,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CYBR.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "LOPI",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 162000,
+            "lot": 20,
+            "avg_price": 81,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LOPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "META",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 129000,
+            "lot": 5,
+            "avg_price": 258,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/META.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DSNG",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 121000,
+            "lot": 2,
+            "avg_price": 605,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DSNG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JKON",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 120000,
+            "lot": 10,
+            "avg_price": 120,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JKON.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IPTV",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 31500,
+            "lot": 5,
+            "avg_price": 63,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IPTV.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ADMG",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 31000,
+            "lot": 2,
+            "avg_price": 155,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ADMG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MDKI",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 19900,
+            "lot": 1,
+            "avg_price": 199,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MDKI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ZYRX",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 19600,
+            "lot": 1,
+            "avg_price": 196,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ZYRX.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTMP",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 19500,
+            "lot": 1,
+            "avg_price": 195,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTMP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRM",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 14600,
+            "lot": 2,
+            "avg_price": 73,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "LEAD",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 8500,
+            "lot": 1,
+            "avg_price": 85,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LEAD.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BTPS",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 206635000,
+            "lot": 1105,
+            "avg_price": 1870,
+            "freq": 15,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BTPS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BULL",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 77825500,
+            "lot": 6776,
+            "avg_price": 114.85463400236128,
+            "freq": 36,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BULL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ELSA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 52301200,
+            "lot": 1289,
+            "avg_price": 405.7501939487975,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ELSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "META",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 51417000,
+            "lot": 2015,
+            "avg_price": 255.1712158808933,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/META.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBNI",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 39575000,
+            "lot": 74,
+            "avg_price": 5347.972972972973,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBNI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GOTO",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 29712600,
+            "lot": 4117,
+            "avg_price": 72.17051250910858,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "K",
+                  "notation_desc": "Perusahaan Tercatat yang menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/K.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/K.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "STRK",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 19685600,
+            "lot": 1004,
+            "avg_price": 196.07171314741035,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/STRK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IPTV",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 11032500,
+            "lot": 2005,
+            "avg_price": 55.02493765586035,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IPTV.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMRI",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 7390000,
+            "lot": 12,
+            "avg_price": 6158.333333333333,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ACST",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 5176000,
+            "lot": 256,
+            "avg_price": 202.1875,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ACST.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "E",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan ekuitas negatif",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/E.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/E.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ITMG",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 2735000,
+            "lot": 1,
+            "avg_price": 27350,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ITMG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BSDE",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 2712500,
+            "lot": 25,
+            "avg_price": 1085,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BSDE.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ESSA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 2363000,
+            "lot": 34,
+            "avg_price": 695,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ESSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JSMR",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1365000,
+            "lot": 3,
+            "avg_price": 4550,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JSMR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INDF",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1360000,
+            "lot": 2,
+            "avg_price": 6800,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INDF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BSSR",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1224000,
+            "lot": 3,
+            "avg_price": 4080,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BSSR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ASII",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1190000,
+            "lot": 2,
+            "avg_price": 5950,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ASII.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BDMN",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1136000,
+            "lot": 4,
+            "avg_price": 2840,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BDMN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INCO",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1115000,
+            "lot": 2,
+            "avg_price": 5575,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INCO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTBA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1084000,
+            "lot": 4,
+            "avg_price": 2710,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTBA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ANTM",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1080000,
+            "lot": 6,
+            "avg_price": 1800,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANTM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1065000,
+            "lot": 2,
+            "avg_price": 5325,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CTRA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1050000,
+            "lot": 10,
+            "avg_price": 1050,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CTRA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KLBF",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1047000,
+            "lot": 6,
+            "avg_price": 1745,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KLBF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MPMX",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1025000,
+            "lot": 10,
+            "avg_price": 1025,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MPMX.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AGII",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1024500,
+            "lot": 6,
+            "avg_price": 1707.5,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AGII.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SIDO",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1011500,
+            "lot": 17,
+            "avg_price": 595,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SIDO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "INTP",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1010000,
+            "lot": 1,
+            "avg_price": 10100,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/INTP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTMH",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1004500,
+            "lot": 7,
+            "avg_price": 1435,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTMH.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBTN",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1004000,
+            "lot": 8,
+            "avg_price": 1255,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBTN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ISAP-W",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 1004000,
+            "lot": 2510,
+            "avg_price": 4,
+            "freq": 25,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ISAP.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PWON",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 989000,
+            "lot": 23,
+            "avg_price": 430,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PWON.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "LSIP",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 975000,
+            "lot": 10,
+            "avg_price": 975,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LSIP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "EXCL",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 956000,
+            "lot": 4,
+            "avg_price": 2390,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/EXCL.png?version=1747296040608163618",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMRA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 952000,
+            "lot": 16,
+            "avg_price": 595,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMRA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MMIX",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 951600,
+            "lot": 100,
+            "avg_price": 95.16,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MMIX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BELI",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 949200,
+            "lot": 21,
+            "avg_price": 452,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BELI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "I",
+                  "notation_desc": "Perusahaan Tercatat yang tidak menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/I.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/I.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TINS",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 942000,
+            "lot": 12,
+            "avg_price": 785,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TINS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AGRO",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 934400,
+            "lot": 32,
+            "avg_price": 292,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AGRO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ARTO",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 932500,
+            "lot": 5,
+            "avg_price": 1865,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ARTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ERAA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 932400,
+            "lot": 21,
+            "avg_price": 444,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ERAA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBCA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 905000,
+            "lot": 1,
+            "avg_price": 9050,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AVIA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 901000,
+            "lot": 17,
+            "avg_price": 530,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AVIA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MSIN",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 897000,
+            "lot": 15,
+            "avg_price": 598,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MSIN.png?version=1770367821463423354",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBKP",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 894400,
+            "lot": 104,
+            "avg_price": 86,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBKP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRMS",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 888300,
+            "lot": 47,
+            "avg_price": 189,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUKA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 856000,
+            "lot": 40,
+            "avg_price": 214,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "I",
+                  "notation_desc": "Perusahaan Tercatat yang tidak menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/I.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/I.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RMKE",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 822000,
+            "lot": 12,
+            "avg_price": 685,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RMKE.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ASSA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 792000,
+            "lot": 9,
+            "avg_price": 880,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ASSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MDKA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 768000,
+            "lot": 3,
+            "avg_price": 2560,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MDKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MITI",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 376800,
+            "lot": 12,
+            "avg_price": 314,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MITI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNVR",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 366000,
+            "lot": 1,
+            "avg_price": 3660,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNVR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "WEHA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 250500,
+            "lot": 15,
+            "avg_price": 167,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/WEHA.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KOKA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 132000,
+            "lot": 8,
+            "avg_price": 165,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KOKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IATA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 89500,
+            "lot": 15,
+            "avg_price": 59.666666666666664,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IATA.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ACES",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 81000,
+            "lot": 1,
+            "avg_price": 810,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ACES-NEW.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BIMA",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 34200,
+            "lot": 3,
+            "avg_price": 114,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BIMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "D",
+                  "notation_desc": "Adanya Opini \"Tidak Menyatakan Pendapat (Disclaimer)\" dari Akuntan Publik",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/D.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/D.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CARS",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 22600,
+            "lot": 2,
+            "avg_price": 113,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CARS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTMP",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 19300,
+            "lot": 1,
+            "avg_price": 193,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTMP.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "LEAD",
+            "broker_code": "JB",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-10-12",
+            "value": 8700,
+            "lot": 1,
+            "avg_price": 87,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LEAD.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-10-12",
+      "to": "2023-10-12",
+      "broker_code": "JB",
+      "broker_name": "BJB Sekuritas"
+    }
+  }
+}

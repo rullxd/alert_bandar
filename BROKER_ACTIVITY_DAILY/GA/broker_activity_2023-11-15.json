@@ -1,0 +1,681 @@
+{
+  "downloaded_at": "2026-05-25T09:01:09",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "GA",
+  "from": "2023-11-15",
+  "to": "2023-11-15",
+  "buy_count": 13,
+  "sell_count": 18,
+  "total_count": 31,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BUMI",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 560000000,
+            "lot": 50000,
+            "avg_price": 112,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IMPC",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 214800000,
+            "lot": 6000,
+            "avg_price": 358,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IMPC.png?version=1742443117317841833",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DSNG",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 188700000,
+            "lot": 3400,
+            "avg_price": 555,
+            "freq": 13,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DSNG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "WIRG",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 183100000,
+            "lot": 16000,
+            "avg_price": 114.4375,
+            "freq": 28,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/WIRG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TPIA",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 120147000,
+            "lot": 402,
+            "avg_price": 2988.731343283582,
+            "freq": 10,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TPIA.png?version=1750055121325821609",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTMH",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 112200000,
+            "lot": 816,
+            "avg_price": 1375,
+            "freq": 15,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTMH.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SRTG",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 91200000,
+            "lot": 600,
+            "avg_price": 1520,
+            "freq": 18,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SRTG.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMCB",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 88820500,
+            "lot": 509,
+            "avg_price": 1745,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMCB.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRPT",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 80850000,
+            "lot": 701.1199860585541,
+            "avg_price": 1153.154975006629,
+            "freq": 14,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MBMA",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 64000000,
+            "lot": 1000,
+            "avg_price": 640,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MBMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "VKTR",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 35700000,
+            "lot": 3000,
+            "avg_price": 119,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/VKTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SSIA",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 34080000,
+            "lot": 800,
+            "avg_price": 426,
+            "freq": 11,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SSIA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BELL",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 801900,
+            "lot": 99,
+            "avg_price": 81,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BELL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "AMRT",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 3845572000,
+            "lot": 13138,
+            "avg_price": 2927.060435378292,
+            "freq": 170,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AMRT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GOTO",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 514000000,
+            "lot": 60000,
+            "avg_price": 85.66666666666667,
+            "freq": 48,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "K",
+                  "notation_desc": "Perusahaan Tercatat yang menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/K.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/K.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ARTO",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 458000000,
+            "lot": 2000,
+            "avg_price": 2290,
+            "freq": 21,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ARTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CMNT",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 452500000,
+            "lot": 5000,
+            "avg_price": 905,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CMNT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ISAT",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 252480000,
+            "lot": 1052,
+            "avg_price": 2400,
+            "freq": 68,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ISAT.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRPT",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 180323500,
+            "lot": 1561.4943689504082,
+            "avg_price": 1154.81364253147,
+            "freq": 16,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SRTG",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 153226500,
+            "lot": 1012,
+            "avg_price": 1514.0958498023715,
+            "freq": 30,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SRTG.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TPIA",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 147426000,
+            "lot": 498,
+            "avg_price": 2960.3614457831327,
+            "freq": 13,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TPIA.png?version=1750055121325821609",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ESSA",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 131000000,
+            "lot": 2000,
+            "avg_price": 655,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ESSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "VKTR",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 108200000,
+            "lot": 9000,
+            "avg_price": 120.22222222222223,
+            "freq": 17,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/VKTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMCB",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 103458000,
+            "lot": 591,
+            "avg_price": 1750.5583756345177,
+            "freq": 17,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMCB.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MBMA",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 64500000,
+            "lot": 1000,
+            "avg_price": 645,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MBMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SSIA",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 30947000,
+            "lot": 729,
+            "avg_price": 424.5130315500686,
+            "freq": 19,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SSIA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRMS",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 29865000,
+            "lot": 1650,
+            "avg_price": 181,
+            "freq": 11,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "LAJU",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 6600000,
+            "lot": 1000,
+            "avg_price": 66,
+            "freq": 18,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LAJU.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUKA",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 6420000,
+            "lot": 300,
+            "avg_price": 214,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "I",
+                  "notation_desc": "Perusahaan Tercatat yang tidak menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/I.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/I.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTMH",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 1380000,
+            "lot": 10,
+            "avg_price": 1380,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTMH.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MORA",
+            "broker_code": "GA",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-11-15",
+            "value": 646800,
+            "lot": 14,
+            "avg_price": 462,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MORA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-11-15",
+      "to": "2023-11-15",
+      "broker_code": "GA",
+      "broker_name": "BNC Sekuritas Indonesia"
+    }
+  }
+}

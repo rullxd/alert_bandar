@@ -1,0 +1,447 @@
+{
+  "downloaded_at": "2026-05-25T09:18:44",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "IT",
+  "from": "2024-06-20",
+  "to": "2024-06-20",
+  "buy_count": 10,
+  "sell_count": 7,
+  "total_count": 17,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "PWON",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 77600000,
+            "lot": 2000,
+            "avg_price": 388,
+            "freq": 15,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PWON.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TSPC",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 22464000,
+            "lot": 117,
+            "avg_price": 1920,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TSPC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KRAS",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 12606600,
+            "lot": 1513,
+            "avg_price": 83.32187706543291,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KRAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TOPS",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 1000000,
+            "lot": 5000,
+            "avg_price": 2,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TOPS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                },
+                {
+                  "notation_code": "S",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan tidak ada pendapatan usaha",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/S.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/S.png"
+                  }
+                },
+                {
+                  "notation_code": "C",
+                  "notation_desc": "Kejadian perkara hukum terhadap Perusahaan Tercatat, Anak Perusahaan Tercatat dan/atau anggota Direksi dan anggota Dewan Komisaris Perusahaan Tercatat yang berdampak Materi",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/C.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/C.png"
+                  }
+                },
+                {
+                  "notation_code": "Y",
+                  "notation_desc": "Perusahaan Tercatat yang belum menyelenggarakan Rapat Umum Pemegang Saham Tahunan (RUPST) sampai dengan 6 (enam) bulan setelah tahun buku berakhir",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/Y.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/Y.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MERK",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 385000,
+            "lot": 1,
+            "avg_price": 3850,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MERK.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HMSP",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 69000,
+            "lot": 1,
+            "avg_price": 690,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HMSP.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BJTM",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 50500,
+            "lot": 1,
+            "avg_price": 505,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BJTM.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SCMA",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 26800,
+            "lot": 2,
+            "avg_price": 134,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SCMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BNII",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 19900,
+            "lot": 1,
+            "avg_price": 199,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BNII.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PYFA",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 10600,
+            "lot": 1,
+            "avg_price": 106,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PYFA.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BBCA",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 654500000,
+            "lot": 700,
+            "avg_price": 9350,
+            "freq": 23,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MFIN",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 171900000,
+            "lot": 1037.323925,
+            "avg_price": 1657.148705984006,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MFIN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ELSA",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 41400000,
+            "lot": 1000,
+            "avg_price": 414,
+            "freq": 251,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ELSA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KRAS",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 23935700,
+            "lot": 2813,
+            "avg_price": 85.0895840739424,
+            "freq": 13,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KRAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNTR",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 10762500,
+            "lot": 5,
+            "avg_price": 21525,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRIS",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 2450000,
+            "lot": 10,
+            "avg_price": 2450,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRIS.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TOPS",
+            "broker_code": "IT",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-06-20",
+            "value": 250000,
+            "lot": 2500,
+            "avg_price": 1,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TOPS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                },
+                {
+                  "notation_code": "S",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan tidak ada pendapatan usaha",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/S.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/S.png"
+                  }
+                },
+                {
+                  "notation_code": "C",
+                  "notation_desc": "Kejadian perkara hukum terhadap Perusahaan Tercatat, Anak Perusahaan Tercatat dan/atau anggota Direksi dan anggota Dewan Komisaris Perusahaan Tercatat yang berdampak Materi",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/C.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/C.png"
+                  }
+                },
+                {
+                  "notation_code": "Y",
+                  "notation_desc": "Perusahaan Tercatat yang belum menyelenggarakan Rapat Umum Pemegang Saham Tahunan (RUPST) sampai dengan 6 (enam) bulan setelah tahun buku berakhir",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/Y.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/Y.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-06-20",
+      "to": "2024-06-20",
+      "broker_code": "IT",
+      "broker_name": "Inti Teladan Sekuritas"
+    }
+  }
+}

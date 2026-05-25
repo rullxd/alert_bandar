@@ -1,0 +1,64 @@
+{
+  "downloaded_at": "2026-05-25T09:36:09",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "IP",
+  "from": "2025-02-05",
+  "to": "2025-02-05",
+  "buy_count": 0,
+  "sell_count": 2,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "TBIG",
+            "broker_code": "IP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-05",
+            "value": 832643000,
+            "lot": 4027,
+            "avg_price": 2067.650856717159,
+            "freq": 25,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TBIG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CBRE",
+            "broker_code": "IP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-02-05",
+            "value": 6200000,
+            "lot": 2000,
+            "avg_price": 31,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CBRE.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-02-05",
+      "to": "2025-02-05",
+      "broker_code": "IP",
+      "broker_name": "Yugen Bertumbuh Sekuritas"
+    }
+  }
+}

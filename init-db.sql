@@ -1,5 +1,8 @@
 CREATE EXTENSION IF NOT EXISTS timescaledb;
 
+DROP VIEW IF EXISTS broker_activity_with_price;
+DROP VIEW IF EXISTS broker_activity_net;
+
 CREATE TABLE IF NOT EXISTS broker_activity (
     trade_date DATE NOT NULL,
     broker_code TEXT NOT NULL,
@@ -10,10 +13,13 @@ CREATE TABLE IF NOT EXISTS broker_activity (
     lot NUMERIC(20, 4) NOT NULL DEFAULT 0,
     avg_price NUMERIC(20, 8),
     freq INTEGER NOT NULL DEFAULT 0,
-    downloaded_at TIMESTAMPTZ,
-    source_file TEXT,
+    icon_url TEXT,
     PRIMARY KEY (trade_date, broker_code, stock_code, side)
 );
+
+ALTER TABLE broker_activity DROP COLUMN IF EXISTS downloaded_at;
+ALTER TABLE broker_activity DROP COLUMN IF EXISTS source_file;
+ALTER TABLE broker_activity ADD COLUMN IF NOT EXISTS icon_url TEXT;
 
 SELECT create_hypertable('broker_activity', 'trade_date', if_not_exists => TRUE);
 
@@ -36,9 +42,12 @@ CREATE TABLE IF NOT EXISTS stock_summary (
     frequency NUMERIC(20, 2),
     foreign_buy NUMERIC(20, 2),
     foreign_sell NUMERIC(20, 2),
-    source_file TEXT,
+    icon_url TEXT,
     PRIMARY KEY (trade_date, stock_code)
 );
+
+ALTER TABLE stock_summary DROP COLUMN IF EXISTS source_file;
+ALTER TABLE stock_summary ADD COLUMN IF NOT EXISTS icon_url TEXT;
 
 SELECT create_hypertable('stock_summary', 'trade_date', if_not_exists => TRUE);
 

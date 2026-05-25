@@ -1,0 +1,125 @@
+{
+  "downloaded_at": "2026-05-25T08:51:29",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "DU",
+  "from": "2024-06-03",
+  "to": "2024-06-03",
+  "buy_count": 3,
+  "sell_count": 2,
+  "total_count": 5,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "MEDC",
+            "broker_code": "DU",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-06-03",
+            "value": 68500000,
+            "lot": 500,
+            "avg_price": 1370,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MEDC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TINS",
+            "broker_code": "DU",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-06-03",
+            "value": 43250000,
+            "lot": 500,
+            "avg_price": 865,
+            "freq": 10,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TINS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ACES",
+            "broker_code": "DU",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-06-03",
+            "value": 12300000,
+            "lot": 150,
+            "avg_price": 820,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ACES-NEW.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "DOID",
+            "broker_code": "DU",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-06-03",
+            "value": 10672000,
+            "lot": 184,
+            "avg_price": 580,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DOID.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "RELF",
+            "broker_code": "DU",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2024-06-03",
+            "value": 8095300,
+            "lot": 5154,
+            "avg_price": 15.706829646876212,
+            "freq": 43,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/RELF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-06-03",
+      "to": "2024-06-03",
+      "broker_code": "DU",
+      "broker_name": "KAF Sekuritas Indonesia"
+    }
+  }
+}

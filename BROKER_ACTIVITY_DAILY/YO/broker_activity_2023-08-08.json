@@ -1,0 +1,412 @@
+{
+  "downloaded_at": "2026-05-25T09:13:15",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "YO",
+  "from": "2023-08-08",
+  "to": "2023-08-08",
+  "buy_count": 7,
+  "sell_count": 11,
+  "total_count": 18,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BIPI",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 23400000,
+            "lot": 2000,
+            "avg_price": 117,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BIPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "STAA",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 16600000,
+            "lot": 200,
+            "avg_price": 830,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/STAA.png?ver=2",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ADHI",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 10850000,
+            "lot": 250,
+            "avg_price": 434,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ADHI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SKRN",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 9300000,
+            "lot": 150,
+            "avg_price": 620,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SKRN.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SSIA",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 8120000,
+            "lot": 200,
+            "avg_price": 406,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SSIA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AYLS",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 5520000,
+            "lot": 800,
+            "avg_price": 69,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AYLS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ERTX",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 294400,
+            "lot": 8,
+            "avg_price": 368,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ERTX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "DMAS",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 435000000,
+            "lot": 25000,
+            "avg_price": 174,
+            "freq": 169,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DMAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SKRN",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 18300000,
+            "lot": 300,
+            "avg_price": 610,
+            "freq": 12,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SKRN.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "STAA",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 16800000,
+            "lot": 200,
+            "avg_price": 840,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/STAA.png?ver=2",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ADHI",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 11050000,
+            "lot": 250,
+            "avg_price": 442,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ADHI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SSIA",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 8080000,
+            "lot": 200,
+            "avg_price": 404,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SSIA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AYLS",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 5520000,
+            "lot": 800,
+            "avg_price": 69,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AYLS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GULA",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 4740000,
+            "lot": 150,
+            "avg_price": 316,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GULA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JATI",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 1092000,
+            "lot": 120,
+            "avg_price": 91,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JATI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BCIC",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 1001000,
+            "lot": 70,
+            "avg_price": 143,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BCIC.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ERTX",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 297600,
+            "lot": 8,
+            "avg_price": 372,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ERTX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BIPI",
+            "broker_code": "YO",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2023-08-08",
+            "value": 280600,
+            "lot": 23,
+            "avg_price": 122,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BIPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-08-08",
+      "to": "2023-08-08",
+      "broker_code": "YO",
+      "broker_name": "Amantara Sekuritas Indonesia"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "downloaded_at": "2026-05-25T09:37:49",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "IP",
+  "from": "2025-05-15",
+  "to": "2025-05-15",
+  "buy_count": 0,
+  "sell_count": 2,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "BJBR",
+            "broker_code": "IP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-15",
+            "value": 870000,
+            "lot": 10,
+            "avg_price": 870,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BJBR.png?ver=1",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TINS",
+            "broker_code": "IP",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-15",
+            "value": 801500,
+            "lot": 6.999999999999999,
+            "avg_price": 1145.0000000000002,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TINS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-05-15",
+      "to": "2025-05-15",
+      "broker_code": "IP",
+      "broker_name": "Yugen Bertumbuh Sekuritas"
+    }
+  }
+}

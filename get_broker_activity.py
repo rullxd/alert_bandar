@@ -180,7 +180,7 @@ class Config:
     to_date: Optional[str] = None
     
     # Performance
-    max_broker_workers: int = 3
+    max_broker_workers: int = 10
     max_date_workers: int = 5
     delay_min: float = 0.8
     delay_max: float = 2.0
@@ -195,6 +195,8 @@ class Config:
     quiet: bool = False
     health_check: bool = True
     smart_resume: bool = True
+    scan_corrupt: bool = False
+    validate_existing_json: bool = False
     rotate_impersonate: bool = True
     
     # Webhook
@@ -348,6 +350,61 @@ def format_duration(seconds: float) -> str:
         hours = int(seconds // 3600)
         mins = int((seconds % 3600) // 60)
         return f"{hours}h {mins}m"
+
+
+def expected_broker_files(date_range: list[str]) -> set[str]:
+    """Return the exact filenames expected for a date range."""
+    return {f"broker_activity_{date_value}.json" for date_value in date_range}
+
+
+def is_valid_json_file(path: Path) -> bool:
+    """Fast resume check: existing output must be present and non-empty."""
+    try:
+        return path.exists() and path.stat().st_size > 0
+    except OSError:
+        return False
+
+
+def is_existing_output_valid(path: Path, validate_json: bool = False) -> bool:
+    """Check existing output.
+
+    By default treat any existing file as valid so the downloader will skip
+    re-fetching dates that already have an output file. When ``validate_json``
+    is True perform a full JSON parse check instead.
+    """
+    # If file exists, consider it valid (skip re-download) unless caller
+    # explicitly requests full JSON validation.
+    if path.exists():
+        if validate_json:
+            return is_parseable_json_file(path)
+        return True
+
+    return False
+
+
+def is_parseable_json_file(path: Path) -> bool:
+    """Slow integrity check: output file must be non-empty and parse as JSON."""
+    if not is_valid_json_file(path):
+        return False
+    try:
+        with path.open("r", encoding="utf-8") as file:
+            json.load(file)
+        return True
+    except (OSError, json.JSONDecodeError, UnicodeDecodeError):
+        return False
+
+
+def scan_corrupt_json_files(root_dir: Path, logger: logging.Logger) -> list[Path]:
+    """Scan broker JSON files and return files that are empty or cannot be parsed."""
+    files = sorted(root_dir.rglob("broker_activity_*.json"))
+    corrupt_files: list[Path] = []
+    logger.info(f"Scanning {len(files)} broker JSON files for corruption...")
+    for index, path in enumerate(files, 1):
+        if not is_parseable_json_file(path):
+            corrupt_files.append(path)
+        if index % 5000 == 0:
+            logger.info(f"Scan progress: {index}/{len(files)} files checked")
+    return corrupt_files
 
 
 def generate_request_id() -> str:
@@ -581,7 +638,7 @@ class BrokerActivityFetcher:
         missing_dates: list[str] = []
         for date_value in date_range:
             output_path = output_dir / f"broker_activity_{date_value}.json"
-            if not output_path.exists():
+            if not is_existing_output_valid(output_path, self.config.validate_existing_json):
                 missing_dates.append(date_value)
             elif self.config.verbose:
                 self.logger.debug(f"{broker_code} {date_value}: Already exists, skipping")
@@ -590,7 +647,7 @@ class BrokerActivityFetcher:
     
     def _process_date(
         self,
-        session: Session,
+        session: Optional[Session],
         broker_code: str,
         date_value: str,
         output_dir: Path,
@@ -602,7 +659,7 @@ class BrokerActivityFetcher:
         output_path = output_dir / f"broker_activity_{date_value}.json"
         
         # Check if already exists
-        if output_path.exists() and not self.config.force_redownload:
+        if is_existing_output_valid(output_path, self.config.validate_existing_json) and not self.config.force_redownload:
             self.stats.increment(Status.SKIPPED)
             return Status.SKIPPED, 0
         
@@ -622,17 +679,32 @@ class BrokerActivityFetcher:
             "to": date_value,
         }
         
-        data, status = self._fetch_page(session, params)
+        pages_data: list[dict[str, Any]] = []
+        local_session: Optional[Session] = None
+        active_session = session
+        if active_session is None:
+            local_session = Session(impersonate=self._get_impersonate())
+            active_session = local_session
+
+        try:
+            for page in range(1, max(1, self.config.pages) + 1):
+                params["page"] = page
+                data, status = self._fetch_page(active_session, params)
+                if status != Status.SUCCESS:
+                    self.stats.increment(status)
+                    return status, 0
+                pages_data.append(data)
+        finally:
+            if local_session is not None:
+                local_session.close()
         
-        if status != Status.SUCCESS:
-            self.stats.increment(status)
-            return status, 0
-        
-        # Extract activity data
-        payload_data = as_dict(data.get("data", {}))
-        activity = as_dict(payload_data.get("broker_activity_transaction", {}))
-        brokers_buy = as_list(activity.get("brokers_buy", []))
-        brokers_sell = as_list(activity.get("brokers_sell", []))
+        brokers_buy: list[Any] = []
+        brokers_sell: list[Any] = []
+        for page_data in pages_data:
+            payload_data = as_dict(page_data.get("data", {}))
+            activity = as_dict(payload_data.get("broker_activity_transaction", {}))
+            brokers_buy.extend(as_list(activity.get("brokers_buy", [])))
+            brokers_sell.extend(as_list(activity.get("brokers_sell", [])))
         buy_count = len(brokers_buy)
         sell_count = len(brokers_sell)
         
@@ -653,12 +725,16 @@ class BrokerActivityFetcher:
             "buy_count": buy_count,
             "sell_count": sell_count,
             "total_count": buy_count + sell_count,
-            "response": data,
+            "response": pages_data[0],
         }
+        if len(pages_data) > 1:
+            output_payload["pages"] = pages_data
         
         # Save JSON
         output_content = json.dumps(output_payload, indent=2, ensure_ascii=False)
-        output_path.write_text(output_content, encoding="utf-8")
+        temp_path = output_path.with_suffix(f"{output_path.suffix}.tmp")
+        temp_path.write_text(output_content, encoding="utf-8")
+        temp_path.replace(output_path)
         bytes_written = len(output_content.encode("utf-8"))
         
         # Export CSV if enabled
@@ -726,17 +802,61 @@ class BrokerActivityFetcher:
             f"(skipping {result.skip_count} existing)"
         )
         
-        # Create session with browser impersonation
-        session = Session(impersonate=self._get_impersonate())
-        
-        with session:
-            for idx, date_value in enumerate(missing_dates, 1):
+        date_workers = max(1, min(self.config.max_date_workers, len(missing_dates)))
+
+        if date_workers == 1:
+            session = Session(impersonate=self._get_impersonate())
+            with session:
+                for idx, date_value in enumerate(missing_dates, 1):
+                    if self._shutdown_requested:
+                        self.logger.warning(f"[{broker_code}] Shutdown requested, stopping")
+                        break
+
+                    status, _ = self._process_date(session, broker_code, date_value, output_dir)
+
+                    if status == Status.SUCCESS:
+                        result.success_count += 1
+                    elif status == Status.EMPTY:
+                        result.empty_count += 1
+                    elif status == Status.SKIPPED:
+                        result.skip_count += 1
+                    else:
+                        result.error_count += 1
+                        result.errors.append(f"{date_value}: {status.value}")
+
+                    if idx % 10 == 0 or idx == len(missing_dates):
+                        self.logger.info(
+                            f"[{broker_code}] Progress: {idx}/{len(missing_dates)} "
+                            f"(success={result.success_count}, empty={result.empty_count}, "
+                            f"error={result.error_count})"
+                        )
+
+                    if idx < len(missing_dates):
+                        delay = random.uniform(self.config.delay_min, self.config.delay_max)
+                        time.sleep(delay)
+
+            return result
+
+        self.logger.info(f"[{broker_code}] Date workers: {date_workers}")
+        completed = 0
+        with ThreadPoolExecutor(max_workers=date_workers) as executor:
+            future_map = {
+                executor.submit(self._process_date, None, broker_code, date_value, output_dir): date_value
+                for date_value in missing_dates
+            }
+
+            for future in as_completed(future_map):
+                date_value = future_map[future]
                 if self._shutdown_requested:
                     self.logger.warning(f"[{broker_code}] Shutdown requested, stopping")
                     break
-                
-                status, _ = self._process_date(session, broker_code, date_value, output_dir)
-                
+
+                try:
+                    status, _ = future.result()
+                except Exception as e:
+                    status = Status.ERROR
+                    result.errors.append(f"{date_value}: {e}")
+
                 if status == Status.SUCCESS:
                     result.success_count += 1
                 elif status == Status.EMPTY:
@@ -745,21 +865,17 @@ class BrokerActivityFetcher:
                     result.skip_count += 1
                 else:
                     result.error_count += 1
-                    result.errors.append(f"{date_value}: {status.value}")
-                
-                # Progress logging
-                if idx % 10 == 0 or idx == len(missing_dates):
+                    if not any(error.startswith(f"{date_value}:") for error in result.errors):
+                        result.errors.append(f"{date_value}: {status.value}")
+
+                completed += 1
+                if completed % 10 == 0 or completed == len(missing_dates):
                     self.logger.info(
-                        f"[{broker_code}] Progress: {idx}/{len(missing_dates)} "
+                        f"[{broker_code}] Progress: {completed}/{len(missing_dates)} "
                         f"(success={result.success_count}, empty={result.empty_count}, "
                         f"error={result.error_count})"
                     )
-                
-                # Rate limiting delay
-                if idx < len(missing_dates):
-                    delay = random.uniform(self.config.delay_min, self.config.delay_max)
-                    time.sleep(delay)
-        
+
         return result
     
     def load_broker_codes(self, file_path: Path) -> list[str]:
@@ -793,9 +909,14 @@ class BrokerActivityFetcher:
         for broker_code in broker_codes:
             broker_dir = output_root / broker_code
             if broker_dir.exists() and not self.config.force_redownload:
-                existing_files = list(broker_dir.glob("broker_activity_*.json"))
-                if len(existing_files) >= len(date_range):
-                    self.logger.info(f"[{broker_code}] Already complete ({len(existing_files)} files)")
+                expected_names = expected_broker_files(date_range)
+                valid_names = {
+                    path.name
+                    for path in broker_dir.glob("broker_activity_*.json")
+                    if is_existing_output_valid(path, self.config.validate_existing_json)
+                }
+                if expected_names.issubset(valid_names):
+                    self.logger.info(f"[{broker_code}] Already complete ({len(expected_names)} valid files)")
                     results.append(BrokerResult(
                         broker_code=broker_code,
                         total_days=len(date_range),
@@ -966,8 +1087,8 @@ def parse_args() -> argparse.Namespace:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Download all brokers for last year
-  python get_broker_activity.py
+  # Download all brokers for last 3 years
+  python get_broker_activity.py --last-3-years
   
   # Download specific broker
   python get_broker_activity.py --broker-code AK
@@ -998,6 +1119,10 @@ Examples:
     date_group.add_argument(
         "--last-year", action="store_true",
         help="Download last 365 days"
+    )
+    date_group.add_argument(
+        "--last-3-years", action="store_true",
+        help="Download last 3 years (1095 days)"
     )
     
     # Broker options
@@ -1030,7 +1155,7 @@ Examples:
     perf_group = parser.add_argument_group("Performance Options")
     perf_group.add_argument(
         "--max-broker-workers", type=int, default=None,
-        help="Parallel broker workers (default: prompted)"
+        help="Parallel broker workers (default: 10)"
     )
     perf_group.add_argument(
         "--max-date-workers", type=int, default=5,
@@ -1049,6 +1174,8 @@ Examples:
     feature_group.add_argument("--export-csv", action="store_true", help="Also export to CSV format")
     feature_group.add_argument("--no-health-check", action="store_true", help="Skip API health check")
     feature_group.add_argument("--no-smart-resume", action="store_true", help="Disable smart resume")
+    feature_group.add_argument("--scan-corrupt", action="store_true", help="Scan existing broker JSON files and exit")
+    feature_group.add_argument("--validate-existing-json", action="store_true", help="Parse existing JSON files during resume checks")
     feature_group.add_argument("--rotate-impersonate", action="store_true", help="Rotate browser impersonation")
     
     # Output options
@@ -1091,7 +1218,11 @@ def build_config(args: argparse.Namespace) -> Config:
     config.pages = args.pages
     
     # Date handling
-    if args.last_year:
+    if args.last_3_years:
+        today = datetime.now()
+        config.from_date = (today - timedelta(days=365 * 3)).strftime("%Y-%m-%d")
+        config.to_date = today.strftime("%Y-%m-%d")
+    elif args.last_year:
         today = datetime.now()
         config.from_date = (today - timedelta(days=365)).strftime("%Y-%m-%d")
         config.to_date = today.strftime("%Y-%m-%d")
@@ -1108,7 +1239,7 @@ def build_config(args: argparse.Namespace) -> Config:
         config.to_date = args.to_date
     
     # Performance
-    config.max_broker_workers = args.max_broker_workers or 3
+    config.max_broker_workers = args.max_broker_workers or 10
     config.max_date_workers = args.max_date_workers
     config.delay_min = args.delay_min
     config.delay_max = args.delay_max
@@ -1121,6 +1252,8 @@ def build_config(args: argparse.Namespace) -> Config:
     config.export_csv = args.export_csv
     config.health_check = not args.no_health_check
     config.smart_resume = not args.no_smart_resume
+    config.scan_corrupt = args.scan_corrupt
+    config.validate_existing_json = args.validate_existing_json
     config.rotate_impersonate = args.rotate_impersonate
     
     # Output
@@ -1143,26 +1276,30 @@ def prompt_missing_config(config: Config) -> Config:
         print("\n┌─────────────────────────────────────────┐")
         print("│       Date Range Selection              │")
         print("├─────────────────────────────────────────┤")
-        print("│  1. Last 1 year (365 days)              │")
-        print("│  2. Last 6 months                       │")
-        print("│  3. Last 3 months                       │")
-        print("│  4. Last 1 month                        │")
-        print("│  5. Custom date range                   │")
+        print("│  1. Last 3 years (1095 days)            │")
+        print("│  2. Last 1 year (365 days)              │")
+        print("│  3. Last 6 months                       │")
+        print("│  4. Last 3 months                       │")
+        print("│  5. Last 1 month                        │")
+        print("│  6. Custom date range                   │")
         print("└─────────────────────────────────────────┘")
         
-        choice = input("\nPilih opsi [1-5, default=1]: ").strip() or "1"
+        choice = input("\nPilih opsi [1-6, default=1]: ").strip() or "1"
         
         today = datetime.now()
         if choice == "1":
-            config.from_date = (today - timedelta(days=365)).strftime("%Y-%m-%d")
+            config.from_date = (today - timedelta(days=365 * 3)).strftime("%Y-%m-%d")
             config.to_date = today.strftime("%Y-%m-%d")
         elif choice == "2":
-            config.from_date = (today - timedelta(days=180)).strftime("%Y-%m-%d")
+            config.from_date = (today - timedelta(days=365)).strftime("%Y-%m-%d")
             config.to_date = today.strftime("%Y-%m-%d")
         elif choice == "3":
-            config.from_date = (today - timedelta(days=90)).strftime("%Y-%m-%d")
+            config.from_date = (today - timedelta(days=180)).strftime("%Y-%m-%d")
             config.to_date = today.strftime("%Y-%m-%d")
         elif choice == "4":
+            config.from_date = (today - timedelta(days=90)).strftime("%Y-%m-%d")
+            config.to_date = today.strftime("%Y-%m-%d")
+        elif choice == "5":
             config.from_date = (today - timedelta(days=30)).strftime("%Y-%m-%d")
             config.to_date = today.strftime("%Y-%m-%d")
         else:
@@ -1176,11 +1313,12 @@ def prompt_missing_config(config: Config) -> Config:
         print("├─────────────────────────────────────────┤")
         print("│  1. Conservative (1 worker)             │")
         print("│  2. Moderate (3 workers)                │")
-        print("│  3. Aggressive (5 workers)              │")
-        print("│  4. Custom                              │")
+        print("│  3. Fast (5 workers)                    │")
+        print("│  4. Turbo (10 workers)                  │")
+        print("│  5. Custom                              │")
         print("└─────────────────────────────────────────┘")
         
-        choice = input("\nPilih opsi [1-4, default=2]: ").strip() or "2"
+        choice = input("\nPilih opsi [1-5, default=4]: ").strip() or "4"
         
         if choice == "1":
             config.max_broker_workers = 1
@@ -1188,11 +1326,13 @@ def prompt_missing_config(config: Config) -> Config:
             config.max_broker_workers = 3
         elif choice == "3":
             config.max_broker_workers = 5
+        elif choice == "4":
+            config.max_broker_workers = 10
         else:
             try:
                 config.max_broker_workers = int(input("Jumlah workers: ").strip())
             except ValueError:
-                config.max_broker_workers = 3
+                config.max_broker_workers = 10
     
     return config
 
@@ -1218,32 +1358,54 @@ def main() -> int:
     logger.info("  Enhanced Broker Activity Downloader v2.0")
     logger.info("=" * 60)
     
-    # Check bearer token
-    if not config.bearer_token:
+    # Check bearer token. Scan-only mode does not need API credentials.
+    if not config.bearer_token and not config.scan_corrupt:
         logger.error("Bearer token not found!")
         logger.error("Set EXODUS_BEARER_TOKEN in .env or use --bearer-token")
         return 1
     
-    # Prompt for missing config
-    config = prompt_missing_config(config)
+    # Prompt for missing config only when a date range is needed.
+    if not config.scan_corrupt:
+        config = prompt_missing_config(config)
     
-    # Validate dates
-    try:
-        from_date = validate_date(config.from_date or "")
-        to_date = validate_date(config.to_date or "")
-    except ValueError as e:
-        logger.error(str(e))
-        return 1
-    
-    # Build date range
-    date_range = build_date_range(from_date, to_date)
-    if not date_range:
-        logger.warning("No weekdays in date range")
-        return 0
+    date_range: list[str] = []
+    from_date = ""
+    to_date = ""
+    if not config.scan_corrupt:
+        try:
+            from_date = validate_date(config.from_date or "")
+            to_date = validate_date(config.to_date or "")
+        except ValueError as e:
+            logger.error(str(e))
+            return 1
+
+        date_range = build_date_range(from_date, to_date)
+        if not date_range:
+            logger.warning("No weekdays in date range")
+            return 0
     
     # Setup output directory
     output_root = Path(config.output_dir) / "BROKER_ACTIVITY_DAILY"
     output_root.mkdir(parents=True, exist_ok=True)
+
+    if config.scan_corrupt:
+        corrupt_files = scan_corrupt_json_files(output_root, logger)
+        report_path = output_root / "corrupt_files.txt"
+        report_path.write_text(
+            "\n".join(str(path) for path in corrupt_files),
+            encoding="utf-8",
+        )
+        if corrupt_files:
+            logger.warning(f"Found {len(corrupt_files)} corrupt/empty JSON files")
+            for path in corrupt_files[:20]:
+                logger.warning(f"  - {path}")
+            if len(corrupt_files) > 20:
+                logger.warning(f"  ... and {len(corrupt_files) - 20} more")
+            logger.warning(f"Full list saved to: {report_path}")
+            return 1
+        logger.info("No corrupt JSON files found")
+        logger.info(f"Report saved to: {report_path}")
+        return 0
     
     # Load broker codes
     stats = DownloadStats()

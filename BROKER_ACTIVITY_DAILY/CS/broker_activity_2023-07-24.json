@@ -1,0 +1,154 @@
+{
+  "downloaded_at": "2026-05-25T09:15:07",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "CS",
+  "from": "2023-07-24",
+  "to": "2023-07-24",
+  "buy_count": 3,
+  "sell_count": 3,
+  "total_count": 6,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "HEAL",
+            "broker_code": "CS",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-24",
+            "value": 2267437500,
+            "lot": 14966,
+            "avg_price": 1515.059134037151,
+            "freq": 524,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HEAL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ULTJ",
+            "broker_code": "CS",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-24",
+            "value": 1960125500,
+            "lot": 9810,
+            "avg_price": 1998.0891946992865,
+            "freq": 204,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ULTJ.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNTR",
+            "broker_code": "CS",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-24",
+            "value": 270232500,
+            "lot": 107,
+            "avg_price": 25255.3738317757,
+            "freq": 100,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "SIDO",
+            "broker_code": "CS",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-24",
+            "value": 8103735500,
+            "lot": 116317,
+            "avg_price": 696.6939914199988,
+            "freq": 2992,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SIDO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MIKA",
+            "broker_code": "CS",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-24",
+            "value": 2146170000,
+            "lot": 7171,
+            "avg_price": 2992.8461860270536,
+            "freq": 496,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MIKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "NCKL",
+            "broker_code": "CS",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-07-24",
+            "value": 353760500,
+            "lot": 3967,
+            "avg_price": 891.7582556087724,
+            "freq": 226,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/NCKL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-07-24",
+      "to": "2023-07-24",
+      "broker_code": "CS",
+      "broker_name": "Credit Suisse Sekuritas Indonesia"
+    }
+  }
+}

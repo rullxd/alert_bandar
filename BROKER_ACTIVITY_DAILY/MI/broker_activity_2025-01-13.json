@@ -1,0 +1,1312 @@
+{
+  "downloaded_at": "2026-05-25T09:03:43",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "MI",
+  "from": "2025-01-13",
+  "to": "2025-01-13",
+  "buy_count": 35,
+  "sell_count": 25,
+  "total_count": 60,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "TPIA",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 1538945000,
+            "lot": 2182,
+            "avg_price": 7052.910174152154,
+            "freq": 110,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TPIA.png?version=1750055121325821609",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CMNT",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 736000000,
+            "lot": 8000,
+            "avg_price": 920,
+            "freq": 25,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CMNT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRPT",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 606500000,
+            "lot": 5999.999999999999,
+            "avg_price": 1010.8333333333335,
+            "freq": 16,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 453520000,
+            "lot": 1158,
+            "avg_price": 3916.4075993091537,
+            "freq": 18,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ERAA",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 399043800,
+            "lot": 10099,
+            "avg_price": 395.13199326666006,
+            "freq": 52,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ERAA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CYBR",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 247093200,
+            "lot": 12232,
+            "avg_price": 202.00555918901242,
+            "freq": 132,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CYBR.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "FILM",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 187000000,
+            "lot": 500,
+            "avg_price": 3740,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/FILM.png?version=1732771253362244739",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "FUTR",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 176269200,
+            "lot": 15528,
+            "avg_price": 113.51700154559505,
+            "freq": 15,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/FUTR.png?version=1741669918103381367",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "VTNY",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 171050000,
+            "lot": 12500,
+            "avg_price": 136.84,
+            "freq": 17,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/VTNY.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GOTO",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 167957900,
+            "lot": 21001,
+            "avg_price": 79.97614399314318,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOTO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "K",
+                  "notation_desc": "Perusahaan Tercatat yang menerapkan Saham Dengan Hak Suara Multipel dan tercatat di Papan Ekonomi Baru",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/K.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/K.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AADI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 119190000,
+            "lot": 137,
+            "avg_price": 8700,
+            "freq": 15,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AADI.png?version=1731380937972873322",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTMH",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 90545000,
+            "lot": 995,
+            "avg_price": 910,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTMH.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 85925000,
+            "lot": 7250,
+            "avg_price": 118.51724137931035,
+            "freq": 16,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MLIA",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 61600000,
+            "lot": 2000,
+            "avg_price": 308,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MLIA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PANI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 50812500,
+            "lot": 30,
+            "avg_price": 16937.5,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PANI.png?version=1724730260229025769",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TUGU",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 50000000,
+            "lot": 500,
+            "avg_price": 1000,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TUGU.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AKRA",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 49888500,
+            "lot": 421,
+            "avg_price": 1185,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AKRA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HMSP",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 40774500,
+            "lot": 663,
+            "avg_price": 615,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HMSP.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRMS",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 38980000,
+            "lot": 950,
+            "avg_price": 410.3157894736842,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MAIN",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 36250000,
+            "lot": 500,
+            "avg_price": 725,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MAIN.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ELPI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 28875000,
+            "lot": 825,
+            "avg_price": 350,
+            "freq": 35,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ELPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNTD",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 16198000,
+            "lot": 1820,
+            "avg_price": 89,
+            "freq": 15,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNTD.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BEKS",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 12200000,
+            "lot": 4000,
+            "avg_price": 30.5,
+            "freq": 16,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BEKS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SQMI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 11600000,
+            "lot": 4000,
+            "avg_price": 29,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SQMI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "E",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan ekuitas negatif",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/E.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/E.png"
+                  }
+                },
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBNI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 10575000,
+            "lot": 25,
+            "avg_price": 4230,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBNI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "YOII",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 10500000,
+            "lot": 1000,
+            "avg_price": 105,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/YOII.png?version=1733819717040304169",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CTRA",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 4954500,
+            "lot": 53.99999999999999,
+            "avg_price": 917.5000000000001,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CTRA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMRI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 4950000,
+            "lot": 9,
+            "avg_price": 5500,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMRI.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BDKR",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 3580000,
+            "lot": 200,
+            "avg_price": 179,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BDKR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MAHA",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 3280000,
+            "lot": 200,
+            "avg_price": 164,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MAHA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GZCO",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 3125000,
+            "lot": 250,
+            "avg_price": 125,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GZCO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BGTG",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 2505000,
+            "lot": 350,
+            "avg_price": 71.57142857142857,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BGTG.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MBMA",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 2080000,
+            "lot": 50,
+            "avg_price": 416,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MBMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBCA",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 1935000,
+            "lot": 2,
+            "avg_price": 9675,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HGII",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 340200,
+            "lot": 18,
+            "avg_price": 189,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HGII.png?version=1734504130325627272",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BRPT",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 2469000000,
+            "lot": 23000,
+            "avg_price": 1073.4782608695652,
+            "freq": 39,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TPIA",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 1679250000,
+            "lot": 2432,
+            "avg_price": 6904.8108552631575,
+            "freq": 78,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TPIA.png?version=1750055121325821609",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BREN",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 1033750000,
+            "lot": 1000,
+            "avg_price": 10337.5,
+            "freq": 35,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BREN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRMS",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 941214000,
+            "lot": 22000,
+            "avg_price": 427.82454545454544,
+            "freq": 42,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRMS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBNI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 852000000,
+            "lot": 2000,
+            "avg_price": 4260,
+            "freq": 89,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBNI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CMNT",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 533600000,
+            "lot": 5800,
+            "avg_price": 920,
+            "freq": 19,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CMNT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CYBR",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 246539200,
+            "lot": 12196,
+            "avg_price": 202.1475893735651,
+            "freq": 160,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CYBR.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DSNG",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 193482500,
+            "lot": 2005,
+            "avg_price": 965,
+            "freq": 27,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DSNG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AMMN",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 172500000,
+            "lot": 200,
+            "avg_price": 8625,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AMMN.png?version=1723524843327460802",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MTMH",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 90500000,
+            "lot": 1000,
+            "avg_price": 905,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MTMH.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "FUTR",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 51500000,
+            "lot": 5000,
+            "avg_price": 103,
+            "freq": 12,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/FUTR.png?version=1741669918103381367",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "L",
+                  "notation_desc": "Perusahaan Tercatat belum menyampaikan laporan keuangan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/L.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/L.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "AADI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 43990000,
+            "lot": 53,
+            "avg_price": 8300,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/AADI.png?version=1731380937972873322",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DGWG",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 43855800,
+            "lot": 1593,
+            "avg_price": 275.30320150659134,
+            "freq": 15,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DGWG.png?version=1733208765565022106",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNTD",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 27234000,
+            "lot": 3060,
+            "avg_price": 89,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNTD.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BIKE",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 25452000,
+            "lot": 504,
+            "avg_price": 505,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BIKE.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "LPKR",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 24570000,
+            "lot": 2700,
+            "avg_price": 91,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LPKR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 21275000,
+            "lot": 1750,
+            "avg_price": 121.57142857142857,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "CNKO",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 10500000,
+            "lot": 2500,
+            "avg_price": 42,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/CNKO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": [
+                {
+                  "notation_code": "E",
+                  "notation_desc": "Laporan keuangan terakhir menunjukkan ekuitas negatif",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/E.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/E.png"
+                  }
+                },
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 8878000,
+            "lot": 23,
+            "avg_price": 3860,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "UNVR",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 8550000,
+            "lot": 50,
+            "avg_price": 1710,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/UNVR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MBMA",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 6390000,
+            "lot": 150,
+            "avg_price": 426,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MBMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ELPI",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 5250000,
+            "lot": 150,
+            "avg_price": 350,
+            "freq": 9,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ELPI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ERAA",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 3940200,
+            "lot": 99,
+            "avg_price": 398,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ERAA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "HGII",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 747400,
+            "lot": 37,
+            "avg_price": 202,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/HGII.png?version=1734504130325627272",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "OBAT-W",
+            "broker_code": "MI",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-01-13",
+            "value": 13400,
+            "lot": 2,
+            "avg_price": 67,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/OBAT-W.png?version=1734505235156754964",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-01-13",
+      "to": "2025-01-13",
+      "broker_code": "MI",
+      "broker_name": "Victoria Sekuritas Indonesia"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "downloaded_at": "2026-05-25T07:52:51",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "IC",
+  "from": "2025-05-23",
+  "to": "2025-05-23",
+  "buy_count": 2,
+  "sell_count": 0,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "JSMR",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-23",
+            "value": 20050000,
+            "lot": 50,
+            "avg_price": 4010,
+            "freq": 5,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JSMR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "TINS",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-23",
+            "value": 11750000,
+            "lot": 100,
+            "avg_price": 1175,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/TINS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": []
+      },
+      "from": "2025-05-23",
+      "to": "2025-05-23",
+      "broker_code": "IC",
+      "broker_name": "Integrity Capital Sekuritas"
+    }
+  }
+}

@@ -1,0 +1,943 @@
+{
+  "downloaded_at": "2026-05-25T09:05:51",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "RS",
+  "from": "2024-07-18",
+  "to": "2024-07-18",
+  "buy_count": 21,
+  "sell_count": 24,
+  "total_count": 45,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BINA",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 210500000,
+            "lot": 500,
+            "avg_price": 4210,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BINA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ANTM",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 138500000,
+            "lot": 1000,
+            "avg_price": 1385,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ANTM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTRO",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 112950000,
+            "lot": 1360,
+            "avg_price": 830.5147058823529,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTRO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRPT",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 69400000,
+            "lot": 650,
+            "avg_price": 1067.6923076923076,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MARK",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 49959000,
+            "lot": 549,
+            "avg_price": 910,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MARK.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BHIT",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 33300000,
+            "lot": 7000,
+            "avg_price": 47.57142857142857,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BHIT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IMJS",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 15660000,
+            "lot": 900,
+            "avg_price": 174,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IMJS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "APEX",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 10710000,
+            "lot": 700,
+            "avg_price": 153,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/APEX.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMDM",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 10400000,
+            "lot": 500,
+            "avg_price": 208,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMDM.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "KIJA",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 10080000,
+            "lot": 799.9999999999999,
+            "avg_price": 126.00000000000003,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/KIJA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IATA",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 8400000,
+            "lot": 2000,
+            "avg_price": 42,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IATA.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DKFT",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 5500000,
+            "lot": 500,
+            "avg_price": 110,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DKFT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ASII",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 1350000,
+            "lot": 3,
+            "avg_price": 4500,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ASII.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "EMTK",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 1341000,
+            "lot": 30,
+            "avg_price": 447,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/EMTK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PART",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 489000,
+            "lot": 30,
+            "avg_price": 163,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PART.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SICO",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 298000,
+            "lot": 30,
+            "avg_price": 99.33333333333333,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SICO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SPMA",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 151000,
+            "lot": 6.5,
+            "avg_price": 232.30769230769232,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SPMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DEWA",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 70000,
+            "lot": 10,
+            "avg_price": 70,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DEWA.png?version=1731380794259246908",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IPOL",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 69000,
+            "lot": 5,
+            "avg_price": 138,
+            "freq": 2,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IPOL.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PYFA",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 52500,
+            "lot": 5,
+            "avg_price": 105,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PYFA.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 40000,
+            "lot": 5,
+            "avg_price": 80,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "YULE",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 563968000,
+            "lot": 2203,
+            "avg_price": 2560,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/YULE.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BLES",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 243629600,
+            "lot": 10355,
+            "avg_price": 235.27725736359247,
+            "freq": 88,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BLES.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBRI",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 197831000,
+            "lot": 407,
+            "avg_price": 4860.712530712531,
+            "freq": 7,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "GOLF",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 159959000,
+            "lot": 7765,
+            "avg_price": 206,
+            "freq": 74,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/GOLF.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ADRO",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 58176000,
+            "lot": 192,
+            "avg_price": 3030,
+            "freq": 10,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ADRO.png?version=1753857016610110434",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BRPT",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 55000000,
+            "lot": 499.99999999999994,
+            "avg_price": 1100.0000000000002,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BRPT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "ITMG",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 52350000,
+            "lot": 20,
+            "avg_price": 26175,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/ITMG.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PTRO",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 30600000,
+            "lot": 360,
+            "avg_price": 850,
+            "freq": 4,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PTRO.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBCA",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 30225000,
+            "lot": 30,
+            "avg_price": 10075,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JPFA",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 26345000,
+            "lot": 155,
+            "avg_price": 1699.6774193548388,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JPFA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBNI",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 25250000,
+            "lot": 50,
+            "avg_price": 5050,
+            "freq": 8,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBNI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SCMA",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 18770000,
+            "lot": 1300,
+            "avg_price": 144.3846153846154,
+            "freq": 52,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SCMA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "IMAS",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 13450000,
+            "lot": 100,
+            "avg_price": 1345,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/IMAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "MNCN",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 10020000,
+            "lot": 300,
+            "avg_price": 334,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/MNCN.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PGAS",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 8100000,
+            "lot": 50,
+            "avg_price": 1620,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PGAS.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BUMI",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 7900000,
+            "lot": 1000,
+            "avg_price": 79,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BUMI.png?version=1776071207215393753",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "DKFT",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 5550000,
+            "lot": 500,
+            "avg_price": 111,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/DKFT.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "EMTK",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 651000,
+            "lot": 15,
+            "avg_price": 434,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/EMTK.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "LAPD",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 587300,
+            "lot": 839,
+            "avg_price": 7,
+            "freq": 6,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LAPD.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "SMBR",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 117000,
+            "lot": 5,
+            "avg_price": 234,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/SMBR.png",
+              "corpaction": {
+                "active": true,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BMTR",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 117000,
+            "lot": 5,
+            "avg_price": 234,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BMTR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "PWON",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 84000,
+            "lot": 2,
+            "avg_price": 420,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/PWON.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "WIKA",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 69600,
+            "lot": 3,
+            "avg_price": 232,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/WIKA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": [
+                {
+                  "notation_code": "X",
+                  "notation_desc": "Efek Bersifat Ekuitas Dalam Pemantauan",
+                  "icon_url": {
+                    "light_mode": "https://assets.stockbit.com/logos/notations/light/X.png",
+                    "dark_mode": "https://assets.stockbit.com/logos/notations/dark/X.png"
+                  }
+                }
+              ]
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "LPKR",
+            "broker_code": "RS",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2024-07-18",
+            "value": 31000,
+            "lot": 5,
+            "avg_price": 62,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/LPKR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2024-07-18",
+      "to": "2024-07-18",
+      "broker_code": "RS",
+      "broker_name": "Yulie Sekuritas Indonesia Tbk."
+    }
+  }
+}

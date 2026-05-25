@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2026-05-25T07:52:29",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "IC",
+  "from": "2025-05-02",
+  "to": "2025-05-02",
+  "buy_count": 2,
+  "sell_count": 2,
+  "total_count": 4,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [
+          {
+            "stock_code": "BBCA",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-02",
+            "value": 885000,
+            "lot": 1,
+            "avg_price": 8850,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JSMR",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-02",
+            "value": 422000,
+            "lot": 1,
+            "avg_price": 4220,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JSMR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ],
+        "brokers_sell": [
+          {
+            "stock_code": "BBCA",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-02",
+            "value": 895000,
+            "lot": 1,
+            "avg_price": 8950,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "JSMR",
+            "broker_code": "IC",
+            "type": "BROKER_TYPE_LOCAL",
+            "date": "2025-05-02",
+            "value": 427000,
+            "lot": 1,
+            "avg_price": 4270,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/JSMR.png",
+              "corpaction": {
+                "active": false,
+                "icon": "https://assets.stockbit.com/images/corp_action_event_icon.svg",
+                "text": "Perusahaan Memiliki Corporate Action"
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2025-05-02",
+      "to": "2025-05-02",
+      "broker_code": "IC",
+      "broker_name": "Integrity Capital Sekuritas"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "downloaded_at": "2026-05-25T09:16:00",
+  "endpoint": "https://exodus.stockbit.com/order-trade/broker/activity",
+  "broker_code": "CS",
+  "from": "2023-09-11",
+  "to": "2023-09-11",
+  "buy_count": 0,
+  "sell_count": 2,
+  "total_count": 2,
+  "response": {
+    "message": "Successfully loaded Broker Activity data",
+    "data": {
+      "broker_activity_transaction": {
+        "brokers_buy": [],
+        "brokers_sell": [
+          {
+            "stock_code": "BBRI",
+            "broker_code": "CS",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-09-11",
+            "value": 10850000000,
+            "lot": 20000,
+            "avg_price": 5425,
+            "freq": 3,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBRI.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          },
+          {
+            "stock_code": "BBCA",
+            "broker_code": "CS",
+            "type": "BROKER_TYPE_FOREIGN",
+            "date": "2023-09-11",
+            "value": 9125000000,
+            "lot": 10000,
+            "avg_price": 9125,
+            "freq": 1,
+            "company_detail": {
+              "icon_url": "https://assets.stockbit.com/logos/companies/BBCA.png",
+              "corpaction": {
+                "active": false,
+                "icon": "",
+                "text": ""
+              },
+              "notation": []
+            },
+            "nval_trend": []
+          }
+        ]
+      },
+      "from": "2023-09-11",
+      "to": "2023-09-11",
+      "broker_code": "CS",
+      "broker_name": "Credit Suisse Sekuritas Indonesia"
+    }
+  }
+}
